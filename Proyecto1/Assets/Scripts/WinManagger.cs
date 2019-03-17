@@ -18,6 +18,7 @@ public class WinManagger : MonoBehaviour {
     void Start() {
         killCount = maxKills;
         GameManager.instance.SetWinManager(this);
+        oneTime = true;
     }
 
     void Update() {
@@ -38,7 +39,7 @@ public class WinManagger : MonoBehaviour {
             oneTime = false;
         }
 
-        if ((maxKills > -1 && killCount == 0) || (maxCollectables > -1 && collectables >= maxCollectables))
+        if ((maxKills > -1 && killCount <= 0) || (maxCollectables > -1 && collectables >= maxCollectables))
         {
             GameManager.instance.WinLevel();
             oneTime = false;
@@ -59,6 +60,7 @@ public class WinManagger : MonoBehaviour {
     public void SubKillCount()
     {
         killCount--;
+        print(killCount);
     }
     public void AddCollectable()
     {
@@ -71,6 +73,10 @@ public class WinManagger : MonoBehaviour {
     public int GetKillCount()
     {
         return killCount;
+    }
+    public float GetTime()
+    {
+        return timer;
     }
 
 }
