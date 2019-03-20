@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4908906777343804}
   - component: {fileID: 20623097326941508}
   - component: {fileID: 81470625349714248}
-  - component: {fileID: 114308822437856780}
+  - component: {fileID: 114197927067657328}
   m_Layer: 0
   m_Name: MiniCamera
   m_TagString: Untagged
@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1512999804569786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.1, y: 5.22, z: -10}
-  m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_LocalPosition: {x: 16.96, y: 15.93, z: -10}
+  m_LocalScale: {x: 1.4875, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,7 +66,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 18.348938
+  orthographic size: 32.082
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -89,7 +89,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1512999804569786}
   m_Enabled: 1
---- !u!114 &114308822437856780
+--- !u!114 &114197927067657328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,8 +97,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1512999804569786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b8231ad52c133d43a6ea7e73607d08f, type: 3}
+  m_Script: {fileID: 11500000, guid: b305ce063e7e88e49ba6d2c830e4ea7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  offset: 10
