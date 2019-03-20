@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,7 +31,11 @@ public class OnPlayerContact : MonoBehaviour
             if (Mathf.Approximately(angle, 180) && bumpOnTop)
             {
                 if (kb != null) kb.BumpOnTop(-contact.normal, bumpOnTopForce);
-                if (dies) Destroy(gameObject);  
+                if (dies)
+                {
+                    GameManager.instance.KillEnemy();
+                    Destroy(gameObject);
+                }
             }
 
             else

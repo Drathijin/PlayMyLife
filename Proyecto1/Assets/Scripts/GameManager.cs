@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     UIManager theUIManager;
     WinManagger theWinManager;
 
-    //bool winOnTimeOut, win;
-    //int collected=0, maxCollected,score=0;
     private static int nivel = 0; //empieza en el nivel 0
 
 
@@ -24,15 +22,15 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        theUIManager.SeeTime(theWinManager.maxSeconds);
+        if(theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
     }
     public void Collectable()
     {
-        theUIManager.PlayerCollected(theWinManager.GetCollectables(), theWinManager.maxCollectables);
+        //theUIManager.PlayerCollected(theWinManager.GetCollectables(), theWinManager.maxCollectables);
     }
     public void AddPoints()
     {
-        theUIManager.PlayerPoints(theWinManager.GetKillCount());
+        //theUIManager.PlayerPoints(theWinManager.GetKillCount());
     }
 
     public void ChangeScene(string scene)
@@ -58,19 +56,19 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void PointsManager(int points, int minPoints)
+    /*public void PointsManager(int points, int minPoints)
     {
         theUIManager.PlayerPoints(points);
-    }
+    }*/
     public void WinLevel()
     {
-        nivel++;
+        nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
         print(nivel);
         SceneManager.LoadScene(nivel);
     }
     public void LoseLevel()
     {
-        nivel++;
+        nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
         SceneManager.LoadScene(nivel);
 
     }
@@ -78,10 +76,15 @@ public class GameManager : MonoBehaviour
     public void AddCollectable()
     {
         theWinManager.AddCollectable();
+        theUIManager.PlayerCollected(theWinManager.GetCollectables(), theWinManager.maxCollectables);
     }
     public void KillEnemy()
     {
-        theWinManager.SubKillCount();
+        if(theWinManager.maxKills >-1)
+        {
+            theWinManager.SubKillCount();
+            theUIManager.PlayerKills(theWinManager.GetKillCount());
+        }
     }
 
 }

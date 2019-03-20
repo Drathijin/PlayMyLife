@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -62,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpForce = Mathf.Sqrt(height * -2 * Physics2D.gravity.y * rb.gravityScale) * rb.drag - 2;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jump = false;
         }
 

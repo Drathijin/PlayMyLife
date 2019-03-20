@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,7 +28,6 @@ public class UIManager : MonoBehaviour
     {
         timeoutText.enabled = true;
         timeoutText.text = "" + time;
-
     }
 
     public void TimeEntered(bool lived)
@@ -48,15 +47,15 @@ public class UIManager : MonoBehaviour
         collected.text = "" + collect + " / " + max;
     }
 
-    public void PlayerPoints(int points)
+    public void PlayerKills(int kills)
     {
-        scoreText.text = "Points: " + points;
+        collected.text = "Remaining enemies: " + kills;
     }
 
     //llama al GameManager para saber el tiempo que le quede y lo muestra en pantalla
-    public void SeeTime(float maxSeconds)
+    public void SeeTime(float seconds, float maxSeconds)
     {
-        timer.text = "Time: " + (int)maxSeconds;
+        timer.text ="Time: " + (int)seconds + "/" + (int)maxSeconds;
     }
 
 
