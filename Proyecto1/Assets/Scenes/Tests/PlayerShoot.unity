@@ -289,26 +289,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 50292951199869988, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
+    - target: {fileID: 114613440270396806, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
         type: 2}
-      propertyPath: m_Constraints
-      value: 4
+      propertyPath: left
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1952897519209852, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1835726666790310, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1209393101714382, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1109699634193680, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
-      propertyPath: m_Layer
-      value: 14
+    - target: {fileID: 114613440270396806, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
+        type: 2}
+      propertyPath: right
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
