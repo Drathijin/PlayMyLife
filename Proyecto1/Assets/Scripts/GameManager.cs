@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
         nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
         print(nivel);
         SceneManager.LoadScene(nivel);
+        //Time.timeScale = 0f;
+
     }
     public void LoseLevel()
     {
