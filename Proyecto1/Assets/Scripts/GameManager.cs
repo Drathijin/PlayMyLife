@@ -62,17 +62,25 @@ public class GameManager : MonoBehaviour
     }*/
     public void WinLevel()
     {
-        nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
+        nivel++;
         print(nivel);
-        SceneManager.LoadScene(nivel);
-        //Time.timeScale = 0f;
-
+        theUIManager.FinishLevel(true, nivel);
+        Time.timeScale = 0f;
+        //SceneManager.LoadScene(nivel);
     }
+
     public void LoseLevel()
     {
-        nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
-        SceneManager.LoadScene(nivel);
-
+        nivel++;
+        print(nivel);
+        theUIManager.FinishLevel(true, nivel);
+        Time.timeScale = 0f;
+        //SceneManager.LoadScene(nivel);
+    }
+    public void LoadLevel(int n)
+    {
+        SceneManager.LoadScene(n);
+        Time.timeScale = 1f;
     }
 
     public void AddCollectable()
