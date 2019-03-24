@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class newPinPong : MonoBehaviour {
+public class newPinPong : MonoBehaviour
+{
 
     public Transform pointB;
     public float speed;
@@ -14,15 +15,17 @@ public class newPinPong : MonoBehaviour {
 
     void Start()
     {
-        if(transform.position.x > pointB.position.x)
+        if (transform.position.x > pointB.position.x)
         {
             initialPos = pointB.position;
             finalPos = transform.position;
-        } else if(transform.position.x < pointB.position.x)
+        }
+        else if (transform.position.x < pointB.position.x)
         {
             initialPos = transform.position;
             finalPos = pointB.position;
-        } else if(transform.position.y > pointB.position.y)
+        }
+        else if (transform.position.y > pointB.position.y)
         {
             initialPos = transform.position;
             finalPos = pointB.position;
@@ -34,7 +37,7 @@ public class newPinPong : MonoBehaviour {
         }
 
         state = GetState(initialPos, finalPos);
-        if (state == 4) this.enabled=false;
+        if (state == 4) this.enabled = false;
         dir = new Vector2(finalPos.x - initialPos.x, finalPos.y - initialPos.y);
     }
     void Update()
@@ -46,6 +49,13 @@ public class newPinPong : MonoBehaviour {
         transform.Translate(speed * Time.deltaTime * dir.normalized);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (Mathf.Approximately(Vector2.Angle(collision.GetContact(0).normal, transform.up), 0))
+        {
+            speed *= -1;
+        }
+    }
 
     static bool ChangeSpeed(Vector2 a, Vector2 b, Vector2 position, int state)
     {
@@ -71,11 +81,9 @@ public class newPinPong : MonoBehaviour {
     }
     static int GetState(Vector2 a, Vector2 b)
     {
-        if (a.y < b.y && a.x!=b.x) { return 1; }
+        if (a.y < b.y && a.x != b.x) { return 1; }
         if (a.y > b.y && a.x != b.x) { return 2; }
-        if (a.y != b.y ) { return 3; }
+        if (a.y != b.y) { return 3; }
         return 4;
     }
-
 }
-
