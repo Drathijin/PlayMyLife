@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Def Game/NivelesQueCargaElGM/Nivel-0.unity
+    path: Assets/Scenes/Tests/UI/Menu.unity
+    guid: 8f95f872171338740bbde7832de92a14
+  - enabled: 1
+    path: Assets/Scenes/Tests/UI/WinManager0.unity
     guid: 2bf6ed40609b043ee9cd6f64896166c2
   - enabled: 1
-    path: Assets/Scenes/Def Game/NivelesQueCargaElGM/Nivel-1.unity
+    path: Assets/Scenes/Tests/UI/WinManager1.unity
     guid: 89e6257a7813e4e8ba53794208b81af3
   - enabled: 1
-    path: Assets/Scenes/Def Game/NivelesQueCargaElGM/Nivel-2.unity
+    path: Assets/Scenes/Tests/UI/WinManager2.unity
     guid: 832d9ca0e57104f66903ccb8013bd718
   - enabled: 1
-    path: Assets/Scenes/Def Game/NivelesQueCargaElGM/Nivel-3.unity
+    path: Assets/Scenes/Tests/UI/WinManager3.unity
     guid: de83cc6ce14fd428e935b344349e55fb
   m_configObjects: {}

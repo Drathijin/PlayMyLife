@@ -144,27 +144,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &251117954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1693763097184502, guid: a1a537d03f40c46478b8827c682c589d,
-    type: 2}
-  m_PrefabInternal: {fileID: 659796413}
---- !u!114 &251117955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 251117954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587e387c1e54cec428b248de82539e0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dies: 0
-  bumpOnTop: 0
-  knockbackForce: 0
-  bumpOnTopForce: 0
-  timeUntilRecoveringControl: 0
 --- !u!1001 &439602116
 Prefab:
   m_ObjectHideFlags: 0
@@ -511,6 +490,31 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 553809470}
+    - target: {fileID: 114740812878807154, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114498762326469822, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -330
+      objectReference: {fileID: 0}
+    - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 278
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
@@ -553,16 +557,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4198657169551898, guid: a1a537d03f40c46478b8827c682c589d, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 95.98003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4198657169551898, guid: a1a537d03f40c46478b8827c682c589d, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.5801134
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114679715627067354, guid: a1a537d03f40c46478b8827c682c589d, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1a537d03f40c46478b8827c682c589d, type: 2}
   m_IsPrefabAsset: 0
 --- !u!224 &972099044 stripped

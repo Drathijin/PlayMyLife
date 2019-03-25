@@ -9,7 +9,6 @@ public class UIManager : MonoBehaviour
     public Text timer, scoreText, timeoutText,collected, winOrLose;
     public GameObject panel;
     int nextLevel;
-   
     bool highlightedText;
     //int playerPoints = 0;
 
@@ -107,5 +106,6 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.LoadLevel(0);
     }
+     
     
 }

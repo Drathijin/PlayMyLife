@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        nivel = SceneManager.GetActiveScene().buildIndex;
     }
     private void Update()
     {
@@ -66,16 +67,14 @@ public class GameManager : MonoBehaviour
         print(nivel);
         theUIManager.FinishLevel(true, nivel);
         Time.timeScale = 0f;
-        //SceneManager.LoadScene(nivel);
     }
 
     public void LoseLevel()
     {
         nivel++;
         print(nivel);
-        theUIManager.FinishLevel(true, nivel);
+        theUIManager.FinishLevel(false, nivel);
         Time.timeScale = 0f;
-        //SceneManager.LoadScene(nivel);
     }
     public void LoadLevel(int n)
     {
