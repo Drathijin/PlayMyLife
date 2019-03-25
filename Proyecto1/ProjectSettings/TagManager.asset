@@ -6,10 +6,10 @@ TagManager:
   tags:
   - Enemy
   - PlayerShield
-  - Shield
   - Floor
   - Collectable
   - DeadZone
+  - EnemyShield
   layers:
   - Default
   - TransparentFX
