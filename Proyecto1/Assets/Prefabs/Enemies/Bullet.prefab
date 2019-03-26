@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587e387c1e54cec428b248de82539e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dies: 0
+  dies: 1
   bumpOnTop: 0
   knockbackForce: 0
   bumpOnTopForce: 0

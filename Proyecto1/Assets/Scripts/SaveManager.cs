@@ -18,34 +18,54 @@ public class SaveManager : MonoBehaviour {
 
     private void Start()
     {
-        SaveGame(LoadGame(12));
+        GameManager.instance.SetSaveManager(this);
     }
-    //Carga de un txt el estado del último guardado, en caso de que no haya dicho txt devuelve nivel 1 y el resto bloqueados
-    public LevelsList LoadGame(int levels) 
-    {
 
-        LevelsList actualList = new LevelsList { levels = new LevelState[levels], act = 0};
+    //Crea un guardado con todos los niveles en "bloqueado" y el actual como el 0
+    public LevelsList NewGame(int levels)
+    {
+        LevelsList actualList = new LevelsList { levels = new LevelState[levels], act = 1 }; //inicializa en 1 para ignorar el menu
         for (int i = 0; i < actualList.levels.Length; i++) actualList.levels[i] = 0;
         return actualList;
     }
 
-    //Guarda en un txt el estado del juego
-    public void SaveGame(LevelsList actualList)
+    //Carga de un txt el estado del último guardado, en caso de que no haya dicho txt devuelve nivel 1 y el resto bloqueados
+    public LevelsList LoadGame(int levels) 
     {
-        StreamWriter writer = new StreamWriter(dir);
-        writer.WriteLine(actualList.act);
-        foreach(LevelState level in actualList.levels)
-        writer.WriteLine(level);
-        writer.Close();
+        //crea una lista vacía por si no existe guardado
+        LevelsList actualList = NewGame(levels);
+        if (!File.Exists(dir)) return actualList;
+
+        else //si existe carga la que hay en el txt y la devuelve
+        {
+            StreamReader reader = new StreamReader(dir);
+            actualList.act = int.Parse(reader.ReadLine());
+            int i = 0;
+            while (!reader.EndOfStream)
+            {
+                actualList.levels[i] = (LevelState)System.Enum.Parse(typeof(LevelState), reader.ReadLine());
+                i++;
+            }
+            reader.Close();
+        }
+        return actualList;
+
     }
 
-    //Devuelve el último nivel sin bloquear
-    public int ActualLevel(ref LevelsList actualList)
-    {
-        int i = 0;
-        while (actualList.levels[i] != LevelState.Locked) i++;
-        if (i<actualList.act) actualList.act = i;
-        return i;
+    //Guarda en un txt el estado del juego
+    public void SaveGame(LevelsList actualList)
+    {   
+        StreamWriter writer = new StreamWriter(dir);
+        writer.WriteLine(actualList.act);
+        //writer.WriteLine("Menu");
+        foreach(LevelState level in actualList.levels)
+            writer.WriteLine(level);
+
+        /*for (int i = 0; i< actualList.levels.Length; i++)
+        {
+            writer.WriteLine(actualList.levels[i]);
+        }*/
+        writer.Close();
     }
 
     //Guarda una victoria o una derrota (dependiendo del bool) en la lista
@@ -53,6 +73,8 @@ public class SaveManager : MonoBehaviour {
     {
         if (win) actualList.levels[actualList.act] = LevelState.Win;
         else actualList.levels[actualList.act] = LevelState.Lost;
+        print(actualList.levels[actualList.act]);
+        print(actualList.act);
         actualList.act++;
     }
 }

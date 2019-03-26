@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;
     UIManager theUIManager;
     WinManagger theWinManager;
+    SaveManager theSaveManager;
+    SaveManager.LevelsList save;
 
     private static int nivel = 0; //empieza en el nivel 0
 
@@ -19,26 +21,21 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+
     }
     private void Update()
     {
         if(theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
     }
-    public void Collectable()
-    {
-        //theUIManager.PlayerCollected(theWinManager.GetCollectables(), theWinManager.maxCollectables);
-    }
-    public void AddPoints()
-    {
-        //theUIManager.PlayerPoints(theWinManager.GetKillCount());
-    }
 
-    public void ChangeScene(string scene)
+
+    public void SetSaveManager(SaveManager saveManager)
     {
-        SceneManager.LoadScene(scene);
+        theSaveManager = saveManager;
+        save = theSaveManager.LoadGame(12);
+        nivel = save.act; //SceneManager.GetActiveScene().buildIndex;
 
     }
-
     public void SetUIManager(UIManager UIManager)
     {
         theUIManager = UIManager;
@@ -50,29 +47,41 @@ public class GameManager : MonoBehaviour
         theWinManager = winMan;
     }
 
+    public void ChangeScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
+
 
     public void ExitGame()
     {
         Application.Quit();
     }
 
-    /*public void PointsManager(int points, int minPoints)
-    {
-        theUIManager.PlayerPoints(points);
-    }*/
     public void WinLevel()
     {
-        nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
-        print(nivel);
-        SceneManager.LoadScene(nivel);
-        //Time.timeScale = 0f;
+        nivel++;
+        theUIManager.FinishLevel(true, nivel);
+        theSaveManager.SaveLevel(true, ref save);
+        theSaveManager.SaveGame(save);
 
+        Time.timeScale = 0f;
     }
+
     public void LoseLevel()
     {
-        nivel = (nivel + 1) % SceneManager.sceneCountInBuildSettings;
-        SceneManager.LoadScene(nivel);
+        nivel++;
+        theUIManager.FinishLevel(false, nivel);
+        theSaveManager.SaveLevel(false, ref save);
+        theSaveManager.SaveGame(save);
 
+
+        Time.timeScale = 0f;
+    }
+    public void LoadLevel(int n)
+    {
+        SceneManager.LoadScene(n);
+        Time.timeScale = 1f;
     }
 
     public void AddCollectable()

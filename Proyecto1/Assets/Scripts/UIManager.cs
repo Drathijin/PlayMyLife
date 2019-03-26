@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text timer, scoreText, timeoutText,collected;
+    public Text timer, scoreText, timeoutText,collected, winOrLose;
+    public GameObject panel;
+    int nextLevel;
     bool highlightedText;
     //int playerPoints = 0;
 
@@ -17,12 +19,6 @@ public class UIManager : MonoBehaviour
     {
        GameManager.instance.SetUIManager(this);
     }
-    /*
-    void Update()
-    {
-        scoreText.text = "Points: " + playerPoints;  Como UIManager solo encarga de update los puntos, no deberá tener la referencia de los playerpoints.
-    }                                         (Ademas como va a ser algo como GM que va a cambiar de escena a escena, no debe tener alguna referencia en Start o Update de algo (excepto GM))
-    */
     
     public void TimeOutside (int time)
     {
@@ -83,4 +79,27 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.ExitGame();
     }
+
+    public void FinishLevel(bool win, int level)
+    {
+        panel.SetActive(true);
+        if (win) winOrLose.text = "Has ganado";
+        else winOrLose.text = "Has perdido";
+        nextLevel = level;
+
+    }
+
+
+    public void ChangeLevel()
+    {
+        GameManager.instance.LoadLevel(nextLevel);
+    }
+
+    //hay que hacer que el menú principal sea la escena 0
+    public void MainMenu()
+    {
+        GameManager.instance.LoadLevel(0);
+    }
+     
+    
 }
