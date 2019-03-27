@@ -39,7 +39,7 @@ public class WinManagger : MonoBehaviour {
             oneTime = false;
         }
 
-        if ((maxKills > -1 && killCount <= 0) || (maxCollectables > -1 && collectables >= maxCollectables))
+        if (((maxKills > -1 && killCount <= 0) || (maxCollectables > -1 && collectables >= maxCollectables)) && oneTime)
         {
             GameManager.instance.WinLevel();
             oneTime = false;

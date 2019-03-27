@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text timer, scoreText, timeoutText,collected;
+    public Text timer, scoreText, timeoutText,collected, winOrLose;
+    public GameObject panel;
+    int nextLevel;
     bool highlightedText;
     //int playerPoints = 0;
 
@@ -83,4 +85,27 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.ExitGame();
     }
+
+    public void FinishLevel(bool win, int level)
+    {
+        panel.SetActive(true);
+        if (win) winOrLose.text = "Has ganado";
+        else winOrLose.text = "Has perdido";
+        nextLevel = level;
+
+    }
+
+
+    public void ChangeLevel()
+    {
+        GameManager.instance.LoadLevel(nextLevel);
+    }
+
+    //hay que hacer que el menú principal sea la escena 0
+    public void MainMenu()
+    {
+        GameManager.instance.LoadLevel(0);
+    }
+     
+    
 }

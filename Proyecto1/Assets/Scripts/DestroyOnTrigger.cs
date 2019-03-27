@@ -12,7 +12,6 @@ public class DestroyOnTrigger : MonoBehaviour
 
     static void CountUp()
     {
-        GameManager.instance.AddCollectable();
-        print("HOLA");
+        GameManager.instance.AddCollectable();        
     }
 }
