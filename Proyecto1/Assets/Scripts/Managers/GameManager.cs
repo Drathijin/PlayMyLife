@@ -7,33 +7,33 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     UIManager theUIManager;
-    WinManagger theWinManager;
+    WinManager theWinManager = null;
     SaveManager theSaveManager;
-    SaveManager.LevelsList save;
+    Save save;
+    Level level;
 
-    private static int nivel = 0; //empieza en el nivel 0
+    private static int lvlNum = 0; //empieza en el nivel 0
 
 
     private void Awake()
     {
         if (instance == null) { instance = this; }
         else { Destroy(this.gameObject); }
-    }
-    private void Start()
-    {
 
     }
+
     private void Update()
     {
-        if(theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
+        if(theWinManager != null && theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
     }
 
 
     public void SetSaveManager(SaveManager saveManager)
     {
         theSaveManager = saveManager;
-        save = theSaveManager.LoadGame(12);
-        nivel = save.act; //SceneManager.GetActiveScene().buildIndex;
+        save = theSaveManager.LoadGame();
+        lvlNum = SceneManager.GetActiveScene().buildIndex;
+        level = new Level(lvlNum);
 
     }
     public void SetUIManager(UIManager UIManager)
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void SetWinManager(WinManagger winMan)
+    public void SetWinManager(WinManager winMan)
     {
         theWinManager = winMan;
     }
@@ -58,26 +58,22 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void WinLevel()
-    {
-        nivel++;
-        theUIManager.FinishLevel(true, nivel);
-        theSaveManager.SaveLevel(true, ref save);
-        theSaveManager.SaveGame(save);
 
+    public void FinishLevel(bool win)
+    {
+        level.FinishLevel(win);
+        save.SaveLevel(save, level); 
+        theSaveManager.SaveGame(save); //para probar que funciona el txt, lo mejor será hacer esto periodicamente y no cada nivel
+
+        lvlNum++;
+        //save.SetAct(lvlNum);
+        print(lvlNum);
+        level = new Level(lvlNum);
+
+        theUIManager.FinishLevel(win, lvlNum);
         Time.timeScale = 0f;
     }
 
-    public void LoseLevel()
-    {
-        nivel++;
-        theUIManager.FinishLevel(false, nivel);
-        theSaveManager.SaveLevel(false, ref save);
-        theSaveManager.SaveGame(save);
-
-
-        Time.timeScale = 0f;
-    }
     public void LoadLevel(int n)
     {
         SceneManager.LoadScene(n);
