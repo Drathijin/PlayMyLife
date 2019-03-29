@@ -14,7 +14,7 @@ public class PlayerDamage : MonoBehaviour {
 
     public void PlayerDead()
     {
-        GameManager.instance.LoseLevel();
+        GameManager.instance.FinishLevel(false);
         gameObject.SetActive(false); // desactiva al jugador
     }
 

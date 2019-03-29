@@ -19,12 +19,6 @@ public class UIManager : MonoBehaviour
     {
        GameManager.instance.SetUIManager(this);
     }
-    /*
-    void Update()
-    {
-        scoreText.text = "Points: " + playerPoints;  Como UIManager solo encarga de update los puntos, no deberá tener la referencia de los playerpoints.
-    }                                         (Ademas como va a ser algo como GM que va a cambiar de escena a escena, no debe tener alguna referencia en Start o Update de algo (excepto GM))
-    */
     
     public void TimeOutside (int time)
     {

@@ -7,48 +7,48 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     UIManager theUIManager;
-    WinManagger theWinManager;
+    WinManager theWinManager = null;
+    SaveManager theSaveManager;
+    Save save;
+    Level level;
 
-    private static int nivel = 0; //empieza en el nivel 0
+    private static int lvlNum = 0; //empieza en el nivel 0
 
 
     private void Awake()
     {
         if (instance == null) { instance = this; }
         else { Destroy(this.gameObject); }
-    }
-    private void Start()
-    {
-        nivel = SceneManager.GetActiveScene().buildIndex;
+
     }
     private void Update()
     {
-        if(theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
-    }
-    public void Collectable()
-    {
-        //theUIManager.PlayerCollected(theWinManager.GetCollectables(), theWinManager.maxCollectables);
-    }
-    public void AddPoints()
-    {
-        //theUIManager.PlayerPoints(theWinManager.GetKillCount());
+        if(theWinManager != null && theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
     }
 
-    public void ChangeScene(string scene)
+
+    public void SetSaveManager(SaveManager saveManager)
     {
-        SceneManager.LoadScene(scene);
+        theSaveManager = saveManager;
+        save = theSaveManager.LoadGame();
+        lvlNum = SceneManager.GetActiveScene().buildIndex;
+        level = new Level(lvlNum);
 
     }
-
     public void SetUIManager(UIManager UIManager)
     {
         theUIManager = UIManager;
     }
 
 
-    public void SetWinManager(WinManagger winMan)
+    public void SetWinManager(WinManager winMan)
     {
         theWinManager = winMan;
+    }
+
+    public void ChangeScene(string scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 
 
@@ -57,25 +57,22 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    /*public void PointsManager(int points, int minPoints)
-    {
-        theUIManager.PlayerPoints(points);
-    }*/
-    public void WinLevel()
-    {
-        nivel++;
-        print(nivel);
-        theUIManager.FinishLevel(true, nivel);
-        Time.timeScale = 0f;
-    }
 
-    public void LoseLevel()
+    public void FinishLevel(bool win)
     {
-        nivel++;
-        print(nivel);
-        theUIManager.FinishLevel(false, nivel);
+        level.FinishLevel(win);
+        save.SaveLevel(save, level); 
+        theSaveManager.SaveGame(save); //para probar que funciona el txt, lo mejor será hacer esto periodicamente y no cada nivel
+
+        lvlNum++;
+        //save.SetAct(lvlNum);
+        print(lvlNum);
+        level = new Level(lvlNum);
+
+        theUIManager.FinishLevel(win, lvlNum);
         Time.timeScale = 0f;
     }
+	
     public void LoadLevel(int n)
     {
         SceneManager.LoadScene(n);
