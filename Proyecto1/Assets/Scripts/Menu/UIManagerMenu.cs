@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 public class UIManagerMenu : MonoBehaviour {
-
+    
     public AudioMixer audioMixer;
     public GameObject menu;
+    
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class UIManagerMenu : MonoBehaviour {
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+        GameManager.instance.SetVolume(volume);        
     }
 
     void SeeMenu()

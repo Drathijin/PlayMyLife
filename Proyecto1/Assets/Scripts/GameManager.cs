@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;
     UIManager theUIManager;
     WinManagger theWinManager;
+    AudioManager theAudioManager;
 
     private static int nivel = 0; //empieza en el nivel 0
 
@@ -45,6 +46,10 @@ public class GameManager : MonoBehaviour
         theUIManager = UIManager;
     }
 
+    public void SetAudioManager(AudioManager AudioManager)
+    {
+        theAudioManager = AudioManager;
+    }
 
     public void SetWinManager(WinManagger winMan)
     {
@@ -96,4 +101,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SetVolume(float volume)
+    {
+        theAudioManager.SaveVolume(volume);
+    }
+
+    public void PlayClip(string name)
+    {
+        theAudioManager.Play(name);
+    }
 }
