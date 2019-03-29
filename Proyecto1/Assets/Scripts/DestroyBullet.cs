@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyBullet : MonoBehaviour
+public class Destroy : MonoBehaviour
 {
     public float seconds;  //tiempo que tarda en desaparecer el objeto
 
