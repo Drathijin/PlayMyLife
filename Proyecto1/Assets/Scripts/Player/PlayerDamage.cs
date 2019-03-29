@@ -14,7 +14,11 @@ public class PlayerDamage : MonoBehaviour {
 
     public void PlayerDead()
     {
+<<<<<<< HEAD:Proyecto1/Assets/Scripts/PlayerDamage.cs
         GameManager.instance.LoseLevel();
+=======
+        GameManager.instance.FinishLevel(false);
+>>>>>>> GuardarPartidas:Proyecto1/Assets/Scripts/Player/PlayerDamage.cs
         gameObject.SetActive(false); // desactiva al jugador
     }
 

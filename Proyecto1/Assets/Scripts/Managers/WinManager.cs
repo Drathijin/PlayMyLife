@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinManagger : MonoBehaviour {
+public class WinManager : MonoBehaviour {
     public bool winOnTimeOut = true; // true ganar false perder
     public float maxSeconds = -1; // segundos máximos
     public int maxCollectables = -1; // coleccionables totales
@@ -15,9 +15,12 @@ public class WinManagger : MonoBehaviour {
 
 
 
+    private void Awake()
+    {
+        GameManager.instance.SetWinManager(this);
+    }
     void Start() {
         killCount = maxKills;
-        GameManager.instance.SetWinManager(this);
         oneTime = true;
     }
 
@@ -27,13 +30,11 @@ public class WinManagger : MonoBehaviour {
         {
             if (winOnTimeOut)
             {
-                print("YOU WIN!!");
-                GameManager.instance.WinLevel();
+                GameManager.instance.FinishLevel(true);
             }
             else
             {
-                print("YOU LOST!!");
-                GameManager.instance.LoseLevel();
+                GameManager.instance.FinishLevel(false);
             }
 
             oneTime = false;
@@ -41,7 +42,7 @@ public class WinManagger : MonoBehaviour {
 
         if (((maxKills > -1 && killCount <= 0) || (maxCollectables > -1 && collectables >= maxCollectables)) && oneTime)
         {
-            GameManager.instance.WinLevel();
+            GameManager.instance.FinishLevel(true);
             oneTime = false;
         }
     }
@@ -52,9 +53,9 @@ public class WinManagger : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player" && oneTime)
         {
-            print("YOU WIN!!");
             oneTime = false;
-            GameManager.instance.WinLevel();
+            GameManager.instance.FinishLevel(true);
+
         }
     }
     public void SubKillCount()

@@ -10,7 +10,11 @@ public class ShootDamage : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+<<<<<<< HEAD:Proyecto1/Assets/Scripts/ShootDamage.cs
         else if (collision.gameObject.tag == "Enemy")
+=======
+        else if(collision.gameObject.tag == "Enemy")
+>>>>>>> GuardarPartidas:Proyecto1/Assets/Scripts/Player/ShootDamage.cs
         {
             GameManager.instance.KillEnemy();
             Destroy(collision.gameObject); // Es un código simple para BlackBullet, destruirá todo lo que se va a colisionar. Entonces hay que hace que la máscara 

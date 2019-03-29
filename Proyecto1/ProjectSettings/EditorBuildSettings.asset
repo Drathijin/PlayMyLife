@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Tests/UI/Menu.unity
     guid: 8f95f872171338740bbde7832de92a14
   - enabled: 1
+=======
+>>>>>>> GuardarPartidas
     path: Assets/Scenes/Tests/UI/WinManager0.unity
     guid: 2bf6ed40609b043ee9cd6f64896166c2
   - enabled: 1
