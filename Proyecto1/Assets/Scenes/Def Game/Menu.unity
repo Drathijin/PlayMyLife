@@ -690,6 +690,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: e0769ce366d0aa04b87c9a9764b896a1, type: 2}
   menu: {fileID: 573437582}
+  video: {fileID: 1673288769}
+  SkipVideoKey: 13
 --- !u!1 &278226720
 GameObject:
   m_ObjectHideFlags: 0
