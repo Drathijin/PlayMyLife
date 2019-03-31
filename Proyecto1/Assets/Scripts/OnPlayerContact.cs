@@ -8,11 +8,11 @@ public class OnPlayerContact : MonoBehaviour
     public float knockbackForce, bumpOnTopForce;
     public float timeUntilRecoveringControl; //tiempo que dura el knockBack
     private MakeDamage mDamage;
-    private Destroy killThis;
+    private DestroyBullet killThis;
 
     private void Start()
     {
-        killThis = GetComponent<Destroy>();
+        killThis = GetComponent<DestroyBullet>();
         mDamage = GetComponent<MakeDamage>();
     }
 
@@ -34,7 +34,7 @@ public class OnPlayerContact : MonoBehaviour
                 if (dies)
                 {
                     GameManager.instance.KillEnemy();
-                    Destroy(gameObject);
+                    Destroy(this.gameObject);
                 }
             }
 

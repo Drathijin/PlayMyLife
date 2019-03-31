@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4779784489126134}
   m_Layer: 0
-  m_Name: PointB (1)
+  m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4619925518473046}
   m_Layer: 0
-  m_Name: PointB
+  m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4990429385998138}
   m_Layer: 0
-  m_Name: PointB (2)
+  m_Name: Objective3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

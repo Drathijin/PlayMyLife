@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 61538801266666930}
   - component: {fileID: 50285085813341174}
   - component: {fileID: 114244864689488990}
+  - component: {fileID: 114781503676887824}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -74,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077830612163412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79, y: -1.25, z: 0}
+  m_LocalPosition: {x: 1, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4886980682581062}
@@ -134,7 +135,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1616797708888858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -200,8 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca6b9f55a257dd48a8ce623ca4c0a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tecla: 13
-  bullet: {fileID: 114074992300999158, guid: 79cc89cd82016474d902e5ba147b6338, type: 2}
+  bullet: {fileID: 114096534015251760, guid: b6f3954a16b448b4296b6c196fab119b, type: 2}
   points: {fileID: 4064607456137526}
   cooldown: 1
 --- !u!114 &114360011967061970
@@ -226,6 +226,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7516e4a7387e6b141bebc74d1a253086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114781503676887824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077830612163412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7516e4a7387e6b141bebc74d1a253086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114799260330828842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,8 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13411f284de2429cb4d27dd34a2880f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  height: 20
+  speed: 12
+  height: 6
   dashDecreaseRate: 0.95
   impulseOnDash: 2
 --- !u!212 &212199794916374248

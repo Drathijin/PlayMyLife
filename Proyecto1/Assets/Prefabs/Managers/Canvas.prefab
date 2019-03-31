@@ -328,7 +328,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Time: 1/10'
 --- !u!114 &114476456724317108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,7 +399,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0 / 8
+  m_Text: 'Remaining enemies: 2'
 --- !u!114 &114506741726698300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -638,8 +638,8 @@ Canvas:
   m_GameObject: {fileID: 1957101994067562}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_RenderMode: 0
+  m_Camera: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607, type: 2}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -753,15 +753,15 @@ RectTransform:
   m_GameObject: {fileID: 1462853136546052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.87296486, y: 1.1221875, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224250290003623324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -425, y: 276}
-  m_SizeDelta: {x: 66.73, y: 45.32}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 149.99998, y: -56}
+  m_SizeDelta: {x: 300, y: 45.320007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224718368916959002
 RectTransform:
@@ -792,14 +792,14 @@ RectTransform:
   m_GameObject: {fileID: 1865107648370732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8487621, y: 1.2875, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224250290003623324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 364, y: 282}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -115, y: -56}
   m_SizeDelta: {x: 205.69, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224786625423585060
