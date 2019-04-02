@@ -85,7 +85,7 @@ public class UIManager : MonoBehaviour
         panel.SetActive(true);
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";
-        nextLevel = level;
+        nextLevel = level+1;
 
     }
 

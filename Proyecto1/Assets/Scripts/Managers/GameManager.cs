@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     UIManager theUIManager;
     WinManager theWinManager = null;
     SaveManager theSaveManager;
-    Save save;
-    Level level;
 
     private static int lvlNum = 0; //empieza en el nivel 0
 
@@ -30,10 +28,6 @@ public class GameManager : MonoBehaviour
     public void SetSaveManager(SaveManager saveManager)
     {
         theSaveManager = saveManager;
-        save = theSaveManager.LoadGame();
-        lvlNum = SceneManager.GetActiveScene().buildIndex;
-        level = new Level(lvlNum);
-
     }
     public void SetUIManager(UIManager UIManager)
     {
@@ -45,6 +39,7 @@ public class GameManager : MonoBehaviour
     {
         theWinManager = winMan;
     }
+
 
     public void ChangeScene(string scene)
     {
@@ -60,22 +55,16 @@ public class GameManager : MonoBehaviour
 
     public void FinishLevel(bool win)
     {
-        level.FinishLevel(win);
-        save.SaveLevel(save, level); 
-        theSaveManager.SaveGame(save); //para probar que funciona el txt, lo mejor será hacer esto periodicamente y no cada nivel
-
-        lvlNum++;
-        //save.SetAct(lvlNum);
-        print(lvlNum);
-        level = new Level(lvlNum);
-
-        theUIManager.FinishLevel(win, lvlNum);
+        theSaveManager.FinishLevel(win);
+        theUIManager.FinishLevel(win, theSaveManager.GetAct()+1);
         Time.timeScale = 0f;
     }
 	
     public void LoadLevel(int n)
     {
+        theSaveManager.SaveGame();
         SceneManager.LoadScene(n);
+        theSaveManager.LoadGame();
         Time.timeScale = 1f;
     }
 
@@ -92,5 +81,13 @@ public class GameManager : MonoBehaviour
             theUIManager.PlayerKills(theWinManager.GetKillCount());
         }
     }
-
+    public void LoadGame()
+    {
+        LoadLevel(theSaveManager.GetAct());
+    }
+    public void NewGame()
+    {
+        theSaveManager.NewSave();
+        LoadLevel(1);
+    }
 }
