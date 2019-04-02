@@ -9,11 +9,6 @@ public class GameManager : MonoBehaviour
     UIManager theUIManager;
     WinManager theWinManager = null;
     SaveManager theSaveManager;
-    Save save;
-    Level level;
-
-    private static int lvlNum = 0; //empieza en el nivel 0
-
 
     private void Awake()
     {
@@ -21,14 +16,6 @@ public class GameManager : MonoBehaviour
         else { Destroy(this.gameObject); }
 
     }
-<<<<<<< HEAD:Proyecto1/Assets/Scripts/GameManager.cs
-    private void Start()
-    {
-        nivel = SceneManager.GetActiveScene().buildIndex;
-    }
-=======
-
->>>>>>> GuardarPartidas:Proyecto1/Assets/Scripts/Managers/GameManager.cs
     private void Update()
     {
         if(theWinManager != null && theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
@@ -38,10 +25,6 @@ public class GameManager : MonoBehaviour
     public void SetSaveManager(SaveManager saveManager)
     {
         theSaveManager = saveManager;
-        save = theSaveManager.LoadGame();
-        lvlNum = SceneManager.GetActiveScene().buildIndex;
-        level = new Level(lvlNum);
-
     }
     public void SetUIManager(UIManager UIManager)
     {
@@ -53,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         theWinManager = winMan;
     }
+
 
     public void ChangeScene(string scene)
     {
@@ -68,38 +52,17 @@ public class GameManager : MonoBehaviour
 
     public void FinishLevel(bool win)
     {
-<<<<<<< HEAD:Proyecto1/Assets/Scripts/GameManager.cs
-        nivel++;
-        print(nivel);
-        theUIManager.FinishLevel(true, nivel);
+        theSaveManager.FinishLevel(win);
+        theUIManager.FinishLevel(win, theSaveManager.GetAct());
         Time.timeScale = 0f;
+        theSaveManager.SaveGame();
+
     }
 
-    public void LoseLevel()
-    {
-        nivel++;
-        print(nivel);
-        theUIManager.FinishLevel(false, nivel);
-        Time.timeScale = 0f;
-    }
-=======
-        level.FinishLevel(win);
-        save.SaveLevel(save, level); 
-        theSaveManager.SaveGame(save); //para probar que funciona el txt, lo mejor será hacer esto periodicamente y no cada nivel
-
-        lvlNum++;
-        //save.SetAct(lvlNum);
-        print(lvlNum);
-        level = new Level(lvlNum);
-
-        theUIManager.FinishLevel(win, lvlNum);
-        Time.timeScale = 0f;
-    }
-
->>>>>>> GuardarPartidas:Proyecto1/Assets/Scripts/Managers/GameManager.cs
     public void LoadLevel(int n)
     {
         SceneManager.LoadScene(n);
+        theSaveManager.LoadGame();
         Time.timeScale = 1f;
     }
 
@@ -116,5 +79,14 @@ public class GameManager : MonoBehaviour
             theUIManager.PlayerKills(theWinManager.GetKillCount());
         }
     }
-
+    public void LoadGame()
+    {
+        theSaveManager.LoadGame();
+        LoadLevel(theSaveManager.GetAct());
+    }
+    public void NewGame()
+    {
+        theSaveManager.NewSave();
+        LoadLevel(1); //empieza en la escena 1 porque la 0 es el menú principal
+    }
 }

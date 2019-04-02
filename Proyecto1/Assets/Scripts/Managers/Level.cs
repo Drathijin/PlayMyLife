@@ -4,8 +4,8 @@
 }
 public class Level
 {
-    LevelState state; //El estado del nivel - Nivel superado, perdido o bloqueado.
-    int num; //Nivel actual en el que se encuentra el guardado.
+    LevelState state; //El estado del nivel - Nivel bloqueado, perdido o superado.
+    readonly int num; //Número del nivel
 
     // -----Constructores----- //
 
@@ -23,11 +23,9 @@ public class Level
     // -----FinDeConstructores----- //
 
 
-    public int GetNum()
-    {
-        return num;
-    }
+    public int GetNum() { return num; }
     public LevelState GetState() { return state; }
+    public void SetState(LevelState State) { state = State; }
 
 
     public void FinishLevel(bool win)
@@ -35,6 +33,6 @@ public class Level
         int d = 0;
         if (win) d = 2; //ganar
         else d = 1; //perder
-        state =(LevelState)d;
+        state = (LevelState)d;
     }
 }

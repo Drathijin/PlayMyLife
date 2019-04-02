@@ -4,63 +4,75 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    public static SaveManager instance = null;
+    public static SaveManager instance;// = null;
     string dir = "./saves.txt";
     const int LVLS = 12; //Numero de niveles por defecto a cargar
+    static private Save currentGame;
 
     private void Awake()
     {
-        if (instance == null) { instance = this; }
-        else { Destroy(this.gameObject); }
+        currentGame = LoadGame();
     }
 
     private void Start()
     {
         GameManager.instance.SetSaveManager(this);
     }
-    
+
     /// <summary>
     /// Busca en la dirección dir el archivo de texto donde está guardada la partdia y la carga en una variable "Save" que devuelve.
     /// </summary>
     /// <returns></returns>
     public Save LoadGame()
     {
-        Save save = new Save(LVLS); //en save se guardan el estado de los niveles
-        if (!File.Exists(dir))
-        {
-            return save; //si no existe el archivo devuelve un save estándar
-        }
-
+        Save save = new Save(LVLS);
+        if (!File.Exists(dir))return save;
         StreamReader reader = new StreamReader(dir);
-
         int i = 0;
         while (!reader.EndOfStream)
         {
             string line = reader.ReadLine();
-            LevelState state = (LevelState)Enum.Parse(typeof(LevelState), line);
-            Level redLevel = new Level(i, state);
-            save.SaveLevel(save, redLevel); //guarda en el save el nivel que acaba de leer
+            LevelState redState = (LevelState)Enum.Parse(typeof(LevelState), line);
+            Level newLevel = new Level(i, redState);
+            save.SaveLevel(newLevel);
+            print(redState);
             i++;
         }
+        int act = save.FindAct();
+        save.SetAct(act);
+        print(act);
         reader.Close();
         return save;
-
     }
 
     /// <summary>
     /// Guarda en el archivo de texto el estado actual del objeto save
     /// </summary>
     /// <param name="actState"></param>
-    public void SaveGame(Save actState)
+    public void SaveGame()
     {
-        StreamWriter writer;
         //if (!File.Exists(dir)) File.Create(dir);
-        writer = new StreamWriter(dir);
-
-        for (int i = 0; i < actState.GetLevels().Length; i++)
-            writer.WriteLine(actState.GetLevels()[i].GetState());
+        StreamWriter writer = new StreamWriter(dir);
+        foreach (Level level in currentGame.GetLevels())
+        {
+            writer.WriteLine(level.GetState());
+            //print(level.GetState());
+        }
         writer.Close();
 
     }
-
+    public void FinishLevel(bool win)
+    {
+        currentGame.GetLevels()[currentGame.GetAct()].FinishLevel(win);
+        //print(currentGame.GetLevels()[currentGame.GetAct()].GetState());
+    }
+    public int GetAct()
+    {
+       return currentGame.GetAct();
+    }
+    public void NewSave()
+    {
+        File.Delete(dir);
+        currentGame = new Save(LVLS);
+    }
 }
