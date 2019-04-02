@@ -4,12 +4,32 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour {
 
+    private float animationChangeTime = 0.5f;
+
+    private float animTime;
     bool shield = true;
     Shield shieldObject;
+    Animator animator, armAnim;
 
-    private void Start()
+    void Start()
     {
+        animTime = animationChangeTime;
         shieldObject = GetComponentInChildren<Shield>();
+        animator = GetComponent<Animator>();
+        armAnim = transform.GetChild(1).GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if (animTime < animationChangeTime)
+        {
+            animTime += Time.deltaTime;
+        }
+        else
+        {
+            animator.SetBool("IsDamaged", false);
+            armAnim.SetBool("IsDamaged", false);
+        }
     }
 
     public void PlayerDead()
@@ -26,8 +46,11 @@ public class PlayerDamage : MonoBehaviour {
     {
         if (shield)
         {
+            animator.SetBool("IsDamaged", true);
+            armAnim.SetBool("IsDamaged", true);
             shieldObject.SetActive(false);
             shield = false;
+            animTime = 0;
         }
         else PlayerDead();
     }

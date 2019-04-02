@@ -8,6 +8,8 @@ public class PlayerShoot : MonoBehaviour {
     public Bullet bullet; //Objeto que se instanciará
     public Transform points;
     public float cooldown;
+
+    private Transform arm;
     private GameObject bulletpool; //objeto padre de las balas, para mantener organización
     private bool disparoActv; //activa y desactiva la capacidad de disparar del jugador
     float offset = 0.5f;    // distancia entre player y su shootpoints
@@ -17,7 +19,7 @@ public class PlayerShoot : MonoBehaviour {
     {
         bulletpool = GameObject.Find("BulletPool"); //busca al padre de las balas
         disparoActv = true;
-
+        arm = transform.GetChild(1);
     }
 
     //si se pulsa la tecla de disparo (Edit-->Input-->Axis-->Fire1) y el cooldown está inactivo, dispara
@@ -26,6 +28,7 @@ public class PlayerShoot : MonoBehaviour {
         if (disparoActv && (Input.GetKeyDown("left")|| Input.GetKeyDown( "right"))) //Aunque he puesto left y right como "Fire1", pero para detectar si está pulsado o no hay que hacer esto
         {
             Invoke("Cooldown", cooldown);
+            arm.GetComponent<Animator>().SetBool("IsShooting", true);
             disparoActv = false;
             ShootBullet();
         }
@@ -35,6 +38,7 @@ public class PlayerShoot : MonoBehaviour {
     void Cooldown()
     {
         disparoActv = true;
+        arm.GetComponent<Animator>().SetBool("IsShooting", false);
     }
 
     //instancia una nueva bala y la lanza
@@ -42,13 +46,26 @@ public class PlayerShoot : MonoBehaviour {
     {
         float dir = Input.GetAxisRaw("Fire1"); // si está pulsado la izq, el float de getAxis es negativo, en contrario es positivo
         if (dir >0)
-        { points.position = new Vector2 (transform.position.x + offset,transform.position.y); } //Aunque la posicion del shootpoint en el inspector es 0.5f 
+        {
+            // comprueba si esta hacia donde mira el player
+            if(transform.localScale.x >= 0)
+            {
+                arm.rotation = new Quaternion(0, 0, 0, 0);
+            }
+            else arm.rotation = new Quaternion(0, 0, 180, 0);
+        } //Aunque la posicion del shootpoint en el inspector es 0.5f 
+        
         //respecto de su padre , pero si ponemos manualmente 0.5f, lo que se va a colocar es respecto el mundo de unity.
         else if (dir <0)
-        { points.position = new Vector2(transform.position.x - offset, transform.position.y); }
+        {
+            if (transform.localScale.x >= 0)
+            {
+                arm.rotation = new Quaternion(0, 0, 180, 0);
+            }
+            else arm.rotation = new Quaternion(0, 0, 0, 0);
+        }
         
         Bullet newbullet = Instantiate(bullet, points.position, Quaternion.identity, bulletpool.transform);
-        Vector2 rotation = new Vector2 (points.position.x - transform.position.x, points.position.y - transform.position.y);
-        newbullet.ChangeDir(rotation);
+        newbullet.ChangeDir(arm.right * transform.localScale.x);
     }
 }

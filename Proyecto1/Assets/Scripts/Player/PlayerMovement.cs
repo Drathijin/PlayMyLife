@@ -8,27 +8,34 @@ public class PlayerMovement : MonoBehaviour
     bool jump, dashing = false, dashCD, input = true;
     float speedX, jumpForce, dashAcc = 0, count = 0, dashCoolDown = 0.1f;
     Rigidbody2D rb;
+    Animator animator;
 
     //Obtenemos el Rigidbody del jugador para modificar su velocidad
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     //En el Update() declaramos los "controles" del jugador, para desplazarse en el eje X y para saltar en el eje Y
     void Update()
     {
         speedX = Input.GetAxisRaw("Horizontal");// speedX = {-1, 0, 1}
+
         if (speedX >0)
-        { transform.localScale = new Vector3(1, 1, 1); }
+        { transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z); }
 
         else if (speedX <0)
-        { transform.localScale = new Vector3(-1, 1, 1); }
+        { transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z); }
+
+        animator.SetFloat("SpeedX", Mathf.Abs(rb.velocity.x));
+
+        animator.SetFloat("SpeedY", Mathf.Abs(rb.velocity.y));
 
         if (Input.GetKeyDown(KeyCode.S))
         {
             dashAcc = rb.velocity.x * impulseOnDash / dashDecreaseRate;
-            transform.localScale = new Vector3(1, 0.75f, 1);
+            transform.position = new Vector2(transform.position.x, transform.position.y - 0.2f);
         }
         else if (dashCD)
         {
@@ -47,10 +54,10 @@ public class PlayerMovement : MonoBehaviour
             dashing = true;
         }
         else if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.1f) { jump = true; }
-        else
+        else if (!Input.GetKeyUp(KeyCode.S))
         {
-            if (Input.GetKeyUp(KeyCode.S)) transform.localScale = new Vector3(1, 1, 1);
-            else dashing = false;
+            animator.SetBool("IsDashing", false);
+            dashing = false;            
         }
 
     }
@@ -60,9 +67,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (jump)
         {
-            jumpForce = Mathf.Sqrt(height * -2 * Physics2D.gravity.y * rb.gravityScale) * rb.drag - 2;
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            //rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            animator.SetBool("IsJumping", jump);
+            jumpForce = Mathf.Sqrt(height * -2 * Physics2D.gravity.y * rb.gravityScale);
+            //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jump = false;
         }
 
@@ -73,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
                 if (input) rb.velocity = new Vector2(dashAcc, rb.velocity.y); //sólo hace dash si no ha sido knockeado
                 //rb.AddForce(new Vector2(dashAcc, 0), ForceMode2D.Impulse);
                 dashCD = true;
+                animator.SetBool("IsDashing", true);
             }
         }
         else if (input) rb.velocity = new Vector2(speedX * speed, rb.velocity.y); //sólo se puede mover si no ha sido knockeado

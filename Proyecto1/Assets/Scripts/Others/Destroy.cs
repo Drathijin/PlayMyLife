@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class DestroyBullet : MonoBehaviour
 {
     public float seconds;  //tiempo que tarda en desaparecer el objeto
 
     //cuando se crea, el objeto tarda "seconds" segundos en ser destruido
     void Start()
     {
+
         Destroy(gameObject, seconds);
     }
 
