@@ -10,9 +10,6 @@ public class GameManager : MonoBehaviour
     WinManager theWinManager = null;
     SaveManager theSaveManager;
 
-    private static int lvlNum = 0; //empieza en el nivel 0
-
-
     private void Awake()
     {
         if (instance == null) { instance = this; }
@@ -88,6 +85,6 @@ public class GameManager : MonoBehaviour
     public void NewGame()
     {
         theSaveManager.NewSave();
-        LoadLevel(1);
+        LoadLevel(1); //empieza en la escena 1 porque la 0 es el menú principal
     }
 }
