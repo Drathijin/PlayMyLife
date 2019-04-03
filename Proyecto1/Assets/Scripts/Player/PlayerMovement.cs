@@ -67,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (jump)
         {
-            animator.SetBool("IsJumping", jump);
             jumpForce = Mathf.Sqrt(height * -2 * Physics2D.gravity.y * rb.gravityScale);
             //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);

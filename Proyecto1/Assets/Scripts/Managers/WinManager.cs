@@ -13,8 +13,6 @@ public class WinManager : MonoBehaviour {
     private int killCount = 0; // contador del score
     private bool oneTime = true; // se asegura que solo se ejecuta una vez
 
-
-
     private void Awake()
     {
         GameManager.instance.SetWinManager(this);

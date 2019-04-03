@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     UIManager theUIManager;
-    WinManagger theWinManager;
+    WinManager theWinManager;
     AudioManager theAudioManager;
-
+    SaveManager theSaveManager;
     private static int nivel = 0; //empieza en el nivel 0
 
 
@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
     {
         theSaveManager.NewSave();
         LoadLevel(1); //empieza en la escena 1 porque la 0 es el menú principal
-
+    }
     public void SetVolume(float volume)
     {
         theAudioManager.SaveVolume(volume);
