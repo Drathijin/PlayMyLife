@@ -7,8 +7,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     UIManager theUIManager;
-    WinManager theWinManager = null;
-    SaveManager theSaveManager;
+    WinManagger theWinManager;
+    AudioManager theAudioManager;
+
+    private static int nivel = 0; //empieza en el nivel 0
+
 
     private void Awake()
     {
@@ -31,6 +34,10 @@ public class GameManager : MonoBehaviour
         theUIManager = UIManager;
     }
 
+    public void SetAudioManager(AudioManager AudioManager)
+    {
+        theAudioManager = AudioManager;
+    }
 
     public void SetWinManager(WinManager winMan)
     {
@@ -88,5 +95,14 @@ public class GameManager : MonoBehaviour
     {
         theSaveManager.NewSave();
         LoadLevel(1); //empieza en la escena 1 porque la 0 es el menú principal
+
+    public void SetVolume(float volume)
+    {
+        theAudioManager.SaveVolume(volume);
+    }
+
+    public void PlayClip(string name)
+    {
+        theAudioManager.Play(name);
     }
 }
