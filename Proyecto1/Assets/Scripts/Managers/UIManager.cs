@@ -6,21 +6,26 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text timer, scoreText, timeoutText,collected, winOrLose;
-    public GameObject panel;
+    public Text timer, scoreText, timeoutText, collected, winOrLose;
+    public GameObject panel, initialPanel;
     int nextLevel;
+    float timeToDisable = 0.05f;
     bool highlightedText;
     //int playerPoints = 0;
 
 
-    
-   
+
+
+    private void Awake()
+    {
+
+    }
     void Start()
     {
-       GameManager.instance.SetUIManager(this);
+        GameManager.instance.SetUIManager(this);
     }
-    
-    public void TimeOutside (int time)
+
+    public void TimeOutside(int time)
     {
         timeoutText.enabled = true;
         timeoutText.text = "" + time;
@@ -38,7 +43,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void PlayerCollected(int collect,int max)
+    public void PlayerCollected(int collect, int max)
     {
         collected.text = "" + collect + " / " + max;
     }
@@ -51,7 +56,7 @@ public class UIManager : MonoBehaviour
     //llama al GameManager para saber el tiempo que le quede y lo muestra en pantalla
     public void SeeTime(float seconds, float maxSeconds)
     {
-        timer.text ="Time: " + (int)seconds + "/" + (int)maxSeconds;
+        timer.text = "Time: " + (int)seconds + "/" + (int)maxSeconds;
     }
 
 
@@ -85,7 +90,7 @@ public class UIManager : MonoBehaviour
         panel.SetActive(true);
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";
-        nextLevel = level+1;
+        nextLevel = level + 1;
 
     }
 
@@ -100,6 +105,17 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.LoadLevel(0);
     }
-     
-    
+
+    public void StartLevel()
+    {
+        initialPanel.SetActive(true);
+        Invoke("DisablePanel()", timeToDisable);
+    }
+
+    public void DisablePanel()
+    {
+        GameObject pan = initialPanel;
+        pan.SetActive(false);
+    }
+    public float GetTime() {return timeToDisable; }
 }
