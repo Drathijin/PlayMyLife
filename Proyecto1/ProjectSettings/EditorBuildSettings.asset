@@ -5,19 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tests/UI/Menu.unity
     guid: 8f95f872171338740bbde7832de92a14
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tests/UI/WinManager0.unity
     guid: 2bf6ed40609b043ee9cd6f64896166c2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tests/UI/WinManager1.unity
     guid: 89e6257a7813e4e8ba53794208b81af3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tests/UI/WinManager2.unity
     guid: 832d9ca0e57104f66903ccb8013bd718
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tests/UI/WinManager3.unity
     guid: de83cc6ce14fd428e935b344349e55fb
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Menu.unity
+    guid: 7bee00c64dcb6964d851555e1c94f956
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Level1.unity
+    guid: 3a7cce16fb249ad4691d0012cd11402c
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Level2.unity
+    guid: 689f71b9f58b6d54db84b5bbf424865d
   m_configObjects: {}
