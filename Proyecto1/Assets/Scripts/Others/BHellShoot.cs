@@ -10,8 +10,7 @@ public class BHellShoot : MonoBehaviour {
     private GameObject pool;
 
     void Start()
-    {
-
+    { 
         pool = GameObject.Find("BulletPool");
         InvokeRepeating("ShootBullet", 0.5f, shootFreq);   //Invocar shootBullet
     }
