@@ -107,9 +107,6 @@ public class FollowPath : MonoBehaviour
         {
             under = false;
         }
-        Debug.Log(direc);
-        Debug.Log("left: " + left);
-        Debug.Log("under: " + under);
     }
 
     // metodo para hacer que el objeto de la vuelta, y retome su caminoo una vez colisione con el anterior objetivo

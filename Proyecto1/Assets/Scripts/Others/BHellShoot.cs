@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BHellShoot : MonoBehaviour {
 
+    public float shootFreq = 2f;
     public Transform[] ShootPoints = new Transform[4]; //obtener los transforms de cada shootpoints como un array que más tarde facilita el uso de Random.
     public Bullet bullet;   // Prefab de bullet que tiene el script EnemyBullet
     private GameObject pool;
@@ -12,7 +13,7 @@ public class BHellShoot : MonoBehaviour {
     {
 
         pool = GameObject.Find("BulletPool");
-        InvokeRepeating("ShootBullet", 0.5f, 2f);   //Invocar shootBullet
+        InvokeRepeating("ShootBullet", 0.5f, shootFreq);   //Invocar shootBullet
     }
     void ShootBullet()
     {

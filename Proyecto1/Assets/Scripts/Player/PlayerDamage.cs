@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerDamage : MonoBehaviour
 {
 
-    private float animationChangeTime = 0.5f;
+    private float animationChangeTime = 1f;
 
     private float animTime;
     bool shield = true;
