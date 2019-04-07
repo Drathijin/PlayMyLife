@@ -16,7 +16,7 @@ public class BHellShoot : MonoBehaviour {
     }
     void ShootBullet()
     {
-        int n = Random.Range(0, 3);  //Un nº aleatorio entre [0,3] que corresponde a los 4 shootpoints de bullethell
+        int n = Random.Range(0, ShootPoints.Length-1);  //Un nº aleatorio entre [0,3] que corresponde a los 4 shootpoints de bullethell
         Bullet newbullet = Instantiate(bullet, ShootPoints[n].position, Quaternion.identity, pool.transform);  // instanciar la bala en shootpoint correpondiente al numero aleatorio
         Vector2 newDir = new Vector2(ShootPoints[n].position.x - transform.position.x, ShootPoints[n].position.y - transform.position.y);  // vector direccion que envia a changeDirecion de bullet
         // corresponde al vector formado por la posicion de Bullet hell con su shootpoint.

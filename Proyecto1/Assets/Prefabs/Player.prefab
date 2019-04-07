@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 114096534015251760, guid: b6f3954a16b448b4296b6c196fab119b, type: 2}
   points: {fileID: 4064607456137526}
-  cooldown: 0.1
+  cooldown: 0.25
 --- !u!114 &114360011967061970
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -15,9 +15,10 @@ public class WinManager : MonoBehaviour {
 
     private void Awake()
     {
-        GameManager.instance.SetWinManager(this);
     }
     void Start() {
+        GameManager.instance.SetWinManager(this);
+
         killCount = maxKills;
         oneTime = true;
     }
