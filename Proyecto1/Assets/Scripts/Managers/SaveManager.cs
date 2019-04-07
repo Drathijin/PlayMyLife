@@ -5,8 +5,9 @@ using UnityEngine;
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;// = null;
+    public char category = 'p';
     string dir = "./saves.txt";
-    const int LVLS = 12; //Numero de niveles por defecto a cargar
+    const int LVLS = 13; //Numero de niveles por defecto a cargar
     static private Save currentGame;
 
     private void Awake()
@@ -31,9 +32,9 @@ public class SaveManager : MonoBehaviour
         int i = 0;
         while (!reader.EndOfStream)
         {
-            string line = reader.ReadLine();
-            LevelState redState = (LevelState)Enum.Parse(typeof(LevelState), line);
-            Level newLevel = new Level(i, redState);
+            string[] line = reader.ReadLine().Split(' ');
+            LevelState redState = (LevelState)Enum.Parse(typeof(LevelState), line[0]);
+            Level newLevel = new Level(i, redState, char.Parse(line[1]));
             save.SaveLevel(newLevel);
             print(redState);
             i++;
@@ -55,7 +56,7 @@ public class SaveManager : MonoBehaviour
         StreamWriter writer = new StreamWriter(dir);
         foreach (Level level in currentGame.GetLevels())
         {
-            writer.WriteLine(level.GetState());
+            writer.WriteLine(level.GetState() + " " + level.GetCategory());
             //print(level.GetState());
         }
         writer.Close();
@@ -63,7 +64,7 @@ public class SaveManager : MonoBehaviour
     }
     public void FinishLevel(bool win)
     {
-        currentGame.GetLevels()[currentGame.GetAct()].FinishLevel(win);
+        currentGame.GetLevels()[currentGame.GetAct()].FinishLevel(win, category);
         //print(currentGame.GetLevels()[currentGame.GetAct()].GetState());
     }
     public int GetAct()
