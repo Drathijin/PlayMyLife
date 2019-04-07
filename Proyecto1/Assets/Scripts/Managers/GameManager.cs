@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(int n)
     {
-    
+        Pause();
         SceneManager.LoadScene(n);
         theSaveManager.LoadGame();
 
@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
 
     public void Pause() 
     {
-        Time.timeScale = 0.01f;
+        Time.timeScale = 0f;
     }
     public void Play() 
     {
