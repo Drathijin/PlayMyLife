@@ -11,6 +11,21 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1952897519209852}
   m_IsPrefabAsset: 1
+--- !u!1 &1037727395192110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4787845409317462}
+  m_Layer: 14
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1109699634193680
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,10 +97,12 @@ GameObject:
   - component: {fileID: 212200608733404968}
   - component: {fileID: 61304922144623820}
   - component: {fileID: 50292951199869988}
+  - component: {fileID: 114468872072831870}
   - component: {fileID: 114080308202517900}
   - component: {fileID: 114244577537555862}
   - component: {fileID: 114613440270396806}
   - component: {fileID: 114197681432527842}
+  - component: {fileID: 95242826035157322}
   m_Layer: 14
   m_Name: Enemy
   m_TagString: Enemy
@@ -126,14 +143,28 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952897519209852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1915894, y: -0.99922156, z: -5.280518}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.49194, y: -4.64, z: -5.26294}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_Children:
   - {fileID: 4204281476943884}
   - {fileID: 4920683441658866}
   - {fileID: 4106685187546524}
+  - {fileID: 4787845409317462}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4787845409317462
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1037727395192110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.357, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4208591058710766}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4920683441658866
 Transform:
@@ -269,7 +300,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.022, y: 0.932}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -328,6 +359,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &95242826035157322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952897519209852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5ebe093cd84d8440ac1446686457cba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114080308202517900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -339,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587e387c1e54cec428b248de82539e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dies: 1
+  dies: 0
   bumpOnTop: 1
   knockbackForce: 12
   bumpOnTopForce: 10
@@ -413,6 +462,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killsInstantly: 0
+--- !u!114 &114468872072831870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952897519209852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad93364c87f66ac4f8df3eb49a703105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootPoints:
+  - {fileID: 4787845409317462}
+  bullet: {fileID: 114279595231629786, guid: 1800d2623b56b294f9d9cfb8d185a991, type: 2}
 --- !u!114 &114490146364892678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -465,8 +528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   left: 0
-  right: 1
-  top: 1
+  right: 0
+  top: 0
 --- !u!212 &212027635009888074
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -548,7 +611,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0dec055b8a9b9a146baff432a9bb78a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11137674300e97e4dbbe7eee8d8c4be3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
