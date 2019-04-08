@@ -16,7 +16,7 @@ public class Ending : MonoBehaviour {
    
     // Use this for initialization
     void Start () {
-        AlgoDeso();
+        ReadStats();
         SetText();
 
     }
@@ -28,7 +28,7 @@ public class Ending : MonoBehaviour {
     /// <summary>
     /// Lee el archivo y guarda en victorias el número de victorias de cada tipo
     /// </summary>
-    private void AlgoDeso()
+    private void ReadStats()
     {
         StreamReader file = new StreamReader(dir);
         string line;

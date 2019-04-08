@@ -1,12 +1,13 @@
-Win
-Lost
-Lost
-Locked
-Locked
-Locked
-Locked
-Locked
-Locked
-Locked
-Locked
-Locked
+Win p
+Win a
+Win a
+Win a
+Win a
+Los s
+Los s
+Los s
+Los s
+Win f
+Win f
+Lost f
+Lost f
