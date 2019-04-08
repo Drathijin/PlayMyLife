@@ -56,11 +56,11 @@ public class Ending : MonoBehaviour {
         int index = 0;
         for(int i = 0; i<victories.Length;i++)
         {
-            if (victories[i] <= 1)
+            if (victories[i] <= 0)
             {
                 texts[index].gameObject.SetActive(true);
             }
-            else if (victories[i] <= 3)
+            else if (victories[i] <= 1)
             {
                 texts[index + 1].gameObject.SetActive(true);
             }

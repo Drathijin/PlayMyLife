@@ -6477,46 +6477,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: m_AllowMSAA
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114114244708240468, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: horizontalOffset
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114114244708240468, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: verticalOffset
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: m_Depth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: m_BackGroundColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: m_BackGroundColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: m_BackGroundColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114114244708240468, guid: 7693a5b743a26d54c963e30ea14ef607,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7693a5b743a26d54c963e30ea14ef607, type: 2}
   m_IsPrefabAsset: 0

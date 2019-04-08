@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (theWinManager != null && theWinManager.maxSeconds > -1) theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
+        if (theWinManager != null && theWinManager.maxSeconds > -1 && theUIManager != null) theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
     }
 
 

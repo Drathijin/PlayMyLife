@@ -1,10 +1,10 @@
 Win p
 Loss p
-Locked p
-Locked p
-Locked p
-Locked p
-Locked p
+Loss p
+Loss p
+Loss p
+Loss p
+Win p
 Locked p
 Locked p
 Locked p
