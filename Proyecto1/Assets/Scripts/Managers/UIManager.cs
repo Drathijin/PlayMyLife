@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text timer, scoreText, timeoutText, collected, winOrLose;
     public Text timer, scoreText, timeoutText,collected, winOrLose, regenSOZ;
     public GameObject panel, initialPanel;
     int nextLevel;
@@ -25,13 +24,8 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.SetUIManager(this);
     }
-<<<<<<< HEAD
-
-    public void TimeOutside(int time)
-=======
     
     public void TimeOutside (float time)
->>>>>>> origin/Niveles
     {
         /*
         timeoutText.enabled = true;
@@ -112,7 +106,6 @@ public class UIManager : MonoBehaviour
     public void StartLevel()
     {
         initialPanel.SetActive(true);
-        Invoke("DisablePanel()", timeToDisable);
     }
 
     public void DisablePanel()

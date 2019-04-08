@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     WinManager theWinManager;
     AudioManager theAudioManager;
     SaveManager theSaveManager;
-    private static int nivel = 0; //empieza en el nivel 0
 
 
     private void Awake()
@@ -34,8 +33,6 @@ public class GameManager : MonoBehaviour
         theUIManager = UIManager;
         Pause();
         theUIManager.StartLevel();
-        Invoke("Play()", theUIManager.GetTime());
-        print("cry");
 
     }
 

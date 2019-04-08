@@ -36,12 +36,10 @@ public class SaveManager : MonoBehaviour
             LevelState redState = (LevelState)Enum.Parse(typeof(LevelState), line[0]);
             Level newLevel = new Level(i, redState, char.Parse(line[1]));
             save.SaveLevel(newLevel);
-            print(redState);
             i++;
         }
         int act = save.FindAct();
         save.SetAct(act);
-        print(act);
         reader.Close();
         return save;
     }

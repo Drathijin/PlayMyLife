@@ -1054,6 +1054,16 @@ Prefab:
       propertyPath: m_Text
       value: 0 / 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1872530989}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
@@ -2501,6 +2511,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f527cb7015fb96e42b8ac2b8b333e5db, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1872530989 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114758683811351722, guid: f527cb7015fb96e42b8ac2b8b333e5db,
+    type: 2}
+  m_PrefabInternal: {fileID: 1872530988}
+  m_Script: {fileID: 11500000, guid: 3cd533bf597ecae4086b4a36f8291862, type: 3}
 --- !u!1001 &1879412246
 Prefab:
   m_ObjectHideFlags: 0

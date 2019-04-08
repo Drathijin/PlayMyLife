@@ -42,7 +42,7 @@
     {
         int i = 0;
         LevelState state = levels[0].GetState();
-        while (i< levels.Length && state != (LevelState)0)
+        while (i< levels.Length-1 && state != (LevelState)0)
         {
             i++;
             state = levels[i].GetState();
