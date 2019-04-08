@@ -11,6 +11,21 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1952897519209852}
   m_IsPrefabAsset: 1
+--- !u!1 &1037727395192110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4787845409317462}
+  m_Layer: 14
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1109699634193680
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,21 +86,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1881777123236218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4890668574561808}
-  m_Layer: 14
-  m_Name: ShootPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1952897519209852
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,12 +97,12 @@ GameObject:
   - component: {fileID: 212200608733404968}
   - component: {fileID: 61304922144623820}
   - component: {fileID: 50292951199869988}
-  - component: {fileID: 114867671917397936}
+  - component: {fileID: 114468872072831870}
   - component: {fileID: 114080308202517900}
   - component: {fileID: 114244577537555862}
   - component: {fileID: 114613440270396806}
   - component: {fileID: 114197681432527842}
-  - component: {fileID: 95605780537469802}
+  - component: {fileID: 95242826035157322}
   m_Layer: 14
   m_Name: Enemy
   m_TagString: Enemy
@@ -143,22 +143,22 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1952897519209852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.49194, y: -3.6879516, z: -5.26294}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.49194, y: -4.64, z: -5.26294}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_Children:
   - {fileID: 4204281476943884}
   - {fileID: 4920683441658866}
   - {fileID: 4106685187546524}
-  - {fileID: 4890668574561808}
+  - {fileID: 4787845409317462}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4890668574561808
+--- !u!4 &4787845409317462
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881777123236218}
+  m_GameObject: {fileID: 1037727395192110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.357, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -359,7 +359,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!95 &95605780537469802
+--- !u!95 &95242826035157322
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -462,6 +462,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killsInstantly: 0
+--- !u!114 &114468872072831870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952897519209852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad93364c87f66ac4f8df3eb49a703105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootPoints:
+  - {fileID: 4787845409317462}
+  bullet: {fileID: 114279595231629786, guid: 1800d2623b56b294f9d9cfb8d185a991, type: 2}
 --- !u!114 &114490146364892678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -516,20 +530,6 @@ MonoBehaviour:
   left: 0
   right: 0
   top: 0
---- !u!114 &114867671917397936
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1952897519209852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad93364c87f66ac4f8df3eb49a703105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShootPoints:
-  - {fileID: 4890668574561808}
-  bullet: {fileID: 114279595231629786, guid: 1800d2623b56b294f9d9cfb8d185a991, type: 2}
 --- !u!212 &212027635009888074
 SpriteRenderer:
   m_ObjectHideFlags: 1
