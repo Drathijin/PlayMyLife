@@ -43,10 +43,10 @@ public class PlayerDamage : MonoBehaviour
     {
         if (shield)
         {
-            animator.SetBool("IsDamaged", true);
-            armAnim.SetBool("IsDamaged", true);
             shieldObject.SetActive(false);
             shield = false;
+            animator.SetBool("IsDamaged", true);
+            armAnim.SetBool("IsDamaged", true);
             animTime = 0;
         }
         else PlayerDead();
