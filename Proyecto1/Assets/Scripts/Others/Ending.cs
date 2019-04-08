@@ -8,9 +8,6 @@ public class Ending : MonoBehaviour {
 
     int[] victories = new int[3]; //en este orden, cuenta las victorias del ámbito Familiar, Social y Académico
     string dir = "./saves.txt";
-    /*public Text[] family = new Text[3];
-    public Text[] social = new Text[3];
-    public Text[] academic = new Text[3];*/
 
     public Text[] texts = new Text[9];
    
@@ -50,8 +47,6 @@ public class Ending : MonoBehaviour {
                     if (v == "Win") victories[2] += 1;
                     break;
             }
-            //esto.es.una.linea
-            //line.Splie('.')
         }
         file.Close();
     }

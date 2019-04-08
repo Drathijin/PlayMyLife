@@ -1,6 +1,6 @@
 ﻿public enum LevelState
 {
-    Locked, Lost, Win
+    Locked, Loss, Win
 }
 public class Level
 {

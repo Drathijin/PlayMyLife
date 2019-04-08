@@ -3,11 +3,11 @@ Win a
 Win a
 Win a
 Win a
-Los s
-Los s
-Los s
-Los s
+Loss s
+Loss s
+Loss s
+Loss s
 Win f
 Win f
-Lost f
-Lost f
+Loss f
+Loss f
