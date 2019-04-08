@@ -25,8 +25,20 @@ EditorBuildSettings:
     guid: 7bee00c64dcb6964d851555e1c94f956
   - enabled: 1
     path: Assets/Scenes/Def Game/DesignLevels/Level1.unity
-    guid: 3a7cce16fb249ad4691d0012cd11402c
+    guid: 9a947ee713b89d54daf5bec5d239028c
   - enabled: 1
     path: Assets/Scenes/Def Game/DesignLevels/Level2.unity
-    guid: 689f71b9f58b6d54db84b5bbf424865d
+    guid: 76f17db9d0587e44cbfd4dfcb35a84f4
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Level3.unity
+    guid: 28d742a4b0fdd174abc9b1dff8e48b94
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Level4.unity
+    guid: bc5fd3a7e8441c84488ee68b231c90e9
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Level5.unity
+    guid: c2f37a57e4b53204487a3588f84371de
+  - enabled: 1
+    path: Assets/Scenes/Def Game/DesignLevels/Level6.unity
+    guid: 6b11898e31e19d64a924cfab104e125f
   m_configObjects: {}
