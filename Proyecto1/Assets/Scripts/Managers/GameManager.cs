@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if(theWinManager != null && theWinManager.maxSeconds>-1)theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
+        if (theWinManager != null && theWinManager.maxSeconds > -1) theUIManager.SeeTime(theWinManager.GetTime(), theWinManager.maxSeconds);
     }
 
 
@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour
     public void SetUIManager(UIManager UIManager)
     {
         theUIManager = UIManager;
+        Pause();
+        theUIManager.StartLevel();
+        Invoke("Play()", theUIManager.GetTime());
+        print("cry");
+
     }
 
     public void SetAudioManager(AudioManager AudioManager)
@@ -61,16 +66,17 @@ public class GameManager : MonoBehaviour
     {
         theSaveManager.FinishLevel(win);
         theUIManager.FinishLevel(win, theSaveManager.GetAct());
-        Time.timeScale = 0f;
+        Pause();
         theSaveManager.SaveGame();
 
     }
 
     public void LoadLevel(int n)
     {
+        Pause();
         SceneManager.LoadScene(n);
         theSaveManager.LoadGame();
-        Time.timeScale = 1f;
+
     }
 
     public void AddCollectable()
@@ -80,7 +86,7 @@ public class GameManager : MonoBehaviour
     }
     public void KillEnemy()
     {
-        if(theWinManager.maxKills >-1)
+        if (theWinManager.maxKills > -1)
         {
             theWinManager.SubKillCount();
             theUIManager.PlayerKills(theWinManager.GetKillCount());
@@ -104,5 +110,14 @@ public class GameManager : MonoBehaviour
     public void PlayClip(string name)
     {
         theAudioManager.Play(name);
+    }
+
+    public void Pause() 
+    {
+        Time.timeScale = 0f;
+    }
+    public void Play() 
+    {
+        Time.timeScale = 1f;
     }
 }
