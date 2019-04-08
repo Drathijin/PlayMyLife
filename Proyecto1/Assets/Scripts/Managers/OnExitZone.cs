@@ -5,14 +5,15 @@ using UnityEngine;
 public class OnExitZone : MonoBehaviour {
 
     public float TimeToLose;
+    public UIManager UI;
 
     private float playerTime;
     private bool outside;
     private bool oneTime;
-    public  UIManager UI;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         playerTime = 0;
         outside = true;
         oneTime = false;
@@ -25,43 +26,34 @@ public class OnExitZone : MonoBehaviour {
             if (outside)
             {
                 playerTime += Time.deltaTime;
-                UI.TimeOutside((5-(int)playerTime));
+                UI.TimeOutside(TimeToLose-playerTime);
             }
             if (playerTime > TimeToLose)
             {
-                print("YOU LOSE!");
                 oneTime = true;
-                UI.TimeEntered(false);
+                UI.TimeEntered();
+                GameManager.instance.FinishLevel(false);
             }
         }
 	}
     
 
-    // cuando haya un GM indicará que has perdido
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!oneTime)
+        if (!oneTime && collision.gameObject.CompareTag("Player"))
         {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                playerTime = 0;
-                outside = false;
-                print("You entered the zone");
-                UI.TimeEntered(true);
-            }
+            playerTime = 0;
+            outside = false;
+            UI.TimeEntered();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!oneTime)
+        if (!oneTime && collision.gameObject.CompareTag("Player"))
         {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                outside = true;
-                print("You exited the zone");
-            }
+            outside = true;
         }
     }
 }

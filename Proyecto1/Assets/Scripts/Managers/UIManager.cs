@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Text timer, scoreText, timeoutText, collected, winOrLose;
+    public Text timer, scoreText, timeoutText,collected, winOrLose, regenSOZ;
     public GameObject panel, initialPanel;
     int nextLevel;
     float timeToDisable = 0.05f;
@@ -24,23 +25,25 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.SetUIManager(this);
     }
+<<<<<<< HEAD
 
     public void TimeOutside(int time)
+=======
+    
+    public void TimeOutside (float time)
+>>>>>>> origin/Niveles
     {
+        /*
         timeoutText.enabled = true;
         timeoutText.text = "" + time;
+        */
+        regenSOZ.enabled = true;
+        regenSOZ.text = "Get Inside! Quick! Before: " + (int)(time + 1);
     }
 
-    public void TimeEntered(bool lived)
+    public void TimeEntered()
     {
-        if (lived)
-        {
-            timeoutText.enabled = false;
-        }
-        else
-        {
-            timeoutText.text = "YOU LOSE";
-        }
+        regenSOZ.enabled = false;
     }
 
     public void PlayerCollected(int collect, int max)

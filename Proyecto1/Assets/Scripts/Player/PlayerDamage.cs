@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerDamage : MonoBehaviour
 {
 
-    private float animationChangeTime = 0.5f;
+    private float animationChangeTime = 1f;
 
     private float animTime;
     bool shield = true;
@@ -43,10 +43,10 @@ public class PlayerDamage : MonoBehaviour
     {
         if (shield)
         {
-            animator.SetBool("IsDamaged", true);
-            armAnim.SetBool("IsDamaged", true);
             shieldObject.SetActive(false);
             shield = false;
+            animator.SetBool("IsDamaged", true);
+            armAnim.SetBool("IsDamaged", true);
             animTime = 0;
         }
         else PlayerDead();
