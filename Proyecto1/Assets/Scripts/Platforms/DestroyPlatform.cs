@@ -9,11 +9,31 @@ public class DestroyPlatform : MonoBehaviour {
     public float timeUntilBreak; //tiempo hasta que se rompe;
     public float timeUntilRegen; //tiempo hasta que se regenera
 
+    private bool anim = false;
+    private SpriteRenderer spr;
+
+    private void Start()
+    {
+        spr = gameObject.GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+        if (anim)
+        {
+            Color temp;
+            temp = spr.color;
+            temp.a -= timeUntilBreak * Time.deltaTime;
+            spr.color = temp;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //comprueba colisiones con el jugador
         if (breaks && collision.gameObject.CompareTag("Player"))
         {
+            anim = true;
             //invoca al metodo de romper tras <timeUntilBreak> segundos
             Invoke("BreakObject", timeUntilBreak);
         }
