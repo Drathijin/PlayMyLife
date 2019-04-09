@@ -12,7 +12,6 @@ public class PlayerShoot : MonoBehaviour {
     private Transform arm;
     private GameObject bulletpool; //objeto padre de las balas, para mantener organización
     private bool disparoActv; //activa y desactiva la capacidad de disparar del jugador
-    float offset = 0.5f;    // distancia entre player y su shootpoints
 
 
     void Start()
