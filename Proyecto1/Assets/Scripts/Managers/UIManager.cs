@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour
         timeoutText.text = "" + time;
         */
         regenSOZ.enabled = true;
-        regenSOZ.text = "Get Inside! Quick! Before: " + (int)(time + 1);
+        regenSOZ.text = "¡Entra! ¡Rápido! Antes de: " + (int)(time + 1);
     }
 
     public void TimeEntered()
