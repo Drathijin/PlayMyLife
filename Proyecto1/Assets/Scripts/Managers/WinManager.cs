@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinManager : MonoBehaviour {
+public class WinManager : MonoBehaviour
+{
     public bool winOnTimeOut = true; // true ganar false perder
     public float maxSeconds = -1; // segundos máximos
     public int maxCollectables = -1; // coleccionables totales
     public int maxKills = -1; // score total
 
-    private float timer = 0; // tiempo transcurrido
+    private float timer; // tiempo transcurrido
     private int collectables = 0; // contador de colleccionables
     private int killCount = 0; // contador del score
     private bool oneTime = true; // se asegura que solo se ejecuta una vez
@@ -21,11 +22,13 @@ public class WinManager : MonoBehaviour {
 
         killCount = maxKills;
         oneTime = true;
+
+        timer = maxSeconds;
     }
 
     void Update() {
-        if (timer < maxSeconds) timer = timer + Time.deltaTime;
-        else if (maxSeconds >-1 && oneTime)
+        if (timer > 0) timer -= Time.deltaTime;
+        else if (maxSeconds > -1 && oneTime)
         {
             if (winOnTimeOut)
             {

@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public Text timer, scoreText, timeoutText,collected, winOrLose, regenSOZ;
+    public Image clock;
+
+    public Text scoreText, timeoutText, collected, winOrLose, regenSOZ;
     public GameObject panel, initialPanel;
     int nextLevel;
     float timeToDisable = 0.05f;
@@ -51,9 +53,10 @@ public class UIManager : MonoBehaviour
     }
 
     //llama al GameManager para saber el tiempo que le quede y lo muestra en pantalla
-    public void SeeTime(float seconds, float maxSeconds)
+    public void SeeTime(float timer, float maxSeconds)
     {
-        timer.text = "Time: " + (int)seconds + "/" + (int)maxSeconds;
+        clock.fillAmount = timer / maxSeconds;
+        //timer.text = "Time: " + (int)maxSeconds;
     }
 
 
