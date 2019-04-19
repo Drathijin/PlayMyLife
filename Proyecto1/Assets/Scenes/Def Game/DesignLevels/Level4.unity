@@ -262,6 +262,21 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -3.95
       objectReference: {fileID: 0}
+    - target: {fileID: 212745971649563436, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212745971649563436, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212745971649563436, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
@@ -2993,6 +3008,21 @@ Prefab:
     - target: {fileID: 1051293091712910, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
       propertyPath: m_Name
       value: MobilePlataform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212745971649563436, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212745971649563436, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212745971649563436, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
