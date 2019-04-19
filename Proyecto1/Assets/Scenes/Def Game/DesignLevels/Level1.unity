@@ -1525,39 +1525,9 @@ Prefab:
       objectReference: {fileID: 2122500092}
     - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: set_enabled
-      objectReference: {fileID: 0}
-    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 2122500091}
-    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: set_enabled
-      objectReference: {fileID: 0}
-    - target: {fileID: 114370642195493950, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_Text
-      value: Primer recreo
-      objectReference: {fileID: 0}
-    - target: {fileID: 114543189054932036, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_Text
-      value: Recorre el recreo y encuentra un lugar tranquilo para comerte el bocata.
-      objectReference: {fileID: 0}
-    - target: {fileID: 224564760683057516, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 800
-      objectReference: {fileID: 0}
-    - target: {fileID: 114498762326469822, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
