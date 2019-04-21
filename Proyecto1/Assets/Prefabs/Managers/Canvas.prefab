@@ -350,7 +350,7 @@ MonoBehaviour:
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 0
-  m_FillOrigin: 3
+  m_FillOrigin: 2
 --- !u!114 &114162333516245406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -528,7 +528,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Presentaci\xF3n oral"
+  m_Text: Pelea de hermanos
 --- !u!114 &114373251144427960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -623,7 +623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clock: {fileID: 114102909876296984}
-  timer: {fileID: 0}
   scoreText: {fileID: 0}
   timeoutText: {fileID: 0}
   collected: {fileID: 114498762326469822}
@@ -837,8 +836,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mant\xE9n atento a tu p\xFAblico y evita el estr\xE9s y las preguntas de
-    tu profesor."
+  m_Text: "Acaba con la fiesta de tu hermano, \xA1p\xE1rteles la nariz a todos sus
+    invitados! Y a \xE9l, evidentemente"
 --- !u!114 &114654037524051216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1374,7 +1373,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 800, y: 150}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224708452884557514
 RectTransform:

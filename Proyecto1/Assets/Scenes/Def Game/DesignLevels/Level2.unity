@@ -12554,30 +12554,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 524241094}
-    - target: {fileID: 114370642195493950, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_Text
-      value: Pelea de hermanos
-      objectReference: {fileID: 0}
-    - target: {fileID: 114543189054932036, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_Text
-      value: "Acaba con la fiesta de tu hermano, \xA1p\xE1rteles la nariz a todos
-        sus invitados! Y a \xE9l, evidentemente"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1747795165695122, guid: e7c2357751615944c9988138192854f7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224564760683057516, guid: e7c2357751615944c9988138192854f7,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 1769806739777690, guid: e7c2357751615944c9988138192854f7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0

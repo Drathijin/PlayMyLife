@@ -1541,6 +1541,11 @@ Prefab:
       value: Explora y busca un sitio para comerte el bocata antes de que termine
         el recreo.
       objectReference: {fileID: 0}
+    - target: {fileID: 114102909876296984, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_FillOrigin
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
