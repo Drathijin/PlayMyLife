@@ -23,7 +23,7 @@ public class DestroyPlatform : MonoBehaviour {
         {
             Color temp;
             temp = spr.color;
-            temp.a -= timeUntilBreak * Time.deltaTime;
+            temp.a -= Time.deltaTime / timeUntilBreak;
             spr.color = temp;
         }
     }
@@ -50,6 +50,10 @@ public class DestroyPlatform : MonoBehaviour {
     //regeneración de la plataforma
     public void Regenerate()
     {
+        Color temp;
+        temp = spr.color;
+        temp.a = 255;
+        spr.color = temp;
         gameObject.SetActive(true);
     }
 }
