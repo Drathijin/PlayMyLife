@@ -52,7 +52,7 @@ public class GameStatus : MonoBehaviour {
                     lvlImages[i].color = Color.red;
                     break;
                 case (LevelState)2:
-                    lvlImages[i].color = Color.blue;
+                    lvlImages[i].color = Color.green;
                     break;
             }
         }
