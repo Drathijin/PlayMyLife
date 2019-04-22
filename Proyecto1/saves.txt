@@ -1,0 +1,13 @@
+Win p
+Win s
+Win f
+Win a
+Loss a
+Loss f
+Loss a
+Loss a
+Loss a
+Loss a
+Loss a
+Win a
+Locked p
