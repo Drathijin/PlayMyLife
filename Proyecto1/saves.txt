@@ -10,4 +10,4 @@ Loss a
 Loss a
 Loss a
 Win a
-Locked p
+Loss f
