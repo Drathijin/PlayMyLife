@@ -9,7 +9,6 @@ public class Destroy : MonoBehaviour
     //cuando se crea, el objeto tarda "seconds" segundos en ser destruido
     void Start()
     {
-
         Destroy(gameObject, seconds);
     }
 

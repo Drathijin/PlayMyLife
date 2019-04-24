@@ -9,7 +9,10 @@ public class MakeDamage : MonoBehaviour {
     public void Damage(Collision2D other)
     {
         PlayerDamage playerDamage = other.gameObject.GetComponent<PlayerDamage>();
-        if (killsInstantly) playerDamage.PlayerDead();
-        else playerDamage.ReceiveDamage();
+        if (playerDamage != null && playerDamage.enabled == true)
+        {
+            if (killsInstantly) playerDamage.PlayerDead();
+            else playerDamage.ReceiveDamage();
+        }
     }
 }

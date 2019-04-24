@@ -87,7 +87,7 @@ public class UIManager : MonoBehaviour
 
     public void FinishLevel(bool win, int level)
     {
-        panel.SetActive(true);
+        Invoke("EnablePanel", 1.5f);
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";
         nextLevel = level + 1;
@@ -115,6 +115,10 @@ public class UIManager : MonoBehaviour
     {
         GameObject pan = initialPanel;
         pan.SetActive(false);
+    }
+    public void EnablePanel()
+    {
+        panel.SetActive(true);
     }
     public float GetTime() {return timeToDisable; }
 }

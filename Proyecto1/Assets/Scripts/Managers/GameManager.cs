@@ -63,9 +63,8 @@ public class GameManager : MonoBehaviour
     {
         theSaveManager.FinishLevel(win);
         theUIManager.FinishLevel(win, theSaveManager.GetAct());
-        Pause();
+        Invoke("Pause", 1.5f);
         theSaveManager.SaveGame();
-
     }
 
     public void LoadLevel(int n)
