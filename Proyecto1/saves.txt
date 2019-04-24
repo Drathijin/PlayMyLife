@@ -10,4 +10,4 @@ Loss a
 Loss a
 Loss a
 Win a
-Loss f
+Win f
