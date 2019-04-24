@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
 {
+    public float invulnerableTime = 100f;
 
     private float animationChangeTime = 1f;
 
@@ -35,8 +36,12 @@ public class PlayerDamage : MonoBehaviour
 
     public void PlayerDead()
     {
+        animator.SetBool("IsDead", true);
+        armAnim.SetBool("IsDead", true);
+
+        gameObject.GetComponent<PlayerMovement>().enabled = false; // desactiva el movimiento del jugador
         GameManager.instance.FinishLevel(false);
-        gameObject.SetActive(false); // desactiva al jugador
+
     }
 
     public void ReceiveDamage()
@@ -48,7 +53,21 @@ public class PlayerDamage : MonoBehaviour
             animator.SetBool("IsDamaged", true);
             armAnim.SetBool("IsDamaged", true);
             animTime = 0;
+
         }
         else PlayerDead();
+        //animator matame
+        Invoke("ActivateMe", invulnerableTime);
+        this.enabled = false;
+
+    }
+
+    void ActivateMe()
+    {
+        this.enabled = true;
+        animator.SetBool("IsDamaged", false);
+        armAnim.SetBool("IsDamaged", false);
+
+
     }
 }
