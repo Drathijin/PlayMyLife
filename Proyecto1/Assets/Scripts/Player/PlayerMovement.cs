@@ -32,11 +32,13 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("SpeedY", Mathf.Abs(rb.velocity.y));
 
-        if (Input.GetKeyDown(KeyCode.S))
+
+        if (Input.GetAxisRaw("Vertical") < 0 && !dashing && !dashCD) //quiero que solo se ejecute una vez
         {
-            dashAcc = rb.velocity.x * impulseOnDash / dashDecreaseRate;
-            transform.position = new Vector2(transform.position.x, transform.position.y - 0.2f);
+            dashAcc = rb.velocity.x * impulseOnDash * dashDecreaseRate;
+            transform.position = new Vector2(transform.position.x, transform.position.y - 0.2f); //corregir la diferecncai de altura al agacharse
         }
+
         else if (dashCD)
         {
             if (count < dashCoolDown) count = count + Time.deltaTime;
@@ -48,13 +50,14 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetAxisRaw("Vertical") < 0)
         {
             dashAcc *= dashDecreaseRate;
             dashing = true;
+            
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.1f) { jump = true; }
-        else if (!Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetAxisRaw("Vertical")> 0 && Mathf.Abs(rb.velocity.y) < 0.1f && !jump) { jump = true; }
+        else if (Input.GetAxisRaw("Vertical") == 0)
         {
             animator.SetBool("IsDashing", false);
             dashing = false;            

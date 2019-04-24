@@ -42,13 +42,13 @@ public class UIManagerMenu : MonoBehaviour {
         print("Has salido del juego");
         GameManager.instance.ExitGame();
     }
-
+    /*
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
         GameManager.instance.SetVolume(volume);        
     }
-
+    */
     void SeeMenu()
     {
         menu.SetActive(true);

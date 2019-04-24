@@ -24,7 +24,7 @@ public class PlayerShoot : MonoBehaviour {
     //si se pulsa la tecla de disparo (Edit-->Input-->Axis-->Fire1) y el cooldown está inactivo, dispara
     private void Update()
     {
-        if (disparoActv && (Input.GetKeyDown("left")|| Input.GetKeyDown( "right"))) //Aunque he puesto left y right como "Fire1", pero para detectar si está pulsado o no hay que hacer esto
+        if (disparoActv && Input.GetAxisRaw("Fire1")!=0) //Aunque he puesto left y right como "Fire1", pero para detectar si está pulsado o no hay que hacer esto
         {
             Invoke("Cooldown", cooldown);
             arm.GetComponent<Animator>().SetBool("IsShooting", true);
