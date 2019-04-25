@@ -1127,6 +1127,7 @@ GameObject:
   - component: {fileID: 1162442523}
   - component: {fileID: 1162442522}
   - component: {fileID: 1162442520}
+  - component: {fileID: 1162442521}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1158,6 +1159,20 @@ MonoBehaviour:
   - {fileID: 668395404}
   - {fileID: 1813667976}
   - {fileID: 393870233}
+--- !u!114 &1162442521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162442519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d7a1a2750b583478a2cfd2f9deae88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
+  menu: {fileID: 0}
+  SkipVideoKey: 0
 --- !u!114 &1162442522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,7 +1975,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Salir :(
+  m_Text: 'Continuar
+
+'
 --- !u!222 &1788666764
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2118,6 +2135,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b562ca10888b0f438add9bc7ae3cb4b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1799626629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114952213533081036, guid: 1b562ca10888b0f438add9bc7ae3cb4b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1799626627}
+  m_Script: {fileID: 11500000, guid: 3cd533bf597ecae4086b4a36f8291862, type: 3}
 --- !u!1 &1806780310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,8 +2361,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ExitGame
+      - m_Target: {fileID: 1799626629}
+        m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2614,7 +2637,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1799626629}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -2622,7 +2645,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 0
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

@@ -14,6 +14,7 @@ public class UIManagerMenu : MonoBehaviour {
     {
         //once = true;
         //Invoke("SeeMenu", 10);
+        Time.timeScale = 1f;
     }
     
     private void Update()

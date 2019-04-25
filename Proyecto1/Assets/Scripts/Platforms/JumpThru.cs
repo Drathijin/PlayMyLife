@@ -6,13 +6,13 @@ public class JumpThru : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S)) GoThru();
-        else if (Input.GetKeyUp(KeyCode.S)) Solidify();
+        if (Input.GetAxisRaw("Vertical") < 0) GoThru();
+        else if (Input.GetAxisRaw("Vertical") >= 0) Solidify();
 
     }
     void GoThru()
     {
-        if (Input.GetKeyDown(KeyCode.S)) this.gameObject.GetComponent<Collider2D>().enabled = false;
+        if (Input.GetAxisRaw("Vertical") < 0) this.gameObject.GetComponent<Collider2D>().enabled = false;
     }
     void Solidify()
     {

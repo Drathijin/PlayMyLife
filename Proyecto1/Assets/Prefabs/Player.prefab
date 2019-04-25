@@ -27,7 +27,6 @@ GameObject:
   - component: {fileID: 114360011967061970}
   - component: {fileID: 114244864689488990}
   - component: {fileID: 95613870188607034}
-  - component: {fileID: 114038004481714294}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -93,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077830612163412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -25, y: -2, z: 0}
+  m_LocalPosition: {x: 1.4572809, y: 9.315474, z: -0.034194946}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children:
   - {fileID: 4886980682581062}
@@ -121,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1601821324910646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.45, y: 1.65, z: 0.076660156}
+  m_LocalPosition: {x: -0.24, y: 1.97, z: 0.076660156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4064607456137526}
@@ -240,17 +239,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114038004481714294
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1077830612163412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7516e4a7387e6b141bebc74d1a253086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114182074929663086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,7 +256,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077830612163412}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2ca6b9f55a257dd48a8ce623ca4c0a88, type: 3}
   m_Name: 
@@ -298,6 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7516e4a7387e6b141bebc74d1a253086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invulnerableTime: 1
 --- !u!114 &114799260330828842
 MonoBehaviour:
   m_ObjectHideFlags: 1

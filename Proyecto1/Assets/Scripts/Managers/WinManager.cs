@@ -53,6 +53,7 @@ public class WinManager : MonoBehaviour
     //Para Utilizar esta forma de ganar desde el editor ser equiere que se habilite el sprite renderer (para ver la bandera) y el rigidbody
     void OnTriggerEnter2D(Collider2D col)
     {
+
         if (col.gameObject.tag == "Player" && oneTime)
         {
             oneTime = false;

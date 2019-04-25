@@ -38,6 +38,7 @@ public class PlayerDamage : MonoBehaviour
     {
         animator.SetBool("IsDead", true);
         armAnim.SetBool("IsDead", true);
+        shieldObject.SetActive(false);
 
         gameObject.GetComponent<PlayerMovement>().enabled = false; // desactiva el movimiento del jugador
         GameManager.instance.FinishLevel(false);
