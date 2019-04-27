@@ -11,15 +11,15 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1955805103939892}
   m_IsPrefabAsset: 1
---- !u!1 &1173396488071970
+--- !u!1 &1177285174196880
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4915501197137562}
-  - component: {fileID: 114184036836191468}
+  - component: {fileID: 4823318565023314}
+  - component: {fileID: 114247190479788062}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -115,16 +115,16 @@ Transform:
   m_Children:
   - {fileID: 4257251065825014}
   - {fileID: 4282758748997458}
-  - {fileID: 4915501197137562}
+  - {fileID: 4823318565023314}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4915501197137562
+--- !u!4 &4823318565023314
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1173396488071970}
+  m_GameObject: {fileID: 1177285174196880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -169,21 +169,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   category: 112
---- !u!114 &114184036836191468
+--- !u!114 &114247190479788062
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1173396488071970}
+  m_GameObject: {fileID: 1177285174196880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8117f3960c42c6e479c8c07dc8bf0d93, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f07f80f6ee5f2b46ba14448760bdb05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: Testing
-    clip: {fileID: 8300000, guid: 96ab025b1d066164d8e010dc4c7b4f8a, type: 3}
-    source: {fileID: 0}
+  audioSettings: []
+  masterMixer: {fileID: 24100000, guid: 9802c3f7e4ae911418608ab827c764de, type: 2}
 --- !u!114 &114374105697719622
 MonoBehaviour:
   m_ObjectHideFlags: 1

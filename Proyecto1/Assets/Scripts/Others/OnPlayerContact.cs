@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OnPlayerContact : MonoBehaviour
 {
-    public bool dies, bumpOnTop;
+    public AudioManager audioManager;
+    public bool dies, bumpOnTop, onlyOnceAudio=true;
     public float knockbackForce, bumpOnTopForce;
     public float timeUntilRecoveringControl; //tiempo que dura el knockBack
     private MakeDamage mDamage;
@@ -34,7 +35,11 @@ public class OnPlayerContact : MonoBehaviour
                 if (dies)
                 {
                     GameManager.instance.KillEnemy();
-                    Destroy(this.gameObject);
+                    if (onlyOnceAudio)
+                    {
+                        onlyOnceAudio = false;
+                        audioManager.PlayClip(this.gameObject);
+                    }
                 }
             }
 

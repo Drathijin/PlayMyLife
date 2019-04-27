@@ -50,7 +50,12 @@ public class AudioManager : MonoBehaviour {
         currentClip.Play();
     }
 
-
+    public void PlayClip(GameObject gO)
+    {
+        AudioSource audio = gO.GetComponent<AudioSource>();
+        audio.Play();
+        Destroy(gO, audio.clip.length);
+    }
     
 }
 
