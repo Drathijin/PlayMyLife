@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed, height, dashDecreaseRate, impulseOnDash;
     bool jump, dashing = false, dashCD, input = true;
+    bool ableToJump;
     float speedX, jumpForce, dashAcc = 0, count = 0, dashCoolDown = 0.1f;
     Rigidbody2D rb;
     Animator animator;
@@ -56,13 +57,12 @@ public class PlayerMovement : MonoBehaviour
             dashing = true;
             
         }
-        else if (Input.GetAxisRaw("Vertical")> 0 && Mathf.Abs(rb.velocity.y) < 0.1f && !jump) { jump = true; }
+        else if (Input.GetAxisRaw("Vertical")> 0 && ableToJump && !jump) { jump = true; }
         else if (Input.GetAxisRaw("Vertical") == 0)
         {
             animator.SetBool("IsDashing", false);
             dashing = false;            
         }
-
     }
 
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
@@ -87,6 +87,23 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         else if (input) rb.velocity = new Vector2(speedX * speed, rb.velocity.y); //sólo se puede mover si no ha sido knockeado
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //primero comprobamos si se puede activar para evitar hacer el cálculo innecesariamente
+        if (!ableToJump)
+        {
+            ContactPoint2D contact = collision.GetContact(0);
+            if (contact.point.y < transform.position.y - transform.localScale.y &&
+                Mathf.Approximately(Vector2.Angle(contact.normal, transform.up), 0))
+                ableToJump = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        ableToJump = false;
     }
 
     public void SetInputActive(bool state)
