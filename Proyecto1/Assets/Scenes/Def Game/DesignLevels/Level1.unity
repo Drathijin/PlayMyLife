@@ -550,7 +550,7 @@ Prefab:
     - target: {fileID: 114064636471918820, guid: e3b102aee376bd54fbf781b6ac3e710d,
         type: 2}
       propertyPath: shootFreq
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1138634951610814, guid: e3b102aee376bd54fbf781b6ac3e710d, type: 2}
       propertyPath: m_IsActive
@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dies: 0
   bumpOnTop: 0
-  knockbackForce: 12
+  knockbackForce: 0
   bumpOnTopForce: 0
   timeUntilRecoveringControl: 0.2
 --- !u!61 &331966480
@@ -1851,7 +1851,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550981800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: -14.03, z: 0}
+  m_LocalPosition: {x: 0, y: -13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070527399}
@@ -2885,7 +2885,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1089833542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070527399}
@@ -2920,8 +2920,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147055021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24, y: -0.06, z: 0}
-  m_LocalScale: {x: 0.3292568, y: 0.25096524, z: 1}
+  m_LocalPosition: {x: -0.353, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 2070527399}
   m_RootOrder: 0
@@ -2948,7 +2948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff55d4214b8b81646acee92e6c38e907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 6
   objectives:
   - {fileID: 1089833543}
   - {fileID: 550981801}
