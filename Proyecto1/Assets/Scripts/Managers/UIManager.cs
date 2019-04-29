@@ -101,10 +101,10 @@ public class UIManager : MonoBehaviour
         GameManager.instance.LoadLevel(nextLevel);
     }
 
-    //hay que hacer que el menú principal sea la escena 0
+    //hay que hacer que el menú principal sea la escena 1
     public void MainMenu()
     {
-        GameManager.instance.LoadLevel(0);
+        GameManager.instance.LoadLevel(1);
     }
 
     public void StartLevel()

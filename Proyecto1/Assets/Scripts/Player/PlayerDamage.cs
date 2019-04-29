@@ -47,6 +47,7 @@ public class PlayerDamage : MonoBehaviour
         m_Rigidbody.constraints = RigidbodyConstraints2D.FreezePositionX;
         m_Rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY;
         m_Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        m_Rigidbody.bodyType = RigidbodyType2D.Static;
         GameManager.instance.FinishLevel(false);
 
     }
