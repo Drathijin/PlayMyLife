@@ -2420,9 +2420,9 @@ GameObject:
   - component: {fileID: 1699166710}
   - component: {fileID: 1699166709}
   - component: {fileID: 1699166708}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8464,7 +8464,7 @@ GameObject:
   - component: {fileID: 2052182061}
   m_Layer: 0
   m_Name: SPBackground
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

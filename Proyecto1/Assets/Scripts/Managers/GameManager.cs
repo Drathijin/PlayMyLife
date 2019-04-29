@@ -62,7 +62,8 @@ public class GameManager : MonoBehaviour
     public void FinishLevel(bool win)
     {
         theUIManager.FinishLevel(win, theSaveManager.GetAct());
-        Invoke("Pause", 1.5f);
+        if (!win) Invoke("Pause", 1.5f);
+        else Invoke("Pause", 0);
 
         // provisional, es para que funcione el tutorial
         if (SceneManager.GetActiveScene().name != "Tutorial")
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour
     public void NewGame()
     {
         theSaveManager.NewSave();
-        LoadLevel(1); //empieza en la escena 1 porque la 0 es el menú principal
+        LoadLevel(2); //empieza en la escena 2 porque la 1 es el menú principal
     }
     /*public void SetVolume(float volume)
     {

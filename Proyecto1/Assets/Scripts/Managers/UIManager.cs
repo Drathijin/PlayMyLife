@@ -87,7 +87,8 @@ public class UIManager : MonoBehaviour
 
     public void FinishLevel(bool win, int level)
     {
-        Invoke("EnablePanel", 1.5f);
+        if (!win) Invoke("EnablePanel", 1.5f);
+        else Invoke("EnablePanel", 0f);
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";
         nextLevel = level + 1;
@@ -100,10 +101,10 @@ public class UIManager : MonoBehaviour
         GameManager.instance.LoadLevel(nextLevel);
     }
 
-    //hay que hacer que el menú principal sea la escena 0
+    //hay que hacer que el menú principal sea la escena 1
     public void MainMenu()
     {
-        GameManager.instance.LoadLevel(0);
+        GameManager.instance.LoadLevel(1);
     }
 
     public void StartLevel()
