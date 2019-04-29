@@ -62,7 +62,8 @@ public class GameManager : MonoBehaviour
     public void FinishLevel(bool win)
     {
         theUIManager.FinishLevel(win, theSaveManager.GetAct());
-        Invoke("Pause", 1.5f);
+        if (!win) Invoke("Pause", 1.5f);
+        else Invoke("Pause", 0);
 
         // provisional, es para que funcione el tutorial
         if (SceneManager.GetActiveScene().name != "Tutorial")

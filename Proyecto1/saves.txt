@@ -1,7 +1,7 @@
 Win p
 Loss f
-Locked p
-Locked p
+Win s
+Win s
 Locked p
 Locked p
 Locked p

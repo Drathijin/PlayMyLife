@@ -87,7 +87,8 @@ public class UIManager : MonoBehaviour
 
     public void FinishLevel(bool win, int level)
     {
-        Invoke("EnablePanel", 1.5f);
+        if (!win) Invoke("EnablePanel", 1.5f);
+        else Invoke("EnablePanel", 0f);
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";
         nextLevel = level + 1;
