@@ -1,5 +1,5 @@
 Win p
-Loss s
+Loss f
 Locked p
 Locked p
 Locked p
