@@ -89,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
         else if (input) rb.velocity = new Vector2(speedX * speed, rb.velocity.y); //sólo se puede mover si no ha sido knockeado
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         //primero comprobamos si se puede activar para evitar hacer el cálculo innecesariamente
         if (!ableToJump)
