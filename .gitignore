@@ -4,6 +4,8 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+#Guardado de nuestro juego
+saves.txt
 
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
