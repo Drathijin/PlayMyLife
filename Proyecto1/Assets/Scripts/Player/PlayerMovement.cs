@@ -61,13 +61,23 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetAxisRaw("Vertical") == 0)
         {
             animator.SetBool("IsDashing", false);
-            dashing = false;            
+            dashing = false;
         }
     }
 
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
     {
+        //raycast para el salto
+        //generamos dos raycasts en los pies del jugador (-0.8f es un offset manual)
+        RaycastHit2D hit_floor1 = Physics2D.Raycast(new Vector2(transform.position.x + transform.lossyScale.x, transform.position.y - transform.lossyScale.y - 0.8f), Vector2.down);
+        RaycastHit2D hit_floor2 = Physics2D.Raycast(new Vector2(transform.position.x - transform.lossyScale.x, transform.position.y - transform.lossyScale.y - 0.8f), Vector2.down);
+
+        //comprobamos que choque con algo y que la distancia a la que choca sea casi nula
+        if ((hit_floor1.collider != null || hit_floor2.collider != null) &&
+            (hit_floor1.distance < 0.1 || hit_floor2.distance < 0.1)) ableToJump = true;
+        else ableToJump = false;
+
         if (jump)
         {
             jumpForce = Mathf.Sqrt(height * -2 * Physics2D.gravity.y * rb.gravityScale);
@@ -89,13 +99,14 @@ public class PlayerMovement : MonoBehaviour
         else if (input) rb.velocity = new Vector2(speedX * speed, rb.velocity.y); //sólo se puede mover si no ha sido knockeado
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //intento de salto con colisiones
+/*  private void OnCollisionEnter2D(Collision2D collision)
     {
         //primero comprobamos si se puede activar para evitar hacer el cálculo innecesariamente
         if (!ableToJump)
         {
             ContactPoint2D contact = collision.GetContact(0);
-            if (contact.point.y < transform.position.y - transform.localScale.y &&
+            if (contact.point.y < transform.position.y - transform.lossyScale.y &&
                 Mathf.Approximately(Vector2.Angle(contact.normal, transform.up), 0))
                 ableToJump = true;
         }
@@ -103,8 +114,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        ableToJump = false;
-    }
+        try
+        {
+            ContactPoint2D contact = collision.GetContact(0);
+            if (contact.point.y < transform.position.y - transform.lossyScale.y)
+                ableToJump = false;
+        }
+        catch { ableToJump = false; }
+    }*/
 
     public void SetInputActive(bool state)
     {
