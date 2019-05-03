@@ -49,7 +49,7 @@ public class UIManager : MonoBehaviour
 
     public void PlayerKills(int kills)
     {
-        collected.text = "Remaining enemies: " + kills;
+        collected.text = "Enemigos restantes: " + kills;
     }
 
     //llama al GameManager para saber el tiempo que le quede y lo muestra en pantalla
