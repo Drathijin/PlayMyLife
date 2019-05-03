@@ -21,7 +21,7 @@
         levels[0] = new Level(0,(LevelState)2); //inicializamos el menú principal, lvl0, a victoria siempre
         for (int i = 1; i < levels.Length; i++)
             levels[i] = new Level(i);
-        act = 1; //el índice 0 es el del menu, queremos que empiece a cargar desde el nivel 1
+        act = 2; //el índice 0 es el del menu, queremos que empiece a cargar desde el nivel 1
     }
 
     // -----FinDConstructores----- //
