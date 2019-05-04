@@ -528,7 +528,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pelea de hermanos
+  m_Text: 'Primer Recreo
+
+'
 --- !u!114 &114373251144427960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -836,8 +838,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Acaba con la fiesta de tu hermano, \xA1p\xE1rteles la nariz a todos sus
-    invitados! Y a \xE9l, evidentemente"
+  m_Text: Explora y busca un sitio para comerte el bocata antes de que termine el
+    recreo.
 --- !u!114 &114654037524051216
 MonoBehaviour:
   m_ObjectHideFlags: 1

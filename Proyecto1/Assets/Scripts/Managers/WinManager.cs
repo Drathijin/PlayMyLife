@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class WinManager : MonoBehaviour
     private int collectables = 0; // contador de colleccionables
     private int killCount = 0; // contador del score
     private bool oneTime = true; // se asegura que solo se ejecuta una vez
+    private bool cheat; //booleano usado para terminar niveles de forma automática para el testing  de niveles
 
     private void Awake()
     {
@@ -47,6 +49,26 @@ public class WinManager : MonoBehaviour
             GameManager.instance.FinishLevel(true);
             oneTime = false;
         }
+        else if(GetCheat(out cheat))
+        {
+            GameManager.instance.FinishLevel(cheat);
+            oneTime = false;
+        }
+    }
+
+    private bool GetCheat(out bool _cheat) //Con L+O o W+I superas los niveles de manera instantanea para testeos.
+    {
+        if(Input.GetKey(KeyCode.L) && Input.GetKey(KeyCode.O))
+        {
+            _cheat = false;
+            return true;
+        } if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.I))
+        {
+            _cheat = true;
+            return true;
+        }
+        _cheat = false;
+        return false;
     }
 
 
