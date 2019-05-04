@@ -6,7 +6,7 @@ public class MakeParentOnColl : MonoBehaviour {
 
     bool parented = false; // para que solo ponga al otro objeto hijo de Level cuando no lo sea
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if(Mathf.Abs(Vector2.Angle(collision.GetContact(0).normal, transform.up) - 180) < 0.1f) // si cae encima
         {
