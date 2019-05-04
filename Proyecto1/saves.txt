@@ -1,8 +1,0 @@
-Win p
-Win s
-Loss s
-Loss f
-Loss a
-Loss a
-Loss f
-
