@@ -15873,7 +15873,7 @@ GameObject:
   - component: {fileID: 731763727}
   m_Layer: 11
   m_Name: JTPlatform
-  m_TagString: EnemyShield
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15885,7 +15885,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 731763725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.978, y: 10.37, z: 0.17610061}
+  m_LocalPosition: {x: 51.978, y: 10.35, z: 0.17610061}
   m_LocalScale: {x: 1.1737, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2113914854}
@@ -16028,7 +16028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &767783122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16467,7 +16467,7 @@ Prefab:
     - target: {fileID: 61655217133945500, guid: 450e4d4cd8ac2af4c9967d2652adaa56,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212870702517753554, guid: 450e4d4cd8ac2af4c9967d2652adaa56,
         type: 2}
@@ -17046,6 +17046,11 @@ Prefab:
         type: 2}
       propertyPath: top
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114613440270396806, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
+        type: 2}
+      propertyPath: right
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
@@ -17901,7 +17906,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4208591058710766, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.086839
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4208591058710766, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17921,21 +17926,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4208591058710766, guid: 1ba9fbecbb0b0364196c4b822d8fab26, type: 2}
       propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114244577537555862, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114080308202517900, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
-        type: 2}
-      propertyPath: dies
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114468872072831870, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
-        type: 2}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114613440270396806, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
@@ -18318,7 +18308,7 @@ GameObject:
   - component: {fileID: 1851194253}
   m_Layer: 11
   m_Name: JTPlatform (1)
-  m_TagString: EnemyShield
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18330,7 +18320,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1851194251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 73.98, y: 7.36, z: 0.17610061}
+  m_LocalPosition: {x: 73.98, y: 7.34, z: 0.17610061}
   m_LocalScale: {x: 1.1737, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2113914854}
@@ -18523,7 +18513,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Agarra la bandera y ganaras
+  m_Text: "Agarra la bandera y ganar\xE1s"
 --- !u!222 &1865667098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18993,7 +18983,7 @@ Prefab:
     - target: {fileID: 114064636471918820, guid: e3b102aee376bd54fbf781b6ac3e710d,
         type: 2}
       propertyPath: shootFreq
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3b102aee376bd54fbf781b6ac3e710d, type: 2}
@@ -19143,7 +19133,7 @@ GameObject:
   - component: {fileID: 2025505705}
   m_Layer: 11
   m_Name: JTPlatform (2)
-  m_TagString: EnemyShield
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19366,11 +19356,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.2
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.6
+      value: 9.1
       objectReference: {fileID: 0}
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_LocalPosition.z

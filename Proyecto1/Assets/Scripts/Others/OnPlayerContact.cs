@@ -28,7 +28,7 @@ public class OnPlayerContact : MonoBehaviour
             float angle = Vector2.Angle(contact.normal, transform.up);
 
             //si el ángulo es de unos 180º (el jugador cae verticalmente), destruye al enemigo
-            if (Mathf.Approximately(angle, 180) && bumpOnTop)
+            if (Mathf.Abs(angle - 180) < 0.1f && bumpOnTop)
             {
                 if (kb != null) kb.BumpOnTop(-contact.normal, bumpOnTopForce);
                 if (dies)
