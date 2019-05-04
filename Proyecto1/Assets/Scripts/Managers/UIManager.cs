@@ -92,6 +92,7 @@ public class UIManager : MonoBehaviour
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";
         nextLevel = level + 1;
+        print(nextLevel);
 
     }
 
