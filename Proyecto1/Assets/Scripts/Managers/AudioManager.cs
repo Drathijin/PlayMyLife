@@ -9,6 +9,14 @@ public class AudioManager : MonoBehaviour {
     public AudioSetting[] audioSettings;
     public AudioMixer masterMixer;
     private AudioObject currentClip = null;
+
+    static public AudioManager instance = null;
+
+    private void Awake()
+    {
+        if(instance==null)instance=this;
+        else Destroy(this.gameObject);
+    }
     
 
     //asignamos los valores del editor a las variables con las que vamos a trabajar
@@ -55,6 +63,11 @@ public class AudioManager : MonoBehaviour {
         AudioSource audio = gO.GetComponent<AudioSource>();
         audio.Play();
         Destroy(gO, audio.clip.length);
+    }
+        public void PlayClip(AudioSource aS)
+    {
+        aS.Play();
+        Destroy(aS.gameObject, aS.clip.length);
     }
     
 }

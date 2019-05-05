@@ -10,21 +10,20 @@ public class WinManager : MonoBehaviour
     public int maxCollectables = -1; // coleccionables totales
     public int maxKills = -1; // score total
 
+    public AudioSource winSound;
+    public AudioSource loseSound;
+    #region Privates
     private float timer; // tiempo transcurrido
     private int collectables = 0; // contador de colleccionables
     private int killCount = 0; // contador del score
     private bool oneTime = true; // se asegura que solo se ejecuta una vez
     private bool cheat; //booleano usado para terminar niveles de forma automática para el testing  de niveles
-
-    private void Awake()
-    {
-    }
+    #endregion
     void Start() {
         GameManager.instance.SetWinManager(this);
 
         killCount = maxKills;
         oneTime = true;
-
         timer = maxSeconds;
     }
 
@@ -34,11 +33,11 @@ public class WinManager : MonoBehaviour
         {
             if (winOnTimeOut)
             {
-                GameManager.instance.FinishLevel(true);
+                FinishLevel(true);
             }
             else
             {
-                GameManager.instance.FinishLevel(false);
+                FinishLevel(false);
             }
 
             oneTime = false;
@@ -46,13 +45,30 @@ public class WinManager : MonoBehaviour
 
         if (((maxKills > -1 && killCount <= 0) || (maxCollectables > -1 && collectables >= maxCollectables)) && oneTime)
         {
-            GameManager.instance.FinishLevel(true);
+            FinishLevel(true);
             oneTime = false;
         }
         else if(GetCheat(out cheat))
         {
-            GameManager.instance.FinishLevel(cheat);
+            print(cheat);
+            FinishLevel(cheat);
             oneTime = false;
+        }
+    }
+    private void FinishLevel(bool w)
+    {
+        GameManager.instance.FinishLevel(w);
+    }
+
+    public void PlayEndSound(bool w)
+    {
+        if (w)
+        {
+            AudioManager.instance.PlayClip(winSound);
+        }
+        else 
+        {
+            AudioManager.instance.PlayClip(loseSound);
         }
     }
 
@@ -79,7 +95,7 @@ public class WinManager : MonoBehaviour
         if (col.gameObject.tag == "Player" && oneTime)
         {
             oneTime = false;
-            GameManager.instance.FinishLevel(true);
+            FinishLevel(true);
 
         }
     }

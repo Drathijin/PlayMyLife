@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void FinishLevel(bool win)
     {
+        theWinManager.PlayEndSound(win);
         theUIManager.FinishLevel(win, theSaveManager.GetAct()+2); //al sumar dos ignoramos el menu y el tutorial
         if (!win) Invoke("Pause", 1.5f);
         else Invoke("Pause", 0);
@@ -102,7 +103,7 @@ public class GameManager : MonoBehaviour
     public void NewGame()
     {
         theSaveManager.NewSave();
-        LoadLevel(2); //empieza en la escena 2 porque la 1 es el menú principal
+        LoadLevel(2); //empieza en la escena 2 porque la 1 es el menï¿½ principal
     }
     /*public void SetVolume(float volume)
     {
