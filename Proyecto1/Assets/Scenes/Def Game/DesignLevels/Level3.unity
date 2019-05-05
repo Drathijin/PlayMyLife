@@ -2559,11 +2559,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4198657169551898, guid: a1a537d03f40c46478b8827c682c589d, type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 1
-=======
       value: 12
->>>>>>> 07797c278f120c2c11274490495c08b69e3a1809
       objectReference: {fileID: 0}
     - target: {fileID: 4198657169551898, guid: a1a537d03f40c46478b8827c682c589d, type: 2}
       propertyPath: m_LocalScale.x
@@ -12022,11 +12018,14 @@ Prefab:
       propertyPath: m_TagString
       value: NotDestructible
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 251756183727027524, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c,
         type: 2}
       propertyPath: m_UseOneWayGrouping
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> c5dff4a80184145c311b8a578abaa63333db5b80
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
   m_IsPrefabAsset: 0

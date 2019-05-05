@@ -1990,6 +1990,10 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
   m_IsPrefabAsset: 0
@@ -2905,6 +2909,10 @@ Prefab:
     - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
