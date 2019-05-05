@@ -15391,6 +15391,11 @@ Prefab:
       propertyPath: ground.m_Bits
       value: 2048
       objectReference: {fileID: 0}
+    - target: {fileID: 212199794916374248, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: m_SpriteSortPoint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
   m_IsPrefabAsset: 0
@@ -16200,7 +16205,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4303066706735648, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_LocalScale.y
-      value: -0.5604218
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
@@ -16208,7 +16213,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4303066706735648, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.59125006
+      value: 0.5375
       objectReference: {fileID: 0}
     - target: {fileID: 212010395666522984, guid: 26fa63ea20e726e49a704763b88ec229,
         type: 2}

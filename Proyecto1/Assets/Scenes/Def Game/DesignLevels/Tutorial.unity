@@ -17788,20 +17788,20 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1409717444}
     m_ColliderPaths:
-    - - X: -14974594
+    - - X: -9970124
         Y: -1520000
-      - X: 14974594
+      - X: 9970124
         Y: -1520000
-      - X: 14974594
+      - X: 9970124
         Y: 1750000
-      - X: -14974594
+      - X: -9970124
         Y: 1750000
   m_CompositePaths:
     m_Paths:
-    - - {x: 1.4974594, y: 0.175}
-      - {x: -1.4974594, y: 0.175}
-      - {x: -1.4974594, y: -0.152}
-      - {x: 1.4974594, y: -0.152}
+    - - {x: 0.99701244, y: 0.175}
+      - {x: -0.99701244, y: 0.175}
+      - {x: -0.99701244, y: -0.152}
+      - {x: 0.99701244, y: -0.152}
   m_VertexDistance: 0.0005
 --- !u!61 &1409717444 stripped
 BoxCollider2D:
@@ -18877,7 +18877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 82.2, y: 9}
+  m_AnchoredPosition: {x: 82.1, y: 9.01}
   m_SizeDelta: {x: 265.8, y: 55.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1995312832
@@ -18997,7 +18997,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.9745
+      value: 14.4741
       objectReference: {fileID: 0}
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_LocalPosition.y
@@ -19053,7 +19053,7 @@ Prefab:
     - target: {fileID: 212403240178103930, guid: c04ca379d487b40b88c7762fdfadfb28,
         type: 2}
       propertyPath: m_Size.x
-      value: 2.9949188
+      value: 1.9940249
       objectReference: {fileID: 0}
     - target: {fileID: 212403240178103930, guid: c04ca379d487b40b88c7762fdfadfb28,
         type: 2}
@@ -19390,6 +19390,11 @@ Prefab:
         type: 2}
       propertyPath: ground.m_Bits
       value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 212199794916374248, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: m_SpriteSortPoint
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
