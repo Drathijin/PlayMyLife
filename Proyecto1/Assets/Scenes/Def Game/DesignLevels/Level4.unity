@@ -272,6 +272,26 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1051293091712910, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219776502432632, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478113306137428, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418190993267158, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681745106050378, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
@@ -955,6 +975,11 @@ Prefab:
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: ground.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
@@ -1774,7 +1799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991216471}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platformer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1962,8 +1987,8 @@ Prefab:
       value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
-      propertyPath: m_TagString
-      value: NotDestructible
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
@@ -2878,8 +2903,8 @@ Prefab:
       value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
-      propertyPath: m_TagString
-      value: NotDestructible
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
@@ -3070,6 +3095,26 @@ Prefab:
       propertyPath: objectives.Array.data[3]
       value: 
       objectReference: {fileID: 541271383}
+    - target: {fileID: 1051293091712910, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219776502432632, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478113306137428, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418190993267158, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681745106050378, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
@@ -3247,7 +3292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1883820974}
   - component: {fileID: 1883820973}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3303,7 +3348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992329944}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3349,7 +3394,7 @@ GameObject:
   - component: {fileID: 2075057772}
   m_Layer: 11
   m_Name: Tilemap
-  m_TagString: NotDestructible
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

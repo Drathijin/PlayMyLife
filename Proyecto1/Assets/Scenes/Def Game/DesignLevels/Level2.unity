@@ -199,6 +199,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -216,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 30217815}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,6 +331,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -649,6 +657,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -737,6 +749,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -847,6 +863,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -936,6 +956,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -1071,6 +1095,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1155,6 +1183,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1168,7 +1200,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2070603942}
+    m_TransformParent: {fileID: 2057594004}
     m_Modifications:
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1200,7 +1232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
@@ -1219,7 +1251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 209254788}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,6 +1348,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1329,7 +1365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248805600}
   - component: {fileID: 248805601}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,8 +1386,8 @@ Transform:
   - {fileID: 1262225691}
   - {fileID: 1669550090}
   - {fileID: 1730821623}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 14
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &248805601
 SpriteRenderer:
@@ -1528,6 +1564,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1540,7 +1580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 323342096}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,6 +2112,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -2171,7 +2215,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2070603942}
+    m_TransformParent: {fileID: 2057594004}
     m_Modifications:
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2203,7 +2247,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_LocalScale.x
@@ -2241,7 +2285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474871415}
   - component: {fileID: 474871416}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2262,8 +2306,8 @@ Transform:
   - {fileID: 755215517}
   - {fileID: 1278133288}
   - {fileID: 930395435}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 21
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &474871416
 SpriteRenderer:
@@ -2339,7 +2383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582720372}
   - component: {fileID: 582720373}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2360,8 +2404,8 @@ Transform:
   - {fileID: 1502835744}
   - {fileID: 1244872940}
   - {fileID: 1284827127}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 16
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &582720373
 SpriteRenderer:
@@ -2420,7 +2464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 586171198}
   - component: {fileID: 586171199}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2441,8 +2485,8 @@ Transform:
   - {fileID: 1677416143}
   - {fileID: 30217815}
   - {fileID: 209254788}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 15
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &586171199
 SpriteRenderer:
@@ -2566,6 +2610,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -2771,6 +2819,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -2849,6 +2901,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -11605,6 +11661,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -11683,6 +11743,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -11805,6 +11869,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -11917,7 +11985,7 @@ GameObject:
   - component: {fileID: 755215520}
   - component: {fileID: 755215519}
   - component: {fileID: 755215518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12185,6 +12253,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -12198,7 +12270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784202941}
   - component: {fileID: 784202942}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12221,8 +12293,8 @@ Transform:
   - {fileID: 1455586792}
   - {fileID: 1584759864}
   - {fileID: 2099039403}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 17
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &784202942
 SpriteRenderer:
@@ -12287,7 +12359,7 @@ GameObject:
   - component: {fileID: 786147241}
   - component: {fileID: 786147240}
   - component: {fileID: 786147246}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12538,6 +12610,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -12616,6 +12692,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -12780,6 +12860,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -12864,6 +12948,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -12916,7 +13004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930395435}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13013,6 +13101,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -13092,6 +13184,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -13105,7 +13201,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2070603942}
+    m_TransformParent: {fileID: 2057594004}
     m_Modifications:
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_LocalPosition.x
@@ -13137,11 +13233,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4975851572605892, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
       propertyPath: m_LocalScale.x
       value: 1.864162
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614190005157130, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c04ca379d487b40b88c7762fdfadfb28, type: 2}
@@ -13257,6 +13357,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -13345,6 +13449,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -13539,8 +13647,8 @@ Transform:
   - {fileID: 117077252}
   - {fileID: 1067370082}
   - {fileID: 1960556847}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 20
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1086602338
 SpriteRenderer:
@@ -13849,6 +13957,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -13933,6 +14045,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -14011,6 +14127,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -14366,7 +14486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1244872940}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14412,7 +14532,7 @@ GameObject:
   - component: {fileID: 1262225694}
   - component: {fileID: 1262225693}
   - component: {fileID: 1262225692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14582,7 +14702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278133288}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14680,6 +14800,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -14697,7 +14821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1284827127}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14799,21 +14923,24 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1335757115
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1051293091712910, guid: 5788cacbb9d7b4533a4bbf94518499dc,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1335757116}
   - component: {fileID: 1335757117}
   m_Layer: 0
-  m_Name: MobilePlataform (4)
+  m_Name: MobilePlataform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14822,12 +14949,11 @@ GameObject:
 --- !u!4 &1335757116
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4331011464211702, guid: 5788cacbb9d7b4533a4bbf94518499dc,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1335757115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.358357, y: -5.361847, z: -0.19825745}
+  m_LocalPosition: {x: 14.35836, y: -5.361847, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1723952266}
@@ -14835,8 +14961,8 @@ Transform:
   - {fileID: 352240718}
   - {fileID: 1154332534}
   - {fileID: 1652270461}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 18
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1335757117
 SpriteRenderer:
@@ -15067,7 +15193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455586792}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15132,6 +15258,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: ground.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
   m_IsPrefabAsset: 0
@@ -15155,7 +15286,7 @@ GameObject:
   - component: {fileID: 1502835747}
   - component: {fileID: 1502835746}
   - component: {fileID: 1502835745}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15422,6 +15553,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -15724,6 +15859,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -15843,6 +15982,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -15855,7 +15998,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584759864}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16081,7 +16224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1669550090}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16117,7 +16260,7 @@ GameObject:
   - component: {fileID: 1677416146}
   - component: {fileID: 1677416145}
   - component: {fileID: 1677416144}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16355,6 +16498,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -16433,6 +16580,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -16719,6 +16870,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -16731,7 +16886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730821623}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16817,8 +16972,8 @@ Transform:
   - {fileID: 979444544}
   - {fileID: 925026909}
   - {fileID: 1353595606}
-  m_Father: {fileID: 2070603942}
-  m_RootOrder: 19
+  m_Father: {fileID: 2057594004}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1759781814
 SpriteRenderer:
@@ -16943,6 +17098,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -17021,6 +17180,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -17101,6 +17264,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -17109,7 +17276,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2070603942}
+    m_TransformParent: {fileID: 2057594004}
     m_Modifications:
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -17141,7 +17308,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1350126737958674, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_Name
@@ -17384,6 +17551,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -17477,6 +17648,10 @@ Prefab:
         type: 2}
       propertyPath: bumpOnTopForce
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -17757,6 +17932,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -18033,7 +18212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2057594004}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plataforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18049,7 +18228,20 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2077228119}
+  - {fileID: 197612491}
+  - {fileID: 1841513988}
+  - {fileID: 248805600}
+  - {fileID: 586171198}
+  - {fileID: 582720372}
+  - {fileID: 474871415}
+  - {fileID: 784202941}
+  - {fileID: 1335757116}
+  - {fileID: 1759781813}
+  - {fileID: 1086602337}
+  - {fileID: 977427122}
+  - {fileID: 445570131}
   m_Father: {fileID: 2070603942}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18087,19 +18279,6 @@ Transform:
   - {fileID: 2057594004}
   - {fileID: 1195572703}
   - {fileID: 1621007712}
-  - {fileID: 977427122}
-  - {fileID: 2077228119}
-  - {fileID: 197612491}
-  - {fileID: 1841513988}
-  - {fileID: 445570131}
-  - {fileID: 248805600}
-  - {fileID: 586171198}
-  - {fileID: 582720372}
-  - {fileID: 784202941}
-  - {fileID: 1335757116}
-  - {fileID: 1759781813}
-  - {fileID: 1086602337}
-  - {fileID: 474871415}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18108,7 +18287,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2070603942}
+    m_TransformParent: {fileID: 2057594004}
     m_Modifications:
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -18140,7 +18319,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1350126737958674, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_Name
@@ -18230,6 +18409,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -18318,6 +18501,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -18438,6 +18625,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -18522,6 +18713,10 @@ Prefab:
       propertyPath: bumpOnTopForce
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -18534,7 +18729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128432635}
   - component: {fileID: 2128432636}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
