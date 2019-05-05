@@ -1090,12 +1090,32 @@ Prefab:
     - target: {fileID: 224205874471062916, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.5
+      value: -0.5000305
       objectReference: {fileID: 0}
     - target: {fileID: 114498762326469822, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_Text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 223160861829324818, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223160861829324818, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2052700833}
+    - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 179.45001
+      objectReference: {fileID: 0}
+    - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -58.339996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
@@ -1594,7 +1614,7 @@ GameObject:
   - component: {fileID: 1147055023}
   - component: {fileID: 1147055029}
   m_Layer: 11
-  m_Name: "Plataforma fr\xE1gil prueba"
+  m_Name: "Plataforma m\xF3vil"
   m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1607,7 +1627,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147055021}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.353, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 2070527399}
@@ -2212,9 +2232,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422534239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 6f07f80f6ee5f2b46ba14448760bdb05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSettings: []
+  masterMixer: {fileID: 24100000, guid: 9802c3f7e4ae911418608ab827c764de, type: 2}
 --- !u!1 &1493945153
 GameObject:
   m_ObjectHideFlags: 0
@@ -16509,6 +16531,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!20 &2052700833 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20842022283128422, guid: 7693a5b743a26d54c963e30ea14ef607,
+    type: 2}
+  m_PrefabInternal: {fileID: 1020268219}
 --- !u!1 &2070527398
 GameObject:
   m_ObjectHideFlags: 0

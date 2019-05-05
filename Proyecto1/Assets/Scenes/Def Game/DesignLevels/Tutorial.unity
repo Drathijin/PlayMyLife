@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 10355428}
   - component: {fileID: 10355427}
   - component: {fileID: 10355426}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "Plataforma fr\xE1gil prueba"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +748,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Agachate
+  m_Text: "Ag\xE1chate"
 --- !u!222 &144328076
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -826,8 +826,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aprende las nociones b\xE1sicas de como controlar al jugador y como enfrentarse
-    a los obst\xE1culos del juego."
+  m_Text: "Aprende las nociones b\xE1sicas sobre c\xF3mo controlar al jugador y c\xF3mo
+    enfrentarse a los obst\xE1culos del juego."
 --- !u!222 &173910378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1274,7 +1274,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &356460036
@@ -16162,7 +16162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Disparame con X, B en el mando o con A y D en el teclado
+  m_Text: "Disp\xE1rame con X, B en el mando o con A y D en el teclado"
 --- !u!222 &795945128
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16237,7 +16237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Coge carrerilla y deslizate con las flechas o el joystick
+  m_Text: "Coge carrerilla y desl\xEDzate con las flechas o el joystick"
 --- !u!222 &804114715
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16575,7 +16575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Salta con Espacio, o las flechas de direcci\xF3n, o A en el mando"
+  m_Text: "Salta con Espacio,\ncon las flechas de direcci\xF3n, o con\nA en el mando"
 --- !u!222 &964736386
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16923,8 +16923,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -34.857002}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1280, y: -5}
-  m_SizeDelta: {x: 160, y: 125}
+  m_AnchoredPosition: {x: 1276, y: -12}
+  m_SizeDelta: {x: 170.9, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075419070
 MonoBehaviour:
@@ -16958,8 +16958,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1Mis escudos me hacen inmune a las balas! \nMuajajajajajajaja\nNo me
-    saltes encima porfis"
+  m_Text: "\xA1Mis escudos me hacen inmune a las balas! \n\xA1\xA1Muajajajajajajaja!!\nNo
+    me saltes encima porfi"
 --- !u!222 &1075419071
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17408,7 +17408,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Si hay monedas, cogelas todas para superar el nivel
+  m_Text: "Si hay monedas, c\xF3gelas todas para superar el nivel"
 --- !u!222 &1333250971
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17523,7 +17523,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jejejeje\n\xA1Yo soy inmune a los saltos, no podras conmigo!"
+  m_Text: "\xA1Yo soy inmune a los saltos, no podr\xE1s conmigo!\nJejejeje"
 --- !u!222 &1340863450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18588,7 +18588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mi lluvia es \xE1cida y puntiaguda\nMUAJAJAJAJA"
+  m_Text: "Mi lluvia es \xE1cida y puntiaguda...\n\xA1\xA1\xA1MUAJAJAJAJA!!!"
 --- !u!222 &1876361270
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19385,6 +19385,11 @@ Prefab:
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: ground.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}

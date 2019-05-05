@@ -6,15 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed, height, dashDecreaseRate, impulseOnDash;
     public LayerMask ground;
-    bool jump, dashing = false, dashCD, input = true;
-    public bool ableToJump = false;
+    bool jump, dashing = false, dashCD, input = true, ableToJump = false;
     float speedX, jumpForce, dashAcc = 0, count = 0, dashCoolDown = 0.1f;
     Rigidbody2D rb;
     Animator animator;
     BoxCollider2D collider;
-    Vector2 parentScale;
-
-    Vector2 escalaPlayer;
 
     //Obtenemos el Rigidbody del jugador para modificar su velocidad
     void Start()
@@ -68,21 +64,19 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsDashing", false);
             dashing = false;
         }
-        Debug.Log(transform.lossyScale);
     }
     
     //auxiliar para debug del salto
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * transform.lossyScale.y / 2)),
                         new Vector2(collider.size.x * transform.lossyScale.x / 2, 0.1f));
-    }
+    }*/
 
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
     {
-        parentScale = GetComponentInParent<Transform>().localScale;
         ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - (collider.size.x * transform.lossyScale.x / 4),
                                                         transform.position.y - (collider.size.y * transform.lossyScale.y / 2)),
                                             new Vector2(transform.position.x + (collider.size.x * transform.lossyScale.x / 4),
