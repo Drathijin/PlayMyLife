@@ -23,9 +23,7 @@ public class DestroyPlatform : MonoBehaviour {
         {
             Color temp;
             temp = spr.color;
-            float sub = Time.deltaTime / timeUntilBreak;
-            print(sub);
-            temp.a -= sub;
+            temp.a -= Time.deltaTime / timeUntilBreak;
             spr.color = temp;
         }
     }
