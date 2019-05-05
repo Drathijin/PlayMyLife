@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed, height, dashDecreaseRate, impulseOnDash;
     public LayerMask ground;
-    bool jump, dashing = false, dashCD, input = true, ableToJump = false;
+    bool jump, dashing = false, dashCD, input = true;
+    public bool ableToJump = false;
     float speedX, jumpForce, dashAcc = 0, count = 0, dashCoolDown = 0.1f;
     Rigidbody2D rb;
     Animator animator;
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     //En el Update() declaramos los "controles" del jugador, para desplazarse en el eje X y para saltar en el eje Y
     void Update()
     {
+        Debug.Log(rb.velocity.y);
+
         speedX = Input.GetAxisRaw("Horizontal");// speedX = {-1, 0, 1}
 
         if (speedX >0)
@@ -57,29 +60,32 @@ public class PlayerMovement : MonoBehaviour
         {
             dashAcc *= dashDecreaseRate;
             dashing = true;
-            
         }
-        else if (Input.GetAxisRaw("Vertical")> 0 && /*Mathf.Abs(rb.velocity.y) < 0.1f*/ ableToJump && !jump) { jump = true; }
+        else if (Input.GetAxisRaw("Vertical") > 0 && /*Mathf.Abs(rb.velocity.y) < 0.1f*/ ableToJump && !jump) { jump = true; }
         else if (Input.GetAxisRaw("Vertical") == 0)
         {
             animator.SetBool("IsDashing", false);
             dashing = false;
         }
+
+        animator.SetBool("ableToJump", ableToJump);
     }
 
     //auxiliar para debug del salto
     private void OnDrawGizmos()
     {
-        Gizmos.color = new Color (0, 1, 0, 0.5f );
-        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * 0.15f) / 2),
-                        new Vector2(collider.size.x * 0.15f, 0.01f));
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * transform.localScale.y / 2)),
+                        new Vector2(collider.size.x * transform.localScale.x / 2, 0.05f));
     }
 
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
     {
-        ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - ((collider.size.x * 0.14f) / 2), transform.position.y - ((collider.size.y * 0.15f) / 2)), 
-                                            new Vector2(transform.position.x + ((collider.size.x * 0.14f) / 2), transform.position.y - ((collider.size.y * 0.15f) / 2)),
+        ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - (collider.size.x * transform.localScale.x / 4), 
+                                                        transform.position.y - (collider.size.y * transform.localScale.y / 2)), 
+                                            new Vector2(transform.position.x + (collider.size.x * transform.localScale.x / 4),
+                                                        transform.position.y - (collider.size.y * transform.localScale.y / 2)),
                                             ground);
 
         if (jump)
