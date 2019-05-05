@@ -3998,9 +3998,9 @@ GameObject:
   - component: {fileID: 1918373543}
   - component: {fileID: 1918373542}
   - component: {fileID: 1918373541}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114375907698569116}
   m_Layer: 14
   m_Name: Helmet
-  m_TagString: EnemyShield
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 114543224406121522}
   m_Layer: 14
   m_Name: RightShield
-  m_TagString: EnemyShield
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 114599593513388992}
   m_Layer: 14
   m_Name: LeftShield
-  m_TagString: EnemyShield
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -473,6 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad93364c87f66ac4f8df3eb49a703105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootFreq: 2
   ShootPoints:
   - {fileID: 4787845409317462}
   bullet: {fileID: 114279595231629786, guid: 1800d2623b56b294f9d9cfb8d185a991, type: 2}

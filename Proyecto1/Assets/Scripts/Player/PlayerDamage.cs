@@ -41,6 +41,13 @@ public class PlayerDamage : MonoBehaviour
         shieldObject.SetActive(false);
 
         gameObject.GetComponent<PlayerMovement>().enabled = false; // desactiva el movimiento del jugador
+        gameObject.GetComponent<PlayerShoot>().enabled = false; // desactiva el disparo del jugador
+        gameObject.GetComponent<KnockBack>().enabled = false; // desactiva el knockback del jugador
+        Rigidbody2D m_Rigidbody = GetComponent<Rigidbody2D>();
+        m_Rigidbody.constraints = RigidbodyConstraints2D.FreezePositionX;
+        m_Rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY;
+        m_Rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+        m_Rigidbody.bodyType = RigidbodyType2D.Static;
         GameManager.instance.FinishLevel(false);
 
     }
