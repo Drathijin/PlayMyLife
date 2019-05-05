@@ -12,6 +12,7 @@ TagManager:
   - EnemyShield
   - NotDestructible
   - BreakWall
+  - Music
   layers:
   - Default
   - TransparentFX

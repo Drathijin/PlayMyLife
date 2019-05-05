@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using System;
 
 public class AudioManager : MonoBehaviour {
 
     public AudioSetting[] audioSettings;
     public AudioMixer masterMixer;
     private AudioObject currentClip = null;
-
+    private AudioSource currentSong = null;
     static public AudioManager instance = null;
 
     private void Awake()
@@ -31,6 +32,7 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
+#region Cambiar volumen de las pistas
     public void SetMusicVolume(float value)
     {
         int i = 0;
@@ -50,14 +52,16 @@ public class AudioManager : MonoBehaviour {
         }
         audioSettings[i].SetVolume(value);
     }
-
+#endregion
+#region Clips que se interrumpen (Posibles pistas de diálogo)
     public void SetCurrentClip(AudioObject AO)
     {
         if(currentClip != null) currentClip.KillMe();
         currentClip = AO;
         currentClip.Play();
     }
-
+#endregion
+#region Clips que no se interrumpen 
     public void PlayClip(GameObject gO)
     {
         AudioSource audio = gO.GetComponent<AudioSource>();
@@ -69,7 +73,28 @@ public class AudioManager : MonoBehaviour {
         aS.Play();
         Destroy(aS.gameObject, aS.clip.length);
     }
-    
+#endregion
+#region Música
+    public void SetSong(AudioSource song)
+    {
+        if(currentSong==null)
+        {
+            currentSong = song;
+            PlaySong(song);
+        }
+    }
+
+    private void PlaySong(AudioSource aS)
+    {
+        aS.loop = true;
+        aS.Play();
+    }
+    public void ResetSong()
+    {
+        currentSong.Stop();
+        currentSong=null;
+    }
+#endregion
 }
 
 [System.Serializable]

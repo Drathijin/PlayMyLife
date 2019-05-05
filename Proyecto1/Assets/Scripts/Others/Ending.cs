@@ -11,14 +11,25 @@ public class Ending : MonoBehaviour {
 
     public Text[] texts = new Text[9];
    
-    // Use this for initialization
+    void Awake()
+    {
+        try
+        {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<MusicClass>().StopMusic();
+        }
+        catch
+        {
+            print("No hay música sonando");
+        }
+        this.gameObject.GetComponentInChildren<AudioSource>().Play();
+
+    }
     void Start () {
         ReadStats();
         SetText();
 
     }
 
-    // Update is called once per frame
     void Update () {
 	}
 
