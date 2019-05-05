@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     BoxCollider2D collider;
+    Vector2 parentScale;
+
+    Vector2 escalaPlayer;
 
     //Obtenemos el Rigidbody del jugador para modificar su velocidad
     void Start()
@@ -24,8 +27,6 @@ public class PlayerMovement : MonoBehaviour
     //En el Update() declaramos los "controles" del jugador, para desplazarse en el eje X y para saltar en el eje Y
     void Update()
     {
-        Debug.Log(rb.velocity.y);
-
         speedX = Input.GetAxisRaw("Horizontal");// speedX = {-1, 0, 1}
 
         if (speedX >0)
@@ -67,25 +68,25 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsDashing", false);
             dashing = false;
         }
-
-        animator.SetBool("ableToJump", ableToJump);
+        Debug.Log(transform.lossyScale);
     }
-    /*
+    
     //auxiliar para debug del salto
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * transform.localScale.y / 2)),
-                        new Vector2(collider.size.x * transform.localScale.x / 2, 0.05f));
+        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * transform.lossyScale.y / 2)),
+                        new Vector2(collider.size.x * transform.lossyScale.x / 2, 0.1f));
     }
-    */
+
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
     {
-        ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - (collider.size.x * transform.localScale.x / 4), 
-                                                        transform.position.y - (collider.size.y * transform.localScale.y / 2)), 
-                                            new Vector2(transform.position.x + (collider.size.x * transform.localScale.x / 4),
-                                                        transform.position.y - (collider.size.y * transform.localScale.y / 2)),
+        parentScale = GetComponentInParent<Transform>().localScale;
+        ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - (collider.size.x * transform.lossyScale.x / 4),
+                                                        transform.position.y - (collider.size.y * transform.lossyScale.y / 2)),
+                                            new Vector2(transform.position.x + (collider.size.x * transform.lossyScale.x / 4),
+                                                        transform.position.y - (collider.size.y * transform.lossyScale.y / 2)),
                                             ground);
 
         if (jump)
