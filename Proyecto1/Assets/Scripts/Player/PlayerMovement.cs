@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             dashing = true;
             
         }
-        else if (Input.GetAxisRaw("Vertical")> 0 && Mathf.Abs(rb.velocity.y) < 0.1f /*ableToJump*/ && !jump) { jump = true; }
+        else if (Input.GetAxisRaw("Vertical")> 0 && /*Mathf.Abs(rb.velocity.y) < 0.1f*/ ableToJump && !jump) { jump = true; }
         else if (Input.GetAxisRaw("Vertical") == 0)
         {
             animator.SetBool("IsDashing", false);
@@ -68,18 +68,18 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //auxiliar para debug del salto
-    /*private void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         Gizmos.color = new Color (0, 1, 0, 0.5f );
-        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - collider.size.y / 2),
-                        new Vector2(collider.size.x, 0.01f));
-    }*/
+        Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * 0.15f) / 2),
+                        new Vector2(collider.size.x * 0.15f, 0.01f));
+    }
 
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
     {
-        ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - collider.size.x / 2, transform.position.y - collider.size.y / 2), 
-                                            new Vector2(transform.position.x + collider.size.x / 2, transform.position.y - collider.size.y / 2),
+        ableToJump = Physics2D.OverlapArea(new Vector2(transform.position.x - ((collider.size.x * 0.14f) / 2), transform.position.y - ((collider.size.y * 0.15f) / 2)), 
+                                            new Vector2(transform.position.x + ((collider.size.x * 0.14f) / 2), transform.position.y - ((collider.size.y * 0.15f) / 2)),
                                             ground);
 
         if (jump)

@@ -156,6 +156,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -287,6 +297,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -322,7 +342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97007436}
   - component: {fileID: 97007437}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,6 +741,16 @@ Prefab:
       propertyPath: bumpOnTop
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -798,7 +828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212577914}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,6 +892,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -899,7 +939,7 @@ Transform:
   - {fileID: 1090242596}
   - {fileID: 804816236}
   m_Father: {fileID: 1602011718}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &274538217
 Prefab:
@@ -957,7 +997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 281428363}
   - component: {fileID: 281428362}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,6 +1072,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1082,6 +1132,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -1342,6 +1402,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1494,7 +1564,7 @@ GameObject:
   - component: {fileID: 560825385}
   - component: {fileID: 560825384}
   - component: {fileID: 560825383}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plataformas voladoras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,7 +1911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561091932}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platformers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1962,6 +2032,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -2012,6 +2092,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -2149,6 +2239,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -2172,7 +2272,7 @@ GameObject:
   - component: {fileID: 683586638}
   - component: {fileID: 683586637}
   - component: {fileID: 683586636}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2518,6 +2618,10 @@ Prefab:
     - target: {fileID: 1938964497993554, guid: 6ef8b20204445c943a38dd125ebd4572, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938964497993554, guid: 6ef8b20204445c943a38dd125ebd4572, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ef8b20204445c943a38dd125ebd4572, type: 2}
@@ -3030,6 +3134,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -3238,6 +3352,10 @@ Prefab:
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938964497993554, guid: 6ef8b20204445c943a38dd125ebd4572, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ef8b20204445c943a38dd125ebd4572, type: 2}
@@ -11047,6 +11165,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -11097,6 +11225,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -11205,6 +11343,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -11228,7 +11376,7 @@ GameObject:
   - component: {fileID: 1289382046}
   - component: {fileID: 1289382045}
   - component: {fileID: 1289382044}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PingPongPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11519,7 +11667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1357660905}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11656,6 +11804,10 @@ Prefab:
         type: 2}
       propertyPath: m_Size.y
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
@@ -11993,6 +12145,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -12043,6 +12205,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -12099,6 +12271,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -12276,6 +12458,10 @@ Prefab:
       propertyPath: m_Size.y
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 1957463635730942, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99dca5e77a7fd4ffe8ffd2e90236da8c, type: 2}
   m_IsPrefabAsset: 0
@@ -12309,9 +12495,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 96293141}
   - {fileID: 222356799}
   - {fileID: 2117009105}
-  - {fileID: 96293141}
   - {fileID: 281428363}
   - {fileID: 1054465671}
   - {fileID: 885315357}
@@ -12672,6 +12858,16 @@ Prefab:
       propertyPath: m_Name
       value: Spike (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -12722,6 +12918,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -13104,7 +13310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827976061}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13133,7 +13339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1850718939}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13258,7 +13464,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: ground.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
@@ -13273,7 +13484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1909595701}
   - component: {fileID: 1909595700}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MobilePlataform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13335,7 +13546,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1909595699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.210001, y: -9.82, z: -0.19825745}
+  m_LocalPosition: {x: -17.24, y: -10.94, z: -0.19825745}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1289382043}
@@ -13386,6 +13597,16 @@ Prefab:
     - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
       propertyPath: m_Name
       value: Spike (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: knockbackForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114778745644218878, guid: 26fa63ea20e726e49a704763b88ec229,
+        type: 2}
+      propertyPath: bumpOnTopForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -13503,7 +13724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2009085471}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Objective2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13623,7 +13844,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1602011718}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142811272
 GameObject:
@@ -13634,7 +13855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142811274}
   - component: {fileID: 2142811273}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Grid
   m_TagString: NotDestructible
   m_Icon: {fileID: 0}

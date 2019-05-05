@@ -3475,7 +3475,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392634941}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plataforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18328,6 +18328,11 @@ Prefab:
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: ground.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
