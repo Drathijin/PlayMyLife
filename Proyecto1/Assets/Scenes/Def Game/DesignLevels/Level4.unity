@@ -292,6 +292,26 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1051293091712910, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681745106050378, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418190993267158, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478113306137428, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219776502432632, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
@@ -469,6 +489,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -929,6 +953,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1037,6 +1065,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -1605,6 +1637,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -1670,6 +1706,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -1787,6 +1827,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -2786,6 +2830,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -2980,6 +3028,10 @@ Prefab:
       propertyPath: timeUntilRecoveringControl
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
   m_IsPrefabAsset: 0
@@ -3123,6 +3175,26 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1051293091712910, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681745106050378, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418190993267158, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478113306137428, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219776502432632, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
@@ -3188,6 +3260,10 @@ Prefab:
         type: 2}
       propertyPath: timeUntilRecoveringControl
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073293535483086, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
+      propertyPath: m_TagString
+      value: NotDestructible
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26fa63ea20e726e49a704763b88ec229, type: 2}
@@ -3302,7 +3378,7 @@ GameObject:
   - component: {fileID: 1883820973}
   m_Layer: 11
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3358,7 +3434,7 @@ GameObject:
   - component: {fileID: 1992329944}
   m_Layer: 11
   m_Name: Objective4
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3402,7 +3478,7 @@ GameObject:
   - component: {fileID: 2075057772}
   m_Layer: 11
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2146,7 +2146,7 @@ GameObject:
   - component: {fileID: 1392634941}
   m_Layer: 11
   m_Name: Plataforms
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16519,7 +16519,7 @@ GameObject:
   - component: {fileID: 2070527399}
   m_Layer: 11
   m_Name: MobilePlataform
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
