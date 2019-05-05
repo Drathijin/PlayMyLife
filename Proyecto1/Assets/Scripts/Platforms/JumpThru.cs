@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class JumpThru : MonoBehaviour {
 
+    bool enableGoThru = true;
+
     void Update()
     {
-        if (Input.GetAxisRaw("Vertical") < 0) GoThru();
-        else if (Input.GetAxisRaw("Vertical") >= 0) Solidify();
-
+        if (enableGoThru)
+        {
+            if (Input.GetAxisRaw("Vertical") < 0) GoThru();
+            else if (Input.GetAxisRaw("Vertical") >= 0) Solidify();
+        }
     }
     void GoThru()
     {
-        if (Input.GetAxisRaw("Vertical") < 0) this.gameObject.GetComponent<Collider2D>().enabled = false;
+        this.gameObject.GetComponent<Collider2D>().enabled = false;
+        enableGoThru = false;
+        Invoke("SetAbleGoThru", 0.5f);
     }
     void Solidify()
     {
         this.gameObject.GetComponent<Collider2D>().enabled = true;
     }
+
+    void SetAbleGoThru() { enableGoThru = true; }
 }

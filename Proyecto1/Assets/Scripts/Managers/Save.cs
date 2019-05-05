@@ -9,8 +9,8 @@
     public Save( int tam, int Act, LevelState[] states) //inicializa un guardado  con todas las variables dadas
     {
         levels = new Level[tam];
-        levels[0] = new Level(0, (LevelState)2); //inicializamos el menú principal, lvl0, a victoria siempre
-        for (int i = 1; i < levels.Length; i++)
+        //levels[0] = new Level(0,(LevelState)2); //inicializamos el menú principal, lvl0, a victoria siempre
+        for (int i = 0; i < levels.Length; i++)
             levels[i] = new Level(i, states[i]);
         act = Act;
     }
@@ -18,10 +18,10 @@
     public Save(int tam) //inicializa un guardado con cada nivel bloqueado
     {
         levels = new Level[tam];
-        levels[0] = new Level(0,(LevelState)2); //inicializamos el menú principal, lvl0, a victoria siempre
-        for (int i = 1; i < levels.Length; i++)
+        //levels[0] = new Level(0,(LevelState)2); //inicializamos el menú principal, lvl0, a victoria siempre
+        for (int i = 0; i < levels.Length; i++)
             levels[i] = new Level(i);
-        act = 2; //el índice 0 es el del menu, queremos que empiece a cargar desde el nivel 1
+        act = 0; 
     }
 
     // -----FinDConstructores----- //

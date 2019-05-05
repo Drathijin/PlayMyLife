@@ -42,6 +42,7 @@ public class DestroyPlatform : MonoBehaviour {
     //"rompe" la plataforma e invoca regeneración
     public void BreakObject()
     {
+        anim = false;
         gameObject.SetActive(false);
         //si la plataforma se regenera, invoca la regeneración tras <timeUntilRegen> segundos
         if(regenerates) Invoke("Regenerate", timeUntilRegen);
@@ -52,7 +53,7 @@ public class DestroyPlatform : MonoBehaviour {
     {
         Color temp;
         temp = spr.color;
-        temp.a = 255;
+        temp.a = 1;
         spr.color = temp;
         gameObject.SetActive(true);
     }
