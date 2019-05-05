@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("ableToJump", ableToJump);
     }
-
+    /*
     //auxiliar para debug del salto
     private void OnDrawGizmos()
     {
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * transform.localScale.y / 2)),
                         new Vector2(collider.size.x * transform.localScale.x / 2, 0.05f));
     }
-
+    */
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
     {

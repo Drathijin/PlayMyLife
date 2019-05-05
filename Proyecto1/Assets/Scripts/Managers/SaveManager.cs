@@ -18,6 +18,7 @@ public class SaveManager : MonoBehaviour
     private void Start()
     {
         GameManager.instance.SetSaveManager(this);
+        print(currentGame);
     }
 
     /// <summary>
@@ -73,5 +74,6 @@ public class SaveManager : MonoBehaviour
     {
         File.Delete(dir);
         currentGame = new Save(LVLS);
+        SaveGame();
     }
 }

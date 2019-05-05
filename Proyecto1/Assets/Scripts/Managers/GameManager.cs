@@ -61,12 +61,12 @@ public class GameManager : MonoBehaviour
 
     public void FinishLevel(bool win)
     {
-        theUIManager.FinishLevel(win, theSaveManager.GetAct());
+        theUIManager.FinishLevel(win, theSaveManager.GetAct()+2); //al sumar dos ignoramos el menu y el tutorial
         if (!win) Invoke("Pause", 1.5f);
         else Invoke("Pause", 0);
 
         // provisional, es para que funcione el tutorial
-        if (SceneManager.GetActiveScene().name != "Tutorial")
+        if (SceneManager.GetActiveScene().name != "Tutorial" && SceneManager.GetActiveScene().name != "Menu")
         {
             theSaveManager.FinishLevel(win);
             theSaveManager.SaveGame();
