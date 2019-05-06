@@ -180,7 +180,7 @@ Prefab:
     - target: {fileID: 212539295709792308, guid: 4911e04a11fd4154b92992f4075f47be,
         type: 2}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.65882355
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4911e04a11fd4154b92992f4075f47be, type: 2}
