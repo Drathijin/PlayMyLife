@@ -685,7 +685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Enemigos restantes: 7'
 --- !u!114 &114502056635957882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1163,10 +1163,10 @@ RectTransform:
   m_Father: {fileID: 224250290003623324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -190}
-  m_SizeDelta: {x: 265.1, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -190}
+  m_SizeDelta: {x: -758.9, y: -718}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224079011755197318
 RectTransform:
@@ -1302,7 +1302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -74, y: -54}
+  m_AnchoredPosition: {x: -68, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224426833572316786
@@ -1354,10 +1354,10 @@ RectTransform:
   m_Father: {fileID: 224250290003623324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 179.45, y: -58.34}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -332.55, y: 325.66}
+  m_SizeDelta: {x: -624, y: -668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224564760683057516
 RectTransform:

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class OnPlayerContact : MonoBehaviour
 {
-    public AudioManager audioManager;
-    public bool dies, bumpOnTop, onlyOnceAudio=true;
+    public bool dies, bumpOnTop;
     public float knockbackForce, bumpOnTopForce;
     public float timeUntilRecoveringControl; //tiempo que dura el knockBack
     private MakeDamage mDamage;
@@ -34,12 +33,7 @@ public class OnPlayerContact : MonoBehaviour
                 if (kb != null) kb.BumpOnTop(-contact.normal, bumpOnTopForce);
                 if (dies)
                 {
-                    GameManager.instance.KillEnemy();
-                    if (onlyOnceAudio)
-                    {
-                        onlyOnceAudio = false;
-                        audioManager.PlayClip(this.gameObject);
-                    }
+                    KillMe();
                 }
             }
 
@@ -52,5 +46,12 @@ public class OnPlayerContact : MonoBehaviour
             }
         }
         if (killThis != null) killThis.GetDestroyed();
+    }
+    public void KillMe()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().enabled =false;
+        this.gameObject.GetComponent<Collider2D>().enabled =false;
+        AudioManager.instance.PlayClip(this.gameObject);
+        GameManager.instance.KillEnemy();
     }
 }
