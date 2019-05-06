@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;
     UIManager theUIManager;
     WinManager theWinManager;
-    //AudioManager theAudioManager;
     SaveManager theSaveManager;
 
 
@@ -35,11 +34,6 @@ public class GameManager : MonoBehaviour
         theUIManager.StartLevel();
 
     }
-
-    /*public void SetAudioManager(AudioManager AudioManager)
-    {
-        theAudioManager = AudioManager;
-    }*/
 
     public void SetWinManager(WinManager winMan)
     {
@@ -105,15 +99,6 @@ public class GameManager : MonoBehaviour
         theSaveManager.NewSave();
         LoadLevel(2); //empieza en la escena 2 porque la 1 es el men� principal
     }
-    /*public void SetVolume(float volume)
-    {
-        theAudioManager.SaveVolume(volume);
-    }
-
-    public void PlayClip(string name)
-    {
-        theAudioManager.Play(name);
-    }*/
 
     public void Pause() 
     {

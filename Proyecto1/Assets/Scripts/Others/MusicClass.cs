@@ -2,11 +2,31 @@
  
  public class MusicClass : MonoBehaviour
  {
-     private AudioSource _audioSource;
+     public AudioSource _audioSource;
      private void Awake()
-     {
-         DontDestroyOnLoad(transform.gameObject);
-         _audioSource = GetComponent<AudioSource>();
+     {   
+        MusicClass mC = null;
+        try
+        {
+            GameObject audio = GameObject.FindGameObjectWithTag("Music");
+            mC = audio.GetComponent<MusicClass>();
+            if(mC._audioSource.isPlaying)
+                Destroy(this.gameObject);
+            else
+            {
+                DontDestroyOnLoad(transform.gameObject);
+                _audioSource = GetComponent<AudioSource>();
+                PlayMusic();
+            }
+        }
+        catch
+        {
+            DontDestroyOnLoad(transform.gameObject);
+            _audioSource = GetComponent<AudioSource>();
+            PlayMusic();
+        }
+
+
      }
  
      public void PlayMusic()

@@ -29,10 +29,23 @@ public class ShootDamage : MonoBehaviour {
                 catch (Exception e)
                 {
                     print("Enemigo sin PlayerContact" + e);
-                    
+                    Destroy(collision.gameObject);
                 }
             }
         }
-        Destroy(this.gameObject);
+        KillMe();
+    }
+    private void KillMe()
+    {
+        this.GetComponent<Collider2D>().enabled=false;
+        this.GetComponent<SpriteRenderer>().enabled=false;
+        try
+        {
+            AudioManager.instance.PlayClip(this.gameObject);
+        }
+        catch
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -6,12 +6,22 @@ public class DestroyOnTrigger : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(this.gameObject);
         if (this.gameObject.tag == "Collectable") CountUp();
     }
 
-    static void CountUp()
+    private void CountUp()
     {
         GameManager.instance.AddCollectable();        
+        try
+        {
+            this.GetComponent<Collider2D>().enabled=false;
+            this.GetComponent<SpriteRenderer>().enabled=false;
+            AudioManager.instance.PlayClip(this.gameObject);
+        }
+        catch (System.Exception e)
+        {
+            Destroy(this.gameObject);
+            print(e);
+        }
     }
 }

@@ -49,9 +49,18 @@ public class OnPlayerContact : MonoBehaviour
     }
     public void KillMe()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().enabled =false;
-        this.gameObject.GetComponent<Collider2D>().enabled =false;
-        AudioManager.instance.PlayClip(this.gameObject);
+
+        try
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().enabled =false;
+            this.gameObject.GetComponent<Collider2D>().enabled =false;
+            AudioManager.instance.PlayClip(this.gameObject);
+        }
+        catch (System.Exception e)
+        {
+            Destroy(this.gameObject);
+            print(e);
+        }
         GameManager.instance.KillEnemy();
     }
 }

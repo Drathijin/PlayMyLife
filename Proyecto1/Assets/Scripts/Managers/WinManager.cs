@@ -62,13 +62,21 @@ public class WinManager : MonoBehaviour
 
     public void PlayEndSound(bool w)
     {
-        if (w)
+        
+        try
         {
-            AudioManager.instance.PlayClip(winSound);
+            if (w)
+            {
+                AudioManager.instance.PlayClip(winSound);
+            }
+            else 
+            {
+                AudioManager.instance.PlayClip(loseSound);
+            }
         }
-        else 
+        catch (System.Exception e)
         {
-            AudioManager.instance.PlayClip(loseSound);
+            print(e);
         }
     }
 
