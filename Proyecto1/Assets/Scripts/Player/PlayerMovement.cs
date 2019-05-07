@@ -66,13 +66,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    //auxiliar para debug del salto
+    /*//auxiliar para debug del salto
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawCube(new Vector2(transform.position.x, transform.position.y - (collider.size.y * transform.lossyScale.y / 2)),
                         new Vector2(collider.size.x * transform.lossyScale.x / 2, 0.1f));
-    }
+    }*/
 
     //Declaramos la velocidad del jugador en el eje X y en el eje Y
     void FixedUpdate()
