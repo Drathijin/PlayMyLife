@@ -90,23 +90,25 @@ public class WinManager : MonoBehaviour
 
     private bool GetCheat(out bool _cheat) //Con L+O o W+I superas los niveles de manera instantanea para testeos.
     {
-        if(Input.GetKey(KeyCode.L) && Input.GetKey(KeyCode.O))
-        {
-            _cheat = false;
-            return true;
-        }
-        if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.I))
-        {
-            _cheat = true;
-            return true;
-        }
-        if(Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.R))
+        if(Input.GetKey(KeyCode.R) && Input.GetKey(KeyCode.LeftAlt))
         {
             print("reload");
+            Destroy(this.gameObject);
             GameManager.instance.Reload();
             _cheat = false;
             return false;
         }
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.L))
+        {
+            _cheat = false;
+            return true;
+        }
+        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.W))
+        {
+            _cheat = true;
+            return true;
+        }
+
         _cheat = false;
         return false;
     }
