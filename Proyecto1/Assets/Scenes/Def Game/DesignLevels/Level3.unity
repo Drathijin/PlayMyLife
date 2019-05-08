@@ -3590,6 +3590,22 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114370642195493950, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: "\xA1Llegas tarde a clase!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114543189054932036, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: "El despertador no te ha sonado essta ma\xF1ana (en realidad s\xED que
+        lo ha hecho, pero las s\xE1banas estaban muy calentitas)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114498762326469822, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0

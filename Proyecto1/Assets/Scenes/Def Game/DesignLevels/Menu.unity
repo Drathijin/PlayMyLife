@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2707037, y: 0.25081933}
   m_AnchorMax: {x: 1, y: 0.40800002}
-  m_AnchoredPosition: {x: 255.13165, y: 3.2277608}
+  m_AnchoredPosition: {x: 255.13167, y: 3.2277606}
   m_SizeDelta: {x: 355.89658, y: 61.06092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2936136
@@ -713,7 +713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 142.5, y: -12.5}
+  m_AnchoredPosition: {x: 142.50005, y: -12.5}
   m_SizeDelta: {x: 375, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412998089
@@ -910,7 +910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26459262, y: 0.8167767}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 253.64058, y: -14.974537}
+  m_AnchoredPosition: {x: 253.6406, y: -14.974537}
   m_SizeDelta: {x: 358.87878, y: 71.98716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585650387
@@ -1277,7 +1277,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: cebe032d9ee5fb248b44d0782ebb17c8, type: 3}
-    m_FontSize: 65
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2330,10 +2330,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: cebe032d9ee5fb248b44d0782ebb17c8, type: 3}
-    m_FontSize: 65
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 80
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -3560,7 +3560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26881486, y: 0.44612798}
   m_AnchorMax: {x: 1, y: 0.6054894}
-  m_AnchoredPosition: {x: 254.67079, y: -0.3185637}
+  m_AnchoredPosition: {x: 254.67078, y: -0.3185637}
   m_SizeDelta: {x: 356.81833, y: 62.868046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1900124131

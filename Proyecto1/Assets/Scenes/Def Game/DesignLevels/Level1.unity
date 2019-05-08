@@ -1098,6 +1098,52 @@ Prefab:
       propertyPath: m_AnchorMin.x
       value: 0.883
       objectReference: {fileID: 0}
+    - target: {fileID: 114370642195493950, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: Primer Recreo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114543189054932036, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: Explora y busca un sitio para comerte el bocata antes de que termine
+        el recreo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114498762326469822, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1520187336}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1520187329}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 352189191}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetSelectedGameObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
@@ -2487,6 +2533,18 @@ Transform:
   m_Father: {fileID: 1392634941}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1520187329 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114244864689488990, guid: 28943edf9dbb34378a0c789ee187e18d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122500090}
+  m_Script: {fileID: 11500000, guid: 2ca6b9f55a257dd48a8ce623ca4c0a88, type: 3}
+--- !u!114 &1520187336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122500090}
+  m_Script: {fileID: 11500000, guid: e13411f284de2429cb4d27dd34a2880f, type: 3}
 --- !u!4 &1523072408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208591058710766, guid: 1ba9fbecbb0b0364196c4b822d8fab26,
@@ -16886,6 +16944,16 @@ Prefab:
         type: 2}
       propertyPath: ground.m_Bits
       value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 114244864689488990, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
