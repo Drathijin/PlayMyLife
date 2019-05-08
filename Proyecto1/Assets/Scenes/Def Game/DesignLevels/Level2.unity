@@ -14032,62 +14032,62 @@ Prefab:
     - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.87663263
       objectReference: {fileID: 0}
     - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.36400002
       objectReference: {fileID: 0}
     - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -332.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 325.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -624
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224506080043379298, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -668
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0.8791407
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.86322075
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.98200005
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.9811837
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224055099193680984, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -14127,12 +14127,12 @@ Prefab:
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -52
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224315776438777270, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -60
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -14179,6 +14179,14 @@ Prefab:
       propertyPath: m_Text
       value: "Tu hermano ha hecho una fiesta y no te ha invitado. \xA1P\xE1rtele la
         nariz a \xE9l y a todos sus invitados!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747795165695122, guid: e7c2357751615944c9988138192854f7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769806739777690, guid: e7c2357751615944c9988138192854f7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
