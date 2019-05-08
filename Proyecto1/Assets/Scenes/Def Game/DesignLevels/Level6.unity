@@ -304,6 +304,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114374105697719622, guid: 1b562ca10888b0f438add9bc7ae3cb4b,
+        type: 2}
+      propertyPath: winOnTimeOut
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b562ca10888b0f438add9bc7ae3cb4b, type: 2}
   m_IsPrefabAsset: 0

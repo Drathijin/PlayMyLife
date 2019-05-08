@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winOnTimeOut: 0
-  maxSeconds: 5
+  maxSeconds: 60
   maxCollectables: -1
   maxKills: -1
   winSound: {fileID: 1236494082}
