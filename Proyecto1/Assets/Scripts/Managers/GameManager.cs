@@ -110,6 +110,6 @@ public class GameManager : MonoBehaviour
     }
     public void Reload()
     {
-        ChangeScene(SceneManager.GetActiveScene().ToString());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

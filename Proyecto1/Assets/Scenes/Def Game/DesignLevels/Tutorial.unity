@@ -19307,20 +19307,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
-        type: 2}
-      propertyPath: ground.m_Bits
-      value: 2048
-      objectReference: {fileID: 0}
-    - target: {fileID: 212199794916374248, guid: 28943edf9dbb34378a0c789ee187e18d,
-        type: 2}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1616797708888858, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
   m_IsPrefabAsset: 0
