@@ -108,4 +108,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
+    public void Reload()
+    {
+        ChangeScene(SceneManager.GetActiveScene().ToString());
+    }
 }

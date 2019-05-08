@@ -57,6 +57,13 @@ public class WinManager : MonoBehaviour
     }
     private void FinishLevel(bool w)
     {
+        GameObject player=null;
+        try
+        {
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<PlayerMovement>().enabled = false;
+        }
+        catch{print(player);}
         GameManager.instance.FinishLevel(w);
     }
 
@@ -86,10 +93,18 @@ public class WinManager : MonoBehaviour
         {
             _cheat = false;
             return true;
-        } if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.I))
+        }
+        if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.I))
         {
             _cheat = true;
             return true;
+        }
+        if(Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.R))
+        {
+            print("reload");
+            GameManager.instance.Reload();
+            _cheat = false;
+            return false;
         }
         _cheat = false;
         return false;
