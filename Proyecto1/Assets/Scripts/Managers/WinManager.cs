@@ -62,6 +62,7 @@ public class WinManager : MonoBehaviour
         {
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<PlayerShoot>().enabled = false;
         }
         catch{print(player);}
         GameManager.instance.FinishLevel(w);

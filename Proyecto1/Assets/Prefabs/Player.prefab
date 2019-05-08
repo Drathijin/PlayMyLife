@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 95506899106033902}
   m_Layer: 10
   m_Name: Shield
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1077830612163412}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: -4.5, y: 9.1, z: 0.17610061}
   m_LocalScale: {x: 0.15, y: 0.14, z: 1}
   m_Children:
   - {fileID: 4886980682581062}
@@ -302,6 +302,9 @@ MonoBehaviour:
   height: 5
   dashDecreaseRate: 0.95
   impulseOnDash: 2
+  ground:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!212 &212100937337530286
 SpriteRenderer:
   m_ObjectHideFlags: 1
