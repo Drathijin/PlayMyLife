@@ -16284,6 +16284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4453d99ab9f4fa84f950d6d05e47a4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSound: {fileID: 0}
   clock: {fileID: 1358575198}
   scoreText: {fileID: 0}
   timeoutText: {fileID: 0}
@@ -18272,6 +18273,11 @@ Prefab:
     - target: {fileID: 4282758748997458, guid: 1b562ca10888b0f438add9bc7ae3cb4b, type: 2}
       propertyPath: m_LocalPosition.y
       value: -9.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 82461096195189438, guid: 1b562ca10888b0f438add9bc7ae3cb4b,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b562ca10888b0f438add9bc7ae3cb4b, type: 2}
