@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public AudioClip buttonSound;
     public Image clock;
 
     public Text scoreText, timeoutText, collected, winOrLose, regenSOZ;
@@ -123,4 +124,7 @@ public class UIManager : MonoBehaviour
         panel.SetActive(true);
     }
     public float GetTime() {return timeToDisable; }
+    public void PlaySoundButton(){
+        AudioManager.instance.PlayClip(buttonSound);
+    }
 }

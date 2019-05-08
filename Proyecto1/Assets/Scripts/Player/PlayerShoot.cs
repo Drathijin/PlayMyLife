@@ -12,6 +12,7 @@ public class PlayerShoot : MonoBehaviour {
     private Transform arm;
     private GameObject bulletpool; //objeto padre de las balas, para mantener organización
     private bool disparoActv; //activa y desactiva la capacidad de disparar del jugador
+    Player_Audio audioController;
 
 
     void Start()
@@ -19,6 +20,14 @@ public class PlayerShoot : MonoBehaviour {
         bulletpool = GameObject.Find("BulletPool"); //busca al padre de las balas
         disparoActv = true;
         arm = transform.GetChild(1);
+        try
+        {
+            audioController = GetComponentInChildren<Player_Audio>();
+        }
+        catch
+        {
+            print("no se encuentra Player_Audio en los hijos");
+        }
     }
 
     //si se pulsa la tecla de disparo (Edit-->Input-->Axis-->Fire1) y el cooldown está inactivo, dispara
@@ -28,6 +37,7 @@ public class PlayerShoot : MonoBehaviour {
         {
             Invoke("Cooldown", cooldown);
             arm.GetComponent<Animator>().SetBool("IsShooting", true);
+            audioController.PlayShoot();
             disparoActv = false;
             ShootBullet();
         }

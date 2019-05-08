@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     float speedX, jumpForce, dashAcc = 0, count = 0, dashCoolDown = 0.1f;
     Rigidbody2D rb;
     Animator animator;
+    Player_Audio audioController;
     BoxCollider2D collider;
 
     //Obtenemos el Rigidbody del jugador para modificar su velocidad
@@ -18,6 +19,14 @@ public class PlayerMovement : MonoBehaviour
         collider = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        try
+        {
+            audioController = GetComponentInChildren<Player_Audio>();
+        }
+        catch
+        {
+            print("no se encuentra Player_Audio en los hijos");
+        }
     }
 
     //En el Update() declaramos los "controles" del jugador, para desplazarse en el eje X y para saltar en el eje Y
@@ -88,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
             jumpForce = Mathf.Sqrt(height * -2 * Physics2D.gravity.y * rb.gravityScale);
             //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            audioController.PlayJump();
             jump = false;
         }
 

@@ -1144,6 +1144,17 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
       value: SetSelectedGameObject
       objectReference: {fileID: 0}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 114758683811351722, guid: f527cb7015fb96e42b8ac2b8b333e5db,
+        type: 2}
+    - target: {fileID: 114162333516245406, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
@@ -16595,14 +16606,6 @@ CompositeCollider2D:
         Y: -100000000
       - X: 140000000
         Y: -100000000
-    - - X: 380000000
-        Y: -40000000
-      - X: 210000000
-        Y: -40000000
-      - X: 210000000
-        Y: -70000000
-      - X: 380000000
-        Y: -70000000
     - - X: 580000000
         Y: -160000000
       - X: 760000000
@@ -16635,6 +16638,14 @@ CompositeCollider2D:
         Y: -270000000
       - X: 580000000
         Y: -270000000
+    - - X: 380000000
+        Y: -40000000
+      - X: 210000000
+        Y: -40000000
+      - X: 210000000
+        Y: -70000000
+      - X: 380000000
+        Y: -70000000
   m_CompositePaths:
     m_Paths:
     - - {x: 14, y: 3}
@@ -16647,10 +16658,6 @@ CompositeCollider2D:
       - {x: 10, y: -8}
       - {x: 10, y: -10}
       - {x: 14, y: -10}
-    - - {x: 38, y: -4}
-      - {x: 21, y: -4}
-      - {x: 21, y: -7}
-      - {x: 38, y: -7}
     - - {x: 58, y: -16}
       - {x: 76, y: -16}
       - {x: 76, y: -4}
@@ -16667,6 +16674,10 @@ CompositeCollider2D:
       - {x: -9, y: -16}
       - {x: -9, y: -27}
       - {x: 58, y: -27}
+    - - {x: 38, y: -4}
+      - {x: 21, y: -4}
+      - {x: 21, y: -7}
+      - {x: 38, y: -7}
   m_VertexDistance: 0.0005
 --- !u!50 &1877872249
 Rigidbody2D:
@@ -16939,21 +16950,6 @@ Prefab:
     - target: {fileID: 4026667858073894, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
-        type: 2}
-      propertyPath: ground.m_Bits
-      value: 2048
-      objectReference: {fileID: 0}
-    - target: {fileID: 114244864689488990, guid: 28943edf9dbb34378a0c789ee187e18d,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114799260330828842, guid: 28943edf9dbb34378a0c789ee187e18d,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28943edf9dbb34378a0c789ee187e18d, type: 2}

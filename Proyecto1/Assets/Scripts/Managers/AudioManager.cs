@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour {
     public AudioSetting[] audioSettings;
     public AudioMixer masterMixer;
     private AudioObject currentClip = null;
-    private AudioSource currentSong = null;
+    private AudioSource defaultPlayer = null;
     static public AudioManager instance = null;
 
     private void Awake()
@@ -26,10 +26,12 @@ public class AudioManager : MonoBehaviour {
 
         for (int i=0; i< audioSettings.Length; i++)
         {
-
             audioSettings[i].SetAudioManager(this);
             audioSettings[i].Initialize();
         }
+        try{
+            defaultPlayer = this.GetComponent<AudioSource>();
+        }catch{print("no se encuentra audiosource");}
     }
 
 #region Cambiar volumen de las pistas
@@ -68,33 +70,23 @@ public class AudioManager : MonoBehaviour {
         audio.Play();
         Destroy(gO, audio.clip.length);
     }
-        public void PlayClip(AudioSource aS)
+    public void PlayClip(AudioSource aS)
     {
         aS.Play();
         Destroy(aS.gameObject, aS.clip.length);
     }
-#endregion
-#region Música
-    public void SetSong(AudioSource song)
+    public void PlayClip(AudioClip clip)
     {
-        if(currentSong==null)
-        {
-            currentSong = song;
-            PlaySong(song);
-        }
+        defaultPlayer.clip = clip;
+        defaultPlayer.Play();
+        Invoke("ResetAudioClip", clip.length);
     }
 
-    private void PlaySong(AudioSource aS)
+    private void ResetAudioClip()
     {
-        aS.loop = true;
-        aS.Play();
+        defaultPlayer.clip = null;
     }
-    public void ResetSong()
-    {
-        currentSong.Stop();
-        currentSong=null;
-    }
-#endregion
+    #endregion
 }
 
 [System.Serializable]

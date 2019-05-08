@@ -12,6 +12,8 @@ public class PlayerDamage : MonoBehaviour
     bool shield = true;
     Shield shieldObject;
     Animator animator, armAnim;
+    Player_Audio audioController;
+
 
     void Start()
     {
@@ -19,6 +21,14 @@ public class PlayerDamage : MonoBehaviour
         shieldObject = GetComponentInChildren<Shield>();
         animator = GetComponent<Animator>();
         armAnim = transform.GetChild(1).GetComponent<Animator>();
+        try
+        {
+            audioController = GetComponentInChildren<Player_Audio>();
+        }
+        catch
+        {
+            print("no se encuentra Player_Audio en los hijos");
+        }
     }
 
     private void Update()
@@ -40,6 +50,7 @@ public class PlayerDamage : MonoBehaviour
         animator.SetBool("IsDead", true);
         armAnim.SetBool("IsDead", true);
         shieldObject.SetActive(false);
+        audioController.PlayDead();
 
         gameObject.GetComponent<PlayerMovement>().enabled = false; // desactiva el movimiento del jugador
         gameObject.GetComponent<PlayerShoot>().enabled = false; // desactiva el disparo del jugador
@@ -62,7 +73,7 @@ public class PlayerDamage : MonoBehaviour
             animator.SetBool("IsDamaged", true);
             armAnim.SetBool("IsDamaged", true);
             animTime = 0;
-
+            audioController.PlayDamage();
         }
         else PlayerDead();
         //animator matame
