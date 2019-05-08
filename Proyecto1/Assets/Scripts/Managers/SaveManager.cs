@@ -33,6 +33,8 @@ public class SaveManager : MonoBehaviour
         int i = 0;
         while (!reader.EndOfStream)
         {
+        print("asdsa");
+
             string[] line = reader.ReadLine().Split(' ');
             LevelState redState = (LevelState)Enum.Parse(typeof(LevelState), line[0]);
             Level newLevel = new Level(i, redState, char.Parse(line[1]));
@@ -40,6 +42,7 @@ public class SaveManager : MonoBehaviour
             i++;
         }
         int act = save.FindAct();
+        print(act);
         save.SetAct(act);
         reader.Close();
         return save;

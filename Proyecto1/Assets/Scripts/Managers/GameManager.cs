@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
     public void LoadGame()
     {
         theSaveManager.LoadGame();
-        LoadLevel(theSaveManager.GetAct());
+        LoadLevel(theSaveManager.GetAct()+2);
     }
     public void NewGame()
     {

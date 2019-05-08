@@ -31,7 +31,6 @@ public class GameStatus : MonoBehaviour {
     void GetStates()
     {
         StreamReader reader = new StreamReader(dir);
-        reader.ReadLine(); //Ignora el primer nivel (menú) del guardado
         for(int i = 0; i < lvlStates.Length; i++)
         {
             string[] line = reader.ReadLine().Split(' ');
