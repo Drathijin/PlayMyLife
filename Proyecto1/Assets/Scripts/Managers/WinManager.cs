@@ -63,6 +63,11 @@ public class WinManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         player.GetComponent<PlayerMovement>().enabled = false;
         player.GetComponent<PlayerShoot>().enabled = false;
+            if(!w)
+            {
+                player.GetComponent<Animator>().SetBool("IsDead",true);
+                player.GetComponentInChildren<Animator>().SetBool("IsDead",true);
+            }
         }
         catch{print(player);}
         GameManager.instance.FinishLevel(w);
@@ -77,15 +82,20 @@ public class WinManager : MonoBehaviour
             {
                 AudioManager.instance.PlayClip(winSound);
             }
-            else 
+            else
             {
-                AudioManager.instance.PlayClip(loseSound);
+                Invoke("LoseSound", GameManager.instance.GetLoseTime());
             }
         }
         catch (System.Exception e)
         {
             print(e);
         }
+    }
+
+    private void LoseSound()
+    {
+        AudioManager.instance.PlayClip(loseSound);
     }
 
     private bool GetCheat(out bool _cheat) //Con L+O o W+I superas los niveles de manera instantanea para testeos.

@@ -26,10 +26,11 @@ public class AudioManager : MonoBehaviour {
 
         for (int i=0; i< audioSettings.Length; i++)
         {
-            audioSettings[i].SetAudioManager(this);
+            //audioSettings[i].SetAudioManager(this);
             audioSettings[i].Initialize();
         }
-        try{
+        try
+        {
             defaultPlayer = this.GetComponent<AudioSource>();
         }catch{print("no se encuentra audiosource");}
     }
@@ -95,12 +96,6 @@ public class AudioSetting
     
     public Slider slider;
     public string parameterName;
-    AudioManager theAudioManager;
-    public void SetAudioManager(AudioManager AudioManager)
-    {
-        theAudioManager = AudioManager;
-        
-    }
 
     /// <summary>
     /// Inicializamos los valores para el audioMixer
@@ -117,7 +112,7 @@ public class AudioSetting
     /// </summary>
     public void SetVolume(float value)
     {
-        theAudioManager.masterMixer.SetFloat(parameterName, value);
+        AudioManager.instance.masterMixer.SetFloat(parameterName, value);
         PlayerPrefs.SetFloat(parameterName, value);
     }
 }

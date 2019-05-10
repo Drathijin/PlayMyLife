@@ -88,7 +88,7 @@ public class UIManager : MonoBehaviour
 
     public void FinishLevel(bool win, int level)
     {
-        if (!win) Invoke("EnablePanel", 1.5f);
+        if (!win) Invoke("EnablePanel", GameManager.instance.GetLoseTime());
         else Invoke("EnablePanel", 0f);
         if (win) winOrLose.text = "Has ganado";
         else winOrLose.text = "Has perdido";

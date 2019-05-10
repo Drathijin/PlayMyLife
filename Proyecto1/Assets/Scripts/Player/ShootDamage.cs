@@ -7,7 +7,7 @@ public class ShootDamage : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag != "NotDestructible")
+        //if (collision.gameObject.tag != "NotDestructible")
         {
             if (collision.gameObject.tag == "BreakWall")
             {
@@ -15,14 +15,18 @@ public class ShootDamage : MonoBehaviour {
                 if (wall != null)
                 {
                     wall.SetTrigger("Open");
+                    AudioSource a;
                     try
                     {
-                        AudioManager.instance.PlayClip(collision.gameObject.GetComponent<AudioSource>().clip);
+                        a =collision.gameObject.GetComponent<AudioSource>();
+                        AudioManager.instance.PlayClip(a.clip);
                     }
-                    catch {print("Puertas sin audio");}
+                    catch (System.Exception e){print("Puertas sin audio" +e);}
                 }
             }
-            else
+            else 
+            if (collision.gameObject.tag == "Enemy")
+
             {
                 // Es un código simple para PlayerBullet, destruya todo lo que se va a colisionar. Entonces hay que hace que la máscara 
                 // de colisión de Playerbullet solo pueda colisionar con breakWall y Enemy.

@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     UIManager theUIManager;
     WinManager theWinManager;
     SaveManager theSaveManager;
+    const float loseTime = 0.8f;
 
 
     private void Awake()
@@ -16,6 +17,10 @@ public class GameManager : MonoBehaviour
         if (instance == null) { instance = this; }
         else { Destroy(this.gameObject); }
 
+    }
+    private void Start()
+    {
+        
     }
     private void Update()
     {
@@ -57,7 +62,7 @@ public class GameManager : MonoBehaviour
     {
         theWinManager.PlayEndSound(win);
         theUIManager.FinishLevel(win, theSaveManager.GetAct()+2); //al sumar dos ignoramos el menu y el tutorial
-        if (!win) Invoke("Pause", 1.5f);
+        if (!win) Invoke("Pause", loseTime);
         else Invoke("Pause", 0);
 
         // provisional, es para que funcione el tutorial
@@ -95,6 +100,7 @@ public class GameManager : MonoBehaviour
     {
         theSaveManager.LoadGame();
         LoadLevel(theSaveManager.GetAct()+2);
+        print(theSaveManager.GetAct());
     }
     public void NewGame()
     {
@@ -114,4 +120,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public float GetLoseTime() {return loseTime;}
+
 }

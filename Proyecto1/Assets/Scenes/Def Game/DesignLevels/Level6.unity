@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb3ce047977ab3b40a6b381d052336ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  category: 97
+  category: 102
 --- !u!1001 &253903301
 Prefab:
   m_ObjectHideFlags: 0
@@ -4025,7 +4025,7 @@ Prefab:
     - target: {fileID: 224145002311343890, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 6.2
+      value: 6.200012
       objectReference: {fileID: 0}
     - target: {fileID: 224145002311343890, guid: e7c2357751615944c9988138192854f7,
         type: 2}

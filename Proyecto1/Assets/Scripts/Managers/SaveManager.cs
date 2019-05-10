@@ -16,7 +16,7 @@ public class SaveManager : MonoBehaviour
     {
         currentGame = LoadGame();
         if (SceneManager.GetActiveScene().name != "Tutorial" && SceneManager.GetActiveScene().name != "Menu"
-        && SceneManager.GetActiveScene().name != "ListsOfLevels" && SceneManager.GetActiveScene().name != "GameEnding")
+        && SceneManager.GetActiveScene().name != "ListOfLevels" && SceneManager.GetActiveScene().name != "GameEnding")
             SetActToScene();
     }
 

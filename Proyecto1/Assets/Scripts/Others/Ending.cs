@@ -40,7 +40,6 @@ public class Ending : MonoBehaviour {
     {
         StreamReader file = new StreamReader(dir);
         string line;
-        file.ReadLine(); //para que se salte lo del menú
         while (!file.EndOfStream)
         {
             line = file.ReadLine();
