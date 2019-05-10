@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 27584095}
   - component: {fileID: 27584094}
   - component: {fileID: 27584093}
+  - component: {fileID: 27584099}
   m_Layer: 11
   m_Name: "Plataforma fr\xE1gil prueba"
   m_TagString: NotDestructible
@@ -183,7 +184,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 6200000, guid: bbe0f61220359fd4eb6918b8b0095b88, type: 2}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -276,6 +277,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!251 &27584099
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27584091}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &37090056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,7 +1919,7 @@ GameObject:
   - component: {fileID: 1147055025}
   - component: {fileID: 1147055024}
   - component: {fileID: 1147055023}
-  - component: {fileID: 1147055029}
+  - component: {fileID: 1147055030}
   m_Layer: 11
   m_Name: "Plataforma m\xF3vil"
   m_TagString: NotDestructible
@@ -1957,7 +1976,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 6200000, guid: bbe0f61220359fd4eb6918b8b0095b88, type: 2}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -2050,17 +2069,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1147055029
-MonoBehaviour:
+--- !u!251 &1147055030
+PlatformEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147055021}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3db71b3f2d1fa4350a5ce368cabe51ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1001 &1193031862
 Prefab:
   m_ObjectHideFlags: 0

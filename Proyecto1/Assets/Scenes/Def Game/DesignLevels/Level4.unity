@@ -312,9 +312,37 @@ Prefab:
       propertyPath: m_TagString
       value: NotDestructible
       objectReference: {fileID: 0}
+    - target: {fileID: 61061675581760382, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &68190228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1219776502432632, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 68190227}
+--- !u!251 &68190229
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68190228}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1001 &112837313
 Prefab:
   m_ObjectHideFlags: 0
@@ -3553,9 +3581,37 @@ Prefab:
       propertyPath: m_TagString
       value: NotDestructible
       objectReference: {fileID: 0}
+    - target: {fileID: 61061675581760382, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5788cacbb9d7b4533a4bbf94518499dc, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1841057871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1219776502432632, guid: 5788cacbb9d7b4533a4bbf94518499dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1841057870}
+--- !u!251 &1841057872
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1841057871}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!4 &1855149683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4303066706735648, guid: 26fa63ea20e726e49a704763b88ec229,

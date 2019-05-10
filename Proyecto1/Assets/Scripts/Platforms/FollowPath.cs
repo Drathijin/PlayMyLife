@@ -55,7 +55,7 @@ public class FollowPath : MonoBehaviour
         // si colisionas por la parte de abajo, y el objeto esta descendiendo
         if (Mathf.Approximately(Vector2.Angle(collision.GetContact(0).normal, transform.up), 0) && direc.y < 0)
         {
-            GoBack(); // ve hacia atras
+            //GoBack(); // ve hacia atras
         }
     }
 
