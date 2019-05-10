@@ -3619,7 +3619,7 @@ Prefab:
     - target: {fileID: 114498762326469822, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_Text
-      value: 
+      value: Llegas tarde a clase
       objectReference: {fileID: 0}
     - target: {fileID: 114506903830352256, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -3756,6 +3756,11 @@ Prefab:
       propertyPath: buttonSound
       value: 
       objectReference: {fileID: 8300000, guid: 8c794c53bbcd64a0ead421505676176c, type: 3}
+    - target: {fileID: 114495356667840942, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0

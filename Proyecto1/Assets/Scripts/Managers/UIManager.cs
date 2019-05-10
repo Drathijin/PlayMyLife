@@ -6,12 +6,14 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    const int blinker = 15; 
     public AudioClip buttonSound;
     public Image clock;
 
     public Text scoreText, timeoutText, collected, winOrLose, regenSOZ;
     public GameObject panel, initialPanel;
     int nextLevel;
+    int currentBlinker = 0;
     float timeToDisable = 0.05f;
     bool highlightedText;
     //int playerPoints = 0;
@@ -57,9 +59,40 @@ public class UIManager : MonoBehaviour
     public void SeeTime(float timer, float maxSeconds)
     {
         clock.fillAmount = timer / maxSeconds;
+        if(timer/maxSeconds <= 0.5f && timer/maxSeconds> 0.25f)
+        {
+            ChangeColor();
+        }
+        else if(timer/maxSeconds <=0.25f)
+            ClockBlinks();
+        
         //timer.text = "Time: " + (int)maxSeconds;
     }
+    private void ChangeColor()
+    {
 
+            clock.color = new Color32(255,0,0,255);
+    }
+
+    private void ClockBlinks()
+    {
+        if(currentBlinker == 0)
+        {
+            Color temp;
+            temp = clock.color;
+            temp.a = 0;
+            clock.color = temp;
+        } else if(currentBlinker==blinker)
+        {
+            Color temp;
+            temp = clock.color;
+            temp.a = 1;
+            clock.color = temp;
+            currentBlinker = -blinker;
+        }
+       currentBlinker++;
+
+    }
 
     public void HighlightTextColor(Text text)
     {
