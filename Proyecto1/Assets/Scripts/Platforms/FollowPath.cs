@@ -53,10 +53,10 @@ public class FollowPath : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // si colisionas por la parte de abajo, y el objeto esta descendiendo
-        if (Mathf.Approximately(Vector2.Angle(collision.GetContact(0).normal, transform.up), 0) && direc.y < 0)
-        {
-            //GoBack(); // ve hacia atras
-        }
+        // if (Mathf.Approximately(Vector2.Angle(collision.GetContact(0).normal, transform.up), 0) && direc.y < 0)
+        // {
+        //     GoBack(); // ve hacia atras
+        // }
     }
 
     // comprueba si ha colisionado con el siguiente objetivo

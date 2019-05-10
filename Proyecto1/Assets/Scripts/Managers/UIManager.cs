@@ -70,7 +70,6 @@ public class UIManager : MonoBehaviour
     }
     private void ChangeColor()
     {
-
             clock.color = new Color32(255,0,0,255);
     }
 
