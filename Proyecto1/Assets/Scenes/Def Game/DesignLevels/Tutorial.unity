@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 10355426}
   m_Layer: 11
   m_Name: "Plataforma fr\xE1gil prueba"
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15847,7 +15847,7 @@ GameObject:
   - component: {fileID: 689824204}
   m_Layer: 0
   m_Name: GotoB
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16585,7 +16585,7 @@ GameObject:
   - component: {fileID: 992635635}
   m_Layer: 0
   m_Name: MobilePlataform
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17727,7 +17727,7 @@ GameObject:
   - component: {fileID: 1392430683}
   m_Layer: 0
   m_Name: GotoA
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19362,7 +19362,7 @@ GameObject:
   - component: {fileID: 2113914854}
   m_Layer: 0
   m_Name: Platforms
-  m_TagString: Untagged
+  m_TagString: NotDestructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
