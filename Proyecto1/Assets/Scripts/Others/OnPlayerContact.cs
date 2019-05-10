@@ -54,6 +54,11 @@ public class OnPlayerContact : MonoBehaviour
         {
             this.gameObject.GetComponent<SpriteRenderer>().enabled =false;
             this.gameObject.GetComponent<Collider2D>().enabled =false;
+            Collider2D[] cols = this.gameObject.GetComponentsInChildren<Collider2D>();
+            foreach(Collider2D c in cols)
+            {
+                c.enabled = false;
+            }
             AudioManager.instance.PlayClip(this.gameObject);
         }
         catch (System.Exception e)
