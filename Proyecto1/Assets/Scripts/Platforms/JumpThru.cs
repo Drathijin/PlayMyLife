@@ -10,8 +10,8 @@ public class JumpThru : MonoBehaviour {
     {
         if (enableGoThru)
         {
-            if (Input.GetAxisRaw("Vertical") < 0) GoThru();
-            else if (Input.GetAxisRaw("Vertical") >= 0) Solidify();
+            if (Input.GetAxisRaw("Jump") < 0) GoThru();
+            else if (Input.GetAxisRaw("Jump") >= 0) Solidify();
         }
     }
     void GoThru()

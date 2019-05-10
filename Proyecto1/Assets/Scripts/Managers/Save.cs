@@ -27,11 +27,6 @@
     // -----FinDConstructores----- //
 
 
-        /// <summary>
-        /// Guarda en el save el nivel actual
-        /// </summary>
-        /// <param name="save"></param>
-        /// <param name="level"></param>
     public void SaveLevel(Level level)
     {
         levels[level.GetNum()] = level;

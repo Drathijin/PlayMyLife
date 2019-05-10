@@ -72,10 +72,12 @@ public class GameManager : MonoBehaviour
     {
         Pause();
         SceneManager.LoadScene(n);
-        theSaveManager.LoadGame();
-
     }
-
+    public void LoadLevel2(int n)
+    {
+        Pause();
+        SceneManager.LoadScene(n+1);
+    }
     public void AddCollectable()
     {
         theWinManager.AddCollectable();

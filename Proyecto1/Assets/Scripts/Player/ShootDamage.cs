@@ -15,6 +15,11 @@ public class ShootDamage : MonoBehaviour {
                 if (wall != null)
                 {
                     wall.SetTrigger("Open");
+                    try
+                    {
+                        AudioManager.instance.PlayClip(collision.gameObject.GetComponent<AudioSource>().clip);
+                    }
+                    catch {print("Puertas sin audio");}
                 }
             }
             else

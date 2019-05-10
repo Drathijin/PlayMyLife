@@ -1521,7 +1521,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 670824150}
+      objectReference: {fileID: 670824152}
     - target: {fileID: 1769806739777690, guid: e7c2357751615944c9988138192854f7, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -1655,6 +1655,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 670824148}
   m_Script: {fileID: 11500000, guid: 4453d99ab9f4fa84f950d6d05e47a4d3, type: 3}
+--- !u!1 &670824152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1247081594955568, guid: e7c2357751615944c9988138192854f7,
+    type: 2}
+  m_PrefabInternal: {fileID: 670824148}
 --- !u!1001 &680160816
 Prefab:
   m_ObjectHideFlags: 0

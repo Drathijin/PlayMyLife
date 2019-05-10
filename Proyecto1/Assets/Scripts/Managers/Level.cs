@@ -46,10 +46,8 @@ public class Level
 
     public void FinishLevel(bool win, char c)
     {
-        int d = 0;
-        if (win) d = 2; //ganar
-        else d = 1; //perder
-        state = (LevelState)d;
+        if (win) state=LevelState.Win; //ganar
+        else state=LevelState.Loss; //perder
         category = c;
     }
     public char GetCategory() { return category; }

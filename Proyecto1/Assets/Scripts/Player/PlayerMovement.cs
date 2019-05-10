@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("SpeedY", Mathf.Abs(rb.velocity.y));
 
 
-        if (Input.GetAxisRaw("Vertical") < 0 && !dashing && !dashCD) //quiero que solo se ejecute una vez
+        if (Input.GetAxisRaw("Jump") < 0 && !dashing && !dashCD) //quiero que solo se ejecute una vez
         {
             dashAcc = rb.velocity.x * impulseOnDash * dashDecreaseRate;
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.2f); //corregir la diferecncai de altura al agacharse
@@ -62,13 +62,13 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetAxisRaw("Vertical") < 0)
+        if (Input.GetAxisRaw("Jump") < 0)
         {
             dashAcc *= dashDecreaseRate;
             dashing = true;
         }
-        else if (Input.GetAxisRaw("Vertical") > 0 && /*Mathf.Abs(rb.velocity.y) < 0.1f*/ ableToJump && !jump) { jump = true; }
-        else if (Input.GetAxisRaw("Vertical") == 0)
+        else if (Input.GetAxisRaw("Jump") ==1 && /*Mathf.Abs(rb.velocity.y) < 0.1f*/ ableToJump && !jump) { jump = true; }
+        else if (Input.GetAxisRaw("Jump") == 0)
         {
             animator.SetBool("IsDashing", false);
             dashing = false;

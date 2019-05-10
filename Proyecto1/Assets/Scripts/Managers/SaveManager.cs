@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoBehaviour
 {
@@ -9,22 +10,21 @@ public class SaveManager : MonoBehaviour
     string dir = "./saves.txt";
     const int LVLS = 13; //Numero de niveles por defecto a cargar
     static private Save currentGame;
+    int actC;
 
     private void Awake()
     {
         currentGame = LoadGame();
+        if (SceneManager.GetActiveScene().name != "Tutorial" && SceneManager.GetActiveScene().name != "Menu"
+        && SceneManager.GetActiveScene().name != "ListsOfLevels" && SceneManager.GetActiveScene().name != "GameEnding")
+            SetActToScene();
     }
 
     private void Start()
     {
         GameManager.instance.SetSaveManager(this);
-        print(currentGame);
     }
 
-    /// <summary>
-    /// Busca en la dirección dir el archivo de texto donde está guardada la partdia y la carga en una variable "Save" que devuelve.
-    /// </summary>
-    /// <returns></returns>
     public Save LoadGame()
     {
         Save save = new Save(LVLS);
@@ -48,10 +48,11 @@ public class SaveManager : MonoBehaviour
         return save;
     }
 
-    /// <summary>
-    /// Guarda en el archivo de texto el estado actual del objeto save
-    /// </summary>
-    /// <param name="actState"></param>
+    public void SetActToScene()
+    {
+        SetAct(SceneManager.GetActiveScene().buildIndex-2);
+    }
+
     public void SaveGame()
     {
         //if (!File.Exists(dir)) File.Create(dir);
@@ -78,5 +79,10 @@ public class SaveManager : MonoBehaviour
         File.Delete(dir);
         currentGame = new Save(LVLS);
         SaveGame();
+    }
+    public void SetAct(int n) 
+    {
+        actC = n;
+        currentGame.SetAct(actC);
     }
 }
