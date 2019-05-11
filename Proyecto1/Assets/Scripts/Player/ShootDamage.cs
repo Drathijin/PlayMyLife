@@ -7,41 +7,37 @@ public class ShootDamage : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //if (collision.gameObject.tag != "NotDestructible")
+        
+        if (collision.gameObject.tag == "BreakWall")
         {
-            if (collision.gameObject.tag == "BreakWall")
+            Animator wall = collision.gameObject.GetComponent<Animator>();
+            if (wall != null)
             {
-                Animator wall = collision.gameObject.GetComponent<Animator>();
-                if (wall != null)
-                {
-                    wall.SetTrigger("Open");
-                    AudioSource a;
-                    try
-                    {
-                        a =collision.gameObject.GetComponent<AudioSource>();
-                        AudioManager.instance.PlayClip(a.clip);
-                    }
-                    catch (System.Exception e){print("Puertas sin audio" +e);}
-                }
-            }
-            else 
-            if (collision.gameObject.tag == "Enemy")
-
-            {
-                // Es un código simple para PlayerBullet, destruya todo lo que se va a colisionar. Entonces hay que hace que la máscara 
-                // de colisión de Playerbullet solo pueda colisionar con breakWall y Enemy.
-                // BreakWall es un simple sprite con box collider2d, no tiene scripts.
+                wall.SetTrigger("Open");
+                AudioSource a;
                 try
                 {
-                    collision.gameObject.GetComponent<OnPlayerContact>().KillMe();
+                    a =collision.gameObject.GetComponent<AudioSource>();
+                    AudioManager.instance.PlayClip(a.clip);
+                    Destroy(this.gameObject);
                 }
-                catch (Exception e)
-                {
-                    print("Enemigo sin PlayerContact" + e);
-                    Destroy(collision.gameObject);
-                }
+                catch (System.Exception e){print("Puertas sin audio" +e);}
             }
         }
+        else 
+        if (collision.gameObject.tag == "Enemy")
+        {
+            try
+            {
+                collision.gameObject.GetComponent<OnPlayerContact>().KillMe();
+            }
+            catch (Exception e)
+            {
+                print("Enemigo sin PlayerContact" + e);
+                Destroy(collision.gameObject);
+            }
+        }
+        
         KillMe();
     }
     private void KillMe()
