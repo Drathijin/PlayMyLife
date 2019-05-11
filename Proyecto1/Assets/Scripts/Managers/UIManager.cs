@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+[System.Serializable]
+public class ClockSounds
+{
+    public AudioClip[] clips;
+}
 public class UIManager : MonoBehaviour
 {
     const int blinker = 15; 
@@ -16,26 +20,23 @@ public class UIManager : MonoBehaviour
     int currentBlinker = 0;
     float timeToDisable = 0.05f;
     bool highlightedText;
-    //int playerPoints = 0;
-
-
+    public ClockSounds[] clockSounds;
+    AudioSource clockAudioSource;
+    int tickTockFreq = -1;
 
 
     private void Awake()
     {
-
     }
     void Start()
     {
         GameManager.instance.SetUIManager(this);
+        try {clockAudioSource = clock.gameObject.GetComponent<AudioSource>();}
+        catch {print("No tiene audiosource el reloj");}
     }
     
     public void TimeOutside (float time)
     {
-        /*
-        timeoutText.enabled = true;
-        timeoutText.text = "" + time;
-        */
         regenSOZ.enabled = true;
         regenSOZ.text = "¡Entra! ¡Rápido! Antes de: " + (int)(time + 1);
     }
@@ -58,19 +59,41 @@ public class UIManager : MonoBehaviour
     //llama al GameManager para saber el tiempo que le quede y lo muestra en pantalla
     public void SeeTime(float timer, float maxSeconds)
     {
-        clock.fillAmount = timer / maxSeconds;
-        if(timer/maxSeconds <= 0.5f && timer/maxSeconds> 0.25f)
+        float timeOverMax = timer / maxSeconds;
+        
+        clock.fillAmount = timeOverMax;
+        
+        System.Random rnd = new System.Random();
+
+        if(timeOverMax <= 0.75f && timeOverMax > 0.5f)
         {
+            ClockPlaySound(0, rnd.Next(0,clockSounds[0].clips.Length));
+        }
+        else if (timeOverMax <= 0.5f && timeOverMax > 0.25f)
+        {
+            ClockPlaySound(1, rnd.Next(0,clockSounds[1].clips.Length));    
             ChangeColor();
         }
-        else if(timer/maxSeconds <=0.25f)
+        else if(timeOverMax <=0.25f)
+        {
+            ClockPlaySound(2, rnd.Next(0,clockSounds[2].clips.Length));
             ClockBlinks();
-        
-        //timer.text = "Time: " + (int)maxSeconds;
+        }
     }
+
+    private void ClockPlaySound(int i, int j)
+    {
+        if(tickTockFreq != i)
+        {
+            clockAudioSource.clip = clockSounds[i].clips[j];
+            clockAudioSource.Play();
+        }
+
+    }
+
     private void ChangeColor()
     {
-            clock.color = new Color32(255,0,0,255);
+        clock.color = new Color32(255,0,0,255); //Rojo full alpha
     }
 
     private void ClockBlinks()
