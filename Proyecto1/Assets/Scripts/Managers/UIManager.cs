@@ -67,17 +67,17 @@ public class UIManager : MonoBehaviour
 
         if(timeOverMax <= 0.75f && timeOverMax > 0.5f)
         {
-            ClockPlaySound(0, rnd.Next(0,clockSounds[0].clips.Length));
+            //ClockPlaySound(0, rnd.Next(0,clockSounds[0].clips.Length));
         }
         else if (timeOverMax <= 0.5f && timeOverMax > 0.25f)
         {
-            ClockPlaySound(1, rnd.Next(0,clockSounds[1].clips.Length));    
             ChangeColor();
+            //ClockPlaySound(1, rnd.Next(0,clockSounds[1].clips.Length));    
         }
         else if(timeOverMax <=0.25f)
         {
-            ClockPlaySound(2, rnd.Next(0,clockSounds[2].clips.Length));
             ClockBlinks();
+            //ClockPlaySound(2, rnd.Next(0,clockSounds[2].clips.Length));
         }
     }
 
