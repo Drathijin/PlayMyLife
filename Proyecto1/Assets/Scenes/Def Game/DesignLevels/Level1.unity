@@ -986,7 +986,7 @@ Prefab:
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: clockSounds.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
