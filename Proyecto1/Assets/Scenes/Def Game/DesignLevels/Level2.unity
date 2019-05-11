@@ -14212,6 +14212,17 @@ Prefab:
       propertyPath: m_ScreenMatchMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114543189054932036, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: "Tu hermano ha hecho una fiesta y no te ha invitado. \xA1P\xE1rtele la
+        nariz a \xE9l y a todos sus invitados!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370642195493950, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: Pelea de hermanos
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
