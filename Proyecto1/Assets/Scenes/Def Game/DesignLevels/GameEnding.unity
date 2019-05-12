@@ -1367,7 +1367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu Principal
+  m_Text: "Men\xFA Principal"
 --- !u!222 &1536049441
 CanvasRenderer:
   m_ObjectHideFlags: 0

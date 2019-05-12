@@ -4102,6 +4102,11 @@ Prefab:
       propertyPath: m_FontData.m_FontSize
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 114270940861141654, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: m_Text
+      value: "Siguiente p\xE1gina"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
