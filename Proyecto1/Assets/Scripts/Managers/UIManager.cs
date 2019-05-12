@@ -14,7 +14,7 @@ public class UIManager : MonoBehaviour
     public AudioClip buttonSound;
     public Image clock;
 
-    public Text scoreText, timeoutText, collected, winOrLose, regenSOZ;
+    public Text scoreText, timeoutText, collected, winOrLose, regenSOZ, winText, loseText;
     public GameObject panel, initialPanel;
     int nextLevel;
     int currentBlinker = 0;
@@ -145,8 +145,16 @@ public class UIManager : MonoBehaviour
     {
         if (!win) Invoke("EnablePanel", GameManager.instance.GetLoseTime());
         else Invoke("EnablePanel", 0f);
-        if (win) winOrLose.text = "Has ganado";
-        else winOrLose.text = "Has perdido";
+        if (win)
+        {
+            winOrLose.text = "Lo has conseguido";
+            winText.gameObject.SetActive(true);
+        }
+        else
+        {
+            winOrLose.text = "No lo has logrado";
+            loseText.gameObject.SetActive(true);
+        }
         nextLevel = level + 1;
         print(nextLevel);
 
