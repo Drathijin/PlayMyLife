@@ -1060,7 +1060,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331966475}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1151,7 +1151,7 @@ Prefab:
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: clockSounds.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -1161,17 +1161,17 @@ Prefab:
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: clockSounds.Array.data[0].clips.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: clockSounds.Array.data[1].clips.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: clockSounds.Array.data[2].clips.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114031682188836372, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -1551,12 +1551,12 @@ Prefab:
     - target: {fileID: 224036436390486030, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224051738843886704, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -1573,6 +1573,26 @@ Prefab:
       propertyPath: m_Text
       value: "Siguiente p\xE1gina"
       objectReference: {fileID: 0}
+    - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: clockSounds.Array.data[0].clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d0edab8ec42f79439d9f291db55784b, type: 3}
+    - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: clockSounds.Array.data[1].clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6feb7b70afbfb0147b34197039dd41ff, type: 3}
+    - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: clockSounds.Array.data[2].clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: bed45ad9e0618604cb2ca71bbb893375, type: 3}
+    - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
+        type: 2}
+      propertyPath: clockSounds.Array.data[0].clips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d0edab8ec42f79439d9f291db55784b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7c2357751615944c9988138192854f7, type: 2}
   m_IsPrefabAsset: 0
@@ -1606,7 +1626,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1884,7 +1904,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550981800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -13, z: 0}
+  m_LocalPosition: {x: 0, y: -15.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2070527399}
@@ -2713,7 +2733,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: 21300000, guid: 994f209f30cd4904986a08b44af997b0, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0

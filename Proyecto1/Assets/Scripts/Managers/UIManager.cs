@@ -31,7 +31,8 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         GameManager.instance.SetUIManager(this);
-        try {clockAudioSource = clock.gameObject.GetComponent<AudioSource>();}
+        try {clockAudioSource = clock.gameObject.GetComponent<AudioSource>();
+        clockAudioSource.volume = 0.2f;}
         catch {print("No tiene audiosource el reloj");}
     }
     
@@ -67,18 +68,19 @@ public class UIManager : MonoBehaviour
 
         if(timeOverMax <= 0.75f && timeOverMax > 0.5f)
         {
-            //ClockPlaySound(0, rnd.Next(0,clockSounds[0].clips.Length));
+            ClockPlaySound(0, rnd.Next(0,clockSounds[0].clips.Length));
         }
         else if (timeOverMax <= 0.5f && timeOverMax > 0.25f)
         {
             ChangeColor();
-            //ClockPlaySound(1, rnd.Next(0,clockSounds[1].clips.Length));    
+            ClockPlaySound(1, rnd.Next(0,clockSounds[1].clips.Length));    
         }
-        else if(timeOverMax <=0.25f)
+        else if(timeOverMax <=0.25f && timeOverMax > 0f)
         {
             ClockBlinks();
-            //ClockPlaySound(2, rnd.Next(0,clockSounds[2].clips.Length));
+            ClockPlaySound(2, rnd.Next(0,clockSounds[2].clips.Length));
         }
+        else ClockStopSound();
     }
 
     private void ClockPlaySound(int i, int j)
@@ -86,9 +88,18 @@ public class UIManager : MonoBehaviour
         if(tickTockFreq != i)
         {
             clockAudioSource.clip = clockSounds[i].clips[j];
+            print(clockSounds[i].clips[j]);
             clockAudioSource.Play();
+            tickTockFreq = i;
         }
-
+    }
+    public void ClockPlaySound()
+    {
+        clockAudioSource.Play();
+    }
+    public void ClockStopSound()
+    {
+        clockAudioSource.Stop();
     }
 
     private void ChangeColor()
@@ -155,6 +166,7 @@ public class UIManager : MonoBehaviour
             winOrLose.text = "No lo has logrado";
             loseText.gameObject.SetActive(true);
         }
+        ClockStopSound();
         nextLevel = level + 1;
         print(nextLevel);
 
