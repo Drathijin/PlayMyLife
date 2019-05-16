@@ -48,12 +48,12 @@ public class WinManager : MonoBehaviour
             FinishLevel(true);
             oneTime = false;
         }
-        else if(GetCheat(out cheat))
+        /*else if(GetCheat(out cheat))
         {
             print(cheat);
             FinishLevel(cheat);
             oneTime = false;
-        }
+        }*/
     }
     private void FinishLevel(bool w)
     {
@@ -98,7 +98,7 @@ public class WinManager : MonoBehaviour
         AudioManager.instance.PlayClip(loseSound);
     }
 
-    private bool GetCheat(out bool _cheat) //Con L+O o W+I superas los niveles de manera instantanea para testeos.
+   /* private bool GetCheat(out bool _cheat) //Con L+O o W+I superas los niveles de manera instantanea para testeos.
     {
         if(Input.GetKey(KeyCode.R) && Input.GetKey(KeyCode.LeftAlt))
         {
@@ -121,7 +121,7 @@ public class WinManager : MonoBehaviour
 
         _cheat = false;
         return false;
-    }
+    }*/
 
 
     //Para Utilizar esta forma de ganar desde el editor ser equiere que se habilite el sprite renderer (para ver la bandera) y el rigidbody

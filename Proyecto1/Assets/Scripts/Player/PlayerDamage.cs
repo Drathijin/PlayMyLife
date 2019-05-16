@@ -42,7 +42,7 @@ public class PlayerDamage : MonoBehaviour
             animator.SetBool("IsDamaged", false);
             armAnim.SetBool("IsDamaged", false);
         }
-        if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.I)) this.enabled = false;  
+       // if(Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.I)) this.enabled = false;  
     }
 
     public void PlayerDead()
