@@ -61,6 +61,6 @@ public class UIManagerMenu : MonoBehaviour {
 
     public void GoToMenu()
     {
-        GameManager.instance.ChangeScene("menu");
+        GameManager.instance.ChangeScene("Menu");
     }
 }
