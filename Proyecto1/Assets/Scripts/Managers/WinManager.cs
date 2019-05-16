@@ -54,7 +54,26 @@ public class WinManager : MonoBehaviour
             FinishLevel(cheat);
             oneTime = false;
         }
+        if (GetCheatTime()) print(timer);
     }
+
+    private bool GetCheatTime()
+    {
+        if (Input.GetKeyDown(KeyCode.KeypadMinus) && Input.GetKey(KeyCode.LeftAlt))
+        {
+            timer -= 10;
+            return true;
+
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadPlus) && Input.GetKey(KeyCode.LeftAlt))
+        {
+            timer += 10;
+            return true;
+
+        }
+        return false;
+    }
+
     private void FinishLevel(bool w)
     {
         GameObject player=null;
