@@ -13,7 +13,7 @@ public class UIManagerMenu : MonoBehaviour {
     private void Start()
     {
         menu.SetActive(false);
-        if (GameManager.instance.GetIniVideoPlay()) Invoke("SeeMenu", 34f);
+        if (GameManager.instance.GetIniVideoPlay()) Invoke("SeeMenu", 2f);
         else Invoke("SeeMenu", 0);
         Time.timeScale = 1f;
         print(GameManager.instance.GetIniVideoPlay());
@@ -48,5 +48,17 @@ public class UIManagerMenu : MonoBehaviour {
     }    
     public void PlaySoundButton(){
         AudioManager.instance.PlayClip(buttonSound);
+    }
+
+    public void GameEnding()
+    {
+        menu.SetActive(false);
+        video.SetActive(true);
+        Invoke("GoToMenu", 34f);
+    }
+
+    public void GoToMenu()
+    {
+        GameManager.instance.ChangeScene("menu");
     }
 }
