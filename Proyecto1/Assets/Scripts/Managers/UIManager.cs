@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
     public Image clock;
 
     public Text scoreText, timeoutText, collected, winOrLose, regenSOZ, winText, loseText;
-    public GameObject panel, initialPanel;
+    public GameObject panel, panelCheats, initialPanel;
     int nextLevel;
     int currentBlinker = 0;
     float timeToDisable = 0.05f;
@@ -23,10 +23,16 @@ public class UIManager : MonoBehaviour
     public ClockSounds[] clockSounds;
     AudioSource clockAudioSource;
     int tickTockFreq = -1;
+    bool cheatsAtivated = true;
 
 
-    private void Awake()
+    private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            cheatsAtivated = !cheatsAtivated;
+            panelCheats.SetActive(cheatsAtivated);
+        }
     }
     void Start()
     {
