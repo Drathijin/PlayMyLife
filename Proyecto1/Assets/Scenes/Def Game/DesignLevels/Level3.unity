@@ -1690,7 +1690,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hubiese sido mejor no levantarse de la cama. Ni te dejan entrar a clase,
+  m_Text: "Habr\xEDa sido mejor no levantarse de la cama. Ni te dejan entrar a clase,
     ni te apetece dormir despu\xE9s de la carrera."
 --- !u!222 &397203625
 CanvasRenderer:
