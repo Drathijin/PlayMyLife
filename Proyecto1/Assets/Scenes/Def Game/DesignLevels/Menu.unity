@@ -224,6 +224,7 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: 9802c3f7e4ae911418608ab827c764de, type: 2}
   menu: {fileID: 895003977}
   video: {fileID: 1028164361}
+  mainTheme: {fileID: 1456070763}
   SkipVideoKey: 27
 --- !u!114 &76564094
 MonoBehaviour:

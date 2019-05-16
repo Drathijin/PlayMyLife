@@ -7,9 +7,9 @@ public class UIManagerMenu : MonoBehaviour {
     
     public AudioClip buttonSound;
     public AudioMixer audioMixer;
-    public GameObject menu, video;
+    public GameObject menu, video, mainTheme;
     public KeyCode SkipVideoKey;
-    bool once = true;
+    public static bool once = true;
     private void Start()
     {
         menu.SetActive(false);
@@ -46,6 +46,7 @@ public class UIManagerMenu : MonoBehaviour {
         GameManager.SetIniVideoPlay();
         video.SetActive(false);
         menu.SetActive(true);
+        mainTheme.SetActive(true);
         print(GameManager.instance.GetIniVideoPlay());
     }    
     public void PlaySoundButton(){
