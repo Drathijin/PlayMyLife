@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 public class UIManagerEnding : MonoBehaviour {
     
     public GameObject menu, video;
-
+    bool skipable = false;
     // Use this for initialization
     void Start () {
 		
@@ -14,8 +14,12 @@ public class UIManagerEnding : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetAxis("Submit") > 0 && skipable)
+        {
+            skipable = false;
+            Invoke("GoToMenu", 0f);
+        }
+    }
 
     public void GameEnding()
     {
@@ -26,6 +30,16 @@ public class UIManagerEnding : MonoBehaviour {
 
     public void GoToMenu()
     {
-        GameManager.instance.ChangeScene("menu");
+        GameManager.instance.ChangeScene("Menu");
+    }
+
+    public void AllowSkip()
+    {
+        Invoke("ChangeSkipable", 0.8f);
+    }
+
+    void ChangeSkipable()
+    {
+        skipable = true;
     }
 }

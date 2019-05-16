@@ -750,7 +750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.64500004, y: 0.06333333}
   m_AnchorMax: {x: 0.9325, y: 0.15}
-  m_AnchoredPosition: {x: -28, y: -260.7796}
+  m_AnchoredPosition: {x: -28, y: -260.77914}
   m_SizeDelta: {x: 295.07086, y: 57.46001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203368936
@@ -794,6 +794,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1575703915}
         m_MethodName: GameEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1575703915}
+        m_MethodName: AllowSkip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1106,7 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1203368934}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1428518992

@@ -9,7 +9,7 @@ public class UIManagerMenu : MonoBehaviour {
     public AudioMixer audioMixer;
     public GameObject menu, video;
     public KeyCode SkipVideoKey;
-
+    bool once = true;
     private void Start()
     {
         menu.SetActive(false);
@@ -21,8 +21,10 @@ public class UIManagerMenu : MonoBehaviour {
     
     private void Update()
     {
-        if (Input.GetAxis("Submit")>0)
+        if (Input.GetAxis("Submit")>0 && once)
         {
+            once = false;
+            CancelInvoke("SeeMenu");
             Invoke("SeeMenu", 0f);
         }
     }
