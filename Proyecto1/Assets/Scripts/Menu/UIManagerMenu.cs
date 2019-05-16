@@ -13,7 +13,7 @@ public class UIManagerMenu : MonoBehaviour {
     private void Start()
     {
         menu.SetActive(false);
-        if (GameManager.instance.GetIniVideoPlay()) Invoke("SeeMenu", 2f);
+        if (GameManager.instance.GetIniVideoPlay()) Invoke("SeeMenu", 34f);
         else Invoke("SeeMenu", 0);
         Time.timeScale = 1f;
         print(GameManager.instance.GetIniVideoPlay());

@@ -983,7 +983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.92
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1044,7 +1044,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331966475}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 587e387c1e54cec428b248de82539e0e, type: 3}
   m_Name: 
@@ -1060,13 +1060,13 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331966475}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04066229, y: 1.1244788}
+  m_Offset: {x: 0.04066229, y: -0.107724905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1077,7 +1077,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.7195845, y: 7.5283384}
+  m_Size: {x: 7.7195845, y: 5.063931}
   m_EdgeRadius: 0
 --- !u!1 &352189188
 GameObject:
@@ -1551,12 +1551,12 @@ Prefab:
     - target: {fileID: 224036436390486030, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224051738843886704, guid: e7c2357751615944c9988138192854f7,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114476456724317108, guid: e7c2357751615944c9988138192854f7,
         type: 2}
@@ -17956,7 +17956,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4507946694904066, guid: 7ae5090f21ddf754b9298909f279120b, type: 2}
       propertyPath: m_LocalPosition.z
