@@ -10,17 +10,16 @@ public class GameManager : MonoBehaviour
     WinManager theWinManager;
     SaveManager theSaveManager;
     const float loseTime = 0.8f;
-
+    static bool videoOnce = true;
 
     private void Awake()
     {
         if (instance == null) { instance = this; }
         else { Destroy(this.gameObject); }
-
     }
     private void Start()
     {
-        
+
     }
     private void Update()
     {
@@ -122,4 +121,13 @@ public class GameManager : MonoBehaviour
     }
     public float GetLoseTime() {return loseTime;}
 
+    public bool GetIniVideoPlay()
+    {
+        return videoOnce;
+    }
+
+    public static void SetIniVideoPlay()
+    {
+        videoOnce = false;
+    }
 }
