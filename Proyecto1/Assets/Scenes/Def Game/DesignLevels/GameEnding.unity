@@ -173,7 +173,7 @@ Transform:
   m_LocalScale: {x: 60, y: 60, z: 60}
   m_Children: []
   m_Father: {fileID: 1093626996}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &475480286
 AudioSource:
@@ -444,7 +444,7 @@ RectTransform:
   m_Children:
   - {fileID: 1658405038}
   m_Father: {fileID: 1093626996}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -594,7 +594,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1428518992}
   - {fileID: 1046683444}
   - {fileID: 1603474915}
   - {fileID: 1203368935}
@@ -746,11 +745,11 @@ RectTransform:
   m_Children:
   - {fileID: 1103919813}
   m_Father: {fileID: 1093626996}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.64500004, y: 0.06333333}
   m_AnchorMax: {x: 0.9325, y: 0.15}
-  m_AnchoredPosition: {x: -28, y: -260.77914}
+  m_AnchoredPosition: {x: -28, y: -260.7791}
   m_SizeDelta: {x: 295.07086, y: 57.46001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203368936
@@ -1127,11 +1126,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1428518989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5399.9985}
-  m_LocalScale: {x: 60, y: 60, z: 60}
+  m_LocalPosition: {x: 0, y: 0, z: 19.226753}
+  m_LocalScale: {x: 0.78636956, y: 0.78636956, z: 0.78636956}
   m_Children: []
-  m_Father: {fileID: 1093626996}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1435429208
 GameObject:
@@ -1206,7 +1205,7 @@ RectTransform:
   m_LocalScale: {x: 137.59998, y: 113.599976, z: 64}
   m_Children: []
   m_Father: {fileID: 1093626996}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1479,6 +1478,7 @@ MonoBehaviour:
   audioMixer: {fileID: 0}
   menu: {fileID: 1093626995}
   video: {fileID: 1757677216}
+  mainTheme: {fileID: 0}
   SkipVideoKey: 0
 --- !u!114 &1575703915
 MonoBehaviour:
@@ -1641,7 +1641,7 @@ RectTransform:
   - {fileID: 1752696074}
   - {fileID: 1568239816}
   m_Father: {fileID: 1093626996}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

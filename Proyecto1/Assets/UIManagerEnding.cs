@@ -23,6 +23,7 @@ public class UIManagerEnding : MonoBehaviour {
 
     public void GameEnding()
     {
+        GameManager.instance.Play();
         menu.SetActive(false);
         video.SetActive(true);
         Invoke("GoToMenu", 34f);

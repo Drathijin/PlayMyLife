@@ -53,12 +53,12 @@ public class UIManagerMenu : MonoBehaviour {
         AudioManager.instance.PlayClip(buttonSound);
     }
 
-    public void GameEnding()
+    /*public void GameEnding()
     {
         menu.SetActive(false);
         video.SetActive(true);
         Invoke("GoToMenu", 34f);
-    }
+    }*/
 
     public void GoToMenu()
     {
